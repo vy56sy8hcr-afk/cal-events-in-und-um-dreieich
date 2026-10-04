@@ -1,0 +1,48 @@
+name: Events täglich aktualisieren
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Kalender aktualisieren
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          file = Path("cal-events-in-und-um-dreieich.ics")
+          text = file.read_text(encoding="utf-8")
+
+          stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+          text = text.replace(
+              "DTSTAMP:20261004T191900Z",
+              f"DTSTAMP:{stamp}"
+          )
+
+          file.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Änderungen speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cal-events-in-und-um-dreieich.ics
+          git diff --cached --quiet || git commit -m "Kalender täglich aktualisieren"
+          git push
