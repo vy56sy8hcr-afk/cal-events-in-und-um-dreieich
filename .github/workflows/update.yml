@@ -1,4 +1,4 @@
-name: Events täglich aktualisieren
+ name: Events täglich aktualisieren
 
 on:
   schedule:
@@ -21,22 +21,602 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Kalender aktualisieren
+      - name: ICS erzeugen
         run: |
           python - <<'PY'
+          from datetime import date, datetime, timedelta
           from pathlib import Path
-          from datetime import datetime, timezone
+          import calendar
 
-          file = Path("cal-events-in-und-um-dreieich.ics")
-          text = file.read_text(encoding="utf-8")
+          OUT = Path("cal-events-in-und-um-dreieich.ics")
 
-          stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-          text = text.replace(
-              "DTSTAMP:20261004T191900Z",
-              f"DTSTAMP:{stamp}"
+          TODAY = date.today()
+
+          # ----------------------------------------------------------
+          # Kalenderfenster:
+          # 6 Monate zurück / 16 Monate voraus
+          # ----------------------------------------------------------
+
+          def add_months(d, months):
+              y = d.year + (d.month - 1 + months) // 12
+              m = (d.month - 1 + months) % 12 + 1
+              day = min(d.day, calendar.monthrange(y, m)[1])
+              return date(y, m, day)
+
+          START = add_months(TODAY, -6)
+          END = add_months(TODAY, 16)
+
+          events = []
+
+          def add(start, end, title, description="", location=""):
+              events.append({
+                  "start": start,
+                  "end": end,
+                  "title": title,
+                  "description": description,
+                  "location": location,
+              })
+
+          # ----------------------------------------------------------
+          # Hilfsfunktionen
+          # ----------------------------------------------------------
+
+          def nth_weekday(year, month, weekday, n):
+              d = date(year, month, 1)
+              offset = (weekday - d.weekday()) % 7
+              return d + timedelta(days=offset + 7 * (n - 1))
+
+          def last_weekday(year, month, weekday):
+              last = calendar.monthrange(year, month)[1]
+              d = date(year, month, last)
+              return d - timedelta(days=(d.weekday() - weekday) % 7)
+
+          def easter(year):
+              a = year % 19
+              b = year // 100
+              c = year % 100
+              d = b // 4
+              e = b % 4
+              f = (b + 8) // 25
+              g = (b - f + 1) // 3
+              h = (19*a + b - d - g + 15) % 30
+              i = c // 4
+              k = c % 4
+              l = (32 + 2*e + 2*i - h - k) % 7
+              m = (a + 11*h + 22*l) // 451
+              month = (h + l - 7*m + 114) // 31
+              day = ((h + l - 7*m + 114) % 31) + 1
+              return date(year, month, day)
+
+          def fmt(d):
+              names = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
+              return f"{names[d.weekday()]} {d:%d.%m.%Y}"
+
+          def first_advent(year):
+              nov30 = date(year, 11, 30)
+              return nov30 - timedelta(days=(nov30.weekday() + 1) % 7)
+
+          # ==========================================================
+          # REFERENZ-/PRÜFLISTE
+          #
+          # Diese Daten sagen dem Programm:
+          # "Diese Veranstaltung existiert und wurde bereits konkret
+          #  veröffentlicht/bestätigt."
+          #
+          # Sie sind NICHT die einzige Quelle für Folgejahre.
+          # ==========================================================
+
+          known = {
+              "Altstadtfest Neu-Isenburg": {
+                  2027: (date(2027, 6, 18), date(2027, 6, 20))
+              },
+
+              "Kerb Warmup": {
+                  2027: (date(2027, 7, 31), date(2027, 7, 31))
+              },
+
+              "Hayner Kerb": {
+                  2026: (date(2026, 5, 22), date(2026, 5, 27)),
+                  2027: (date(2027, 5, 14), date(2027, 5, 19)),
+              },
+
+              "Sprendlinger Kerb": {
+                  2026: (date(2026, 8, 14), date(2026, 8, 18)),
+                  2027: (date(2027, 8, 13), date(2027, 8, 17)),
+              },
+
+              "Götzenhainer Kerb": {
+                  2026: (date(2026, 9, 18), date(2026, 9, 21)),
+                  2027: (date(2027, 9, 17), date(2027, 9, 20)),
+              },
+
+              "Offenthaler Kerb": {
+                  2026: (date(2026, 10, 30), date(2026, 11, 3)),
+                  2027: (date(2027, 10, 29), date(2027, 11, 2)),
+              },
+          }
+
+          # ==========================================================
+          # KERBEN
+          # ==========================================================
+
+          def kerb_data(year):
+
+              # ------------------------------------------------------
+              # Hayner Kerb
+              #
+              # Regel:
+              # Freitag vor Pfingstsonntag bis Mittwoch
+              # ------------------------------------------------------
+
+              pentecost = easter(year) + timedelta(days=49)
+
+              hayner_start = pentecost - timedelta(days=2)
+              hayner_end = hayner_start + timedelta(days=5)
+
+              # ------------------------------------------------------
+              # Sprendlingen
+              #
+              # Regel:
+              # zweites August-Wochenende:
+              # Freitag bis Dienstag
+              # ------------------------------------------------------
+
+              spr_start = nth_weekday(year, 8, 4, 2)
+              spr_end = spr_start + timedelta(days=4)
+
+              # ------------------------------------------------------
+              # Götzenhain
+              #
+              # Regel:
+              # dritter Sonntag im September = Kerbsonntag
+              # Freitag bis Montag
+              # ------------------------------------------------------
+
+              goetz_sonntag = nth_weekday(year, 9, 6, 3)
+              goetz_start = goetz_sonntag - timedelta(days=2)
+              goetz_end = goetz_sonntag + timedelta(days=1)
+
+              # ------------------------------------------------------
+              # Offenthal
+              #
+              # Regel:
+              # erstes November-Wochenende
+              # Freitag bis Dienstag
+              # ------------------------------------------------------
+
+              off_sonntag = nth_weekday(year, 11, 6, 1)
+              off_start = off_sonntag - timedelta(days=2)
+              off_end = off_sonntag + timedelta(days=2)
+
+              # ------------------------------------------------------
+              # Bekannte veröffentlichte Daten überschreiben die
+              # errechnete Regel.
+              # ------------------------------------------------------
+
+              values = {
+                  "Hayner Kerb": [hayner_start, hayner_end],
+                  "Sprendlinger Kerb": [spr_start, spr_end],
+                  "Götzenhainer Kerb": [goetz_start, goetz_end],
+                  "Offenthaler Kerb": [off_start, off_end],
+              }
+
+              for name in values:
+                  if year in known.get(name, {}):
+                      values[name] = list(known[name][year])
+
+              return values
+
+          # ----------------------------------------------------------
+          # Kerb-Notiz automatisch für jedes Jahr erzeugen
+          # ----------------------------------------------------------
+
+          def kerb_note(year):
+              k = kerb_data(year)
+
+              return f"""Die Kerben und ihre Termine {year} in Dreieich:
+
+          Hayner Kerb (Dreieichenhain)
+          {fmt(k["Hayner Kerb"][0])} – {fmt(k["Hayner Kerb"][1])}
+
+          Kerb Sprendlingen
+          {fmt(k["Sprendlinger Kerb"][0])} – {fmt(k["Sprendlinger Kerb"][1])}
+
+          Kerb Götzenhain
+          {fmt(k["Götzenhainer Kerb"][0])} – {fmt(k["Götzenhainer Kerb"][1])}
+
+          Kerb Offenthal
+          {fmt(k["Offenthaler Kerb"][0])} – {fmt(k["Offenthaler Kerb"][1])}"""
+
+          # ----------------------------------------------------------
+          # Nummern automatisch fortführen
+          # ----------------------------------------------------------
+
+          def kerb_number(base, year):
+              return base + (year - 2026)
+
+          for year in range(START.year, END.year + 1):
+
+              k = kerb_data(year)
+              note = kerb_note(year)
+
+              add(
+                  k["Hayner Kerb"][0],
+                  k["Hayner Kerb"][1] + timedelta(days=1),
+                  f"▼🎈{kerb_number(308, year)}. Haaner Kerb {year}",
+                  note,
+                  "Dreieichenhain"
+              )
+
+              add(
+                  k["Sprendlinger Kerb"][0],
+                  k["Sprendlinger Kerb"][1] + timedelta(days=1),
+                  f"▼🎈{kerb_number(310, year)}. Sprendlinger Kerb {year}",
+                  note,
+                  "Sprendlingen"
+              )
+
+              add(
+                  k["Götzenhainer Kerb"][0],
+                  k["Götzenhainer Kerb"][1] + timedelta(days=1),
+                  f"▼🎈{kerb_number(250, year)}. Götzenhainer Kerb {year}",
+                  note,
+                  "Götzenhain"
+              )
+
+              add(
+                  k["Offenthaler Kerb"][0],
+                  k["Offenthaler Kerb"][1] + timedelta(days=1),
+                  f"▼🎈Offenthaler Kerb {year}",
+                  note,
+                  "Offenthal"
+              )
+
+          # ==========================================================
+          # KERB WARMUP
+          #
+          # Bestätigter 2027-Termin: 31.07.2027
+          # Regel für die Folgejahre: letzter Samstag im Juli
+          # ==========================================================
+
+          for year in range(START.year, END.year + 1):
+
+              warmup = last_weekday(year, 7, 5)
+
+              if year in known.get("Kerb Warmup", {}):
+                  warmup = known["Kerb Warmup"][year][0]
+
+              add(
+                  warmup,
+                  warmup + timedelta(days=1),
+                  f"▼🎈Kerb Warmup auf dem Lindenplatz {year}",
+                  "",
+                  "Lindenplatz, Dreieich-Sprendlingen"
+              )
+
+          # ==========================================================
+          # LANGEN
+          #
+          # Die offiziellen 2026-Daten zeigen:
+          # - Weinfest: 6.–9. August
+          # - Kerb: erstes September-Wochenende
+          # - Langener Markt: Sonntag dieses Wochenendes
+          # - Art Promenade: derselbe Sonntag
+          #
+          # Diese Regeln erzeugen die Folgejahre.
+          # ==========================================================
+
+          for year in range(START.year, END.year + 1):
+
+              # Weinfest: erstes vollständiges August-Wochenende,
+              # Donnerstag bis Sonntag.
+              first_aug_sunday = nth_weekday(year, 8, 6, 1)
+              wine_start = first_aug_sunday - timedelta(days=3)
+              wine_end = first_aug_sunday + timedelta(days=1)
+
+              add(
+                  wine_start,
+                  wine_end,
+                  f"🍷Weinfest Langen {year}",
+                  "Jährliches Weinfest in Langen.",
+                  "Rathausplatz, Langen"
+              )
+
+              # Langener Kerb:
+              # erstes September-Wochenende, Samstag bis Dienstag
+              first_sep_sunday = nth_weekday(year, 9, 6, 1)
+              kerb_start = first_sep_sunday - timedelta(days=1)
+              kerb_end = first_sep_sunday + timedelta(days=3)
+
+              add(
+                  kerb_start,
+                  kerb_end,
+                  f"🎈Langener Kerb {year}",
+                  "Die traditionsreiche Langener Kerb am ersten September-Wochenende.",
+                  "Jahnplatz, Langen"
+              )
+
+              # Langener Markt
+              add(
+                  first_sep_sunday,
+                  first_sep_sunday + timedelta(days=1),
+                  f"🛍️Langener Markt {year}",
+                  "Langener Markt und verkaufsoffener Sonntag.",
+                  "Innenstadt, Langen"
+              )
+
+              # Art Promenade
+              add(
+                  first_sep_sunday,
+                  first_sep_sunday + timedelta(days=1),
+                  f"🎨Art Promenade Langen {year}",
+                  "Art Promenade am Langener Markt.",
+                  "Innenstadt, Langen"
+              )
+
+              # Fürstliches Gartenfest:
+              # drittes September-Wochenende als Rhythmus.
+              garden_sunday = nth_weekday(year, 9, 6, 3)
+              garden_start = garden_sunday - timedelta(days=2)
+
+              add(
+                  garden_start,
+                  garden_sunday + timedelta(days=1),
+                  f"🌿Fürstliches Gartenfest Langen {year}",
+                  "Fürstliches Gartenfest rund um Schloss Wolfsgarten.",
+                  "Schloss Wolfsgarten, Langen"
+              )
+
+          # ==========================================================
+          # NEU-ISENBURG
+          #
+          # Bekannte feste Termine werden als Referenz geführt.
+          # Für Folgejahre werden die bisher bekannten Rhythmen
+          # verwendet, bis ein offiziell veröffentlichter Termin
+          # vorliegt.
+          # ==========================================================
+
+          # Altstadtfest: konkret bestätigt für 2027.
+          if START.year <= 2027 <= END.year:
+              s, e = known["Altstadtfest Neu-Isenburg"][2027]
+              add(
+                  s,
+                  e + timedelta(days=1),
+                  f"🎈Altstadtfest Neu-Isenburg {s.year}",
+                  "",
+                  "Neu-Isenburg"
+              )
+
+          # ==========================================================
+          # DREIEICHER WEIHNACHTSMÄRKTE
+          # ==========================================================
+
+          for year in range(START.year, END.year + 1):
+
+              a1 = first_advent(year)
+              a2 = a1 + timedelta(days=7)
+              a3 = a1 + timedelta(days=14)
+              a4 = a1 + timedelta(days=21)
+
+              # Sprendlingen – Freitag bis Sonntag des 1. Advents
+              add(
+                  a1 - timedelta(days=2),
+                  a1 + timedelta(days=1),
+                  "▼🎅🏼Adventsmarkt Sprendlingen",
+                  """1. Advent Adventsmarkt Sprendlingen Lindenplatz, Sprendlingen
+
+          Freitag von 17–21 Uhr
+          Samstag und Sonntag von 15–21 Uhr
+
+          Seit 2000.
+          Veranstalter: AKTIVes Dreieich e.V.""",
+                  "Lindenplatz, Sprendlingen"
+              )
+
+              # Hayner Weihnachtsmarkt – 2. und 3. Advent
+              add(
+                  a2 - timedelta(days=1),
+                  a3 + timedelta(days=1),
+                  "▼🎅🏼Hayner Weihnachtsmarkt",
+                  """2. und 3. Advent: Hayner Weihnachtsmarkt Dreieichenhain, Fahrgasse
+
+          Samstag je von 15–20:30 Uhr
+          Sonntag je von 14–20 Uhr
+
+          Seit 1978.
+
+          2028: ⭐️5o Jahre.""",
+                  "Fahrgasse, Dreieichenhain"
+              )
+
+              # Offenthal – 4. Advent
+              add(
+                  a4 - timedelta(days=1),
+                  a4 + timedelta(days=1),
+                  "▼🎅🏼Weihnachtsmarkt Offenthal",
+                  """4. Advent: Weihnachtsmarkt Offenthal
+
+          Kirchgasse, im Kirchgarten und am Alten Rathaus
+
+          Samstag von 16–22 Uhr
+          Sonntag von 14–20 Uhr
+
+          Wenn Weihnachten auf einen Sonntag fällt:
+          Freitag von 16–22 Uhr
+          Samstag von 14–20 Uhr
+
+          Veranstalter: Kulturverein Dreieich e.V.""",
+                  "Kirchgasse, Offenthal"
+              )
+
+          # ==========================================================
+          # WEIHNACHTSMARKT LANGEN
+          #
+          # 2026 ist offiziell 27.–29.11. und 04.–06.12.
+          # Die Struktur wird für Folgejahre fortgeführt.
+          # ==========================================================
+
+          for year in range(START.year, END.year + 1):
+
+              a1 = first_advent(year)
+
+              # Wochenende vor dem 1. Advent
+              w1_start = a1 - timedelta(days=3)
+              w1_end = a1
+
+              # 1. Adventswochenende
+              w2_start = a1 + timedelta(days=4)
+              w2_end = a1 + timedelta(days=7)
+
+              add(
+                  w1_start,
+                  w1_end,
+                  f"🎅🏼Weihnachtsmarkt Langen {year}",
+                  """Weihnachtsmarkt Langen.
+
+          Freitag 17–21 Uhr
+          Samstag 14–21 Uhr
+          Sonntag 14–20 Uhr.""",
+                  "Vierröhrenbrunnen, Langen"
+              )
+
+              add(
+                  w2_start,
+                  w2_end,
+                  f"🎅🏼Weihnachtsmarkt Langen {year}",
+                  """Weihnachtsmarkt Langen.
+
+          Freitag 17–21 Uhr
+          Samstag 14–21 Uhr
+          Sonntag 14–20 Uhr.""",
+                  "Vierröhrenbrunnen, Langen"
+              )
+
+          # ==========================================================
+          # 50-JAHRE-DREIEICH
+          #
+          # Bereits bekannte Termine werden konkret geführt.
+          # Weitere Jubiläumstermine werden nicht erfunden.
+          # ==========================================================
+
+          add(
+              date(2027, 1, 1),
+              date(2027, 1, 2),
+              "▼⭐️5o Jahre Dreieich – Eröffnung",
+              "",
+              "Dreieich"
           )
 
-          file.write_text(text, encoding="utf-8")
+          add(
+              date(2027, 1, 17),
+              date(2027, 1, 18),
+              "▼⭐️5o Jahre Dreieich – Neujahrskonzert / Akademische Feier",
+              "",
+              "Dreieich"
+          )
+
+          # ==========================================================
+          # OFFENE GÄRTEN BUCHSCHLAG
+          #
+          # Bekannter Rhythmus: drittes Juni-Wochenende.
+          # ==========================================================
+
+          for year in range(START.year, END.year + 1):
+
+              sunday = nth_weekday(year, 6, 6, 3)
+
+              add(
+                  sunday,
+                  sunday + timedelta(days=1),
+                  f"▼🌿Offene Gärten Buchschlag {year}",
+                  "",
+                  "Buchschlag"
+              )
+
+          # ==========================================================
+          # DUPLIKATE UND ZEITRAUM
+          # ==========================================================
+
+          unique = {}
+
+          for ev in events:
+              if ev["end"] <= START:
+                  continue
+
+              if ev["start"] > END:
+                  continue
+
+              key = (
+                  ev["start"],
+                  ev["end"],
+                  ev["title"],
+                  ev["location"]
+              )
+
+              unique[key] = ev
+
+          events = list(unique.values())
+          events.sort(key=lambda x: (x["start"], x["title"]))
+
+          # ==========================================================
+          # ICS AUSGEBEN
+          # ==========================================================
+
+          def esc(value):
+              return (
+                  str(value)
+                  .replace("\\", "\\\\")
+                  .replace(";", "\\;")
+                  .replace(",", "\\,")
+                  .replace("\n", "\\n")
+              )
+
+          now = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+
+          lines = [
+              "BEGIN:VCALENDAR",
+              "VERSION:2.0",
+              "PRODID:-//cal-events-in-und-um-dreieich//DE",
+              "CALSCALE:GREGORIAN",
+              "METHOD:PUBLISH",
+              "X-WR-CALNAME:Events in und um Dreieich",
+              "X-WR-TIMEZONE:Europe/Berlin",
+          ]
+
+          for i, ev in enumerate(events, 1):
+
+              lines.extend([
+                  "BEGIN:VEVENT",
+                  f"UID:cal-{ev['start']:%Y%m%d}-{i}@in-und-um-dreieich",
+                  f"DTSTAMP:{now}",
+                  f"DTSTART;VALUE=DATE:{ev['start']:%Y%m%d}",
+                  f"DTEND;VALUE=DATE:{ev['end']:%Y%m%d}",
+                  f"SUMMARY:{esc(ev['title'])}",
+              ])
+
+              if ev["description"]:
+                  lines.append(
+                      f"DESCRIPTION:{esc(ev['description'])}"
+                  )
+
+              if ev["location"]:
+                  lines.append(
+                      f"LOCATION:{esc(ev['location'])}"
+                  )
+
+              lines.append("END:VEVENT")
+
+          lines.append("END:VCALENDAR")
+
+          OUT.write_text(
+              "\r\n".join(lines) + "\r\n",
+              encoding="utf-8"
+          )
+
+          print(f"ICS erstellt: {OUT}")
+          print(f"Zeitraum: {START} bis {END}")
+          print(f"Termine: {len(events)}")
+
           PY
 
       - name: Änderungen speichern
@@ -44,5 +624,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cal-events-in-und-um-dreieich.ics
-          git diff --cached --quiet || git commit -m "Kalender täglich aktualisieren"
+          git diff --cached --quiet || git commit -m "Kalender automatisch aktualisieren"
           git push
