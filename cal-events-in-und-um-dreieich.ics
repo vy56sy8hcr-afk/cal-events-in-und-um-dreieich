@@ -7,16 +7,16 @@ X-WR-CALNAME:Events in und um Dreieich
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
 UID:event-20260522-0@dreieich
-DTSTAMP:20261004T212034Z
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20260522
 DTEND;VALUE=DATE:20260528
 SUMMARY:🎈308. Hayner Kerb 2026
-DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
+DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\n\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\n\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\n\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
 LOCATION:Dreieichenhain
 END:VEVENT
 BEGIN:VEVENT
 UID:event-20260621-1@dreieich
-DTSTAMP:20261004T212034Z
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20260621
 DTEND;VALUE=DATE:20260622
 SUMMARY:🌿Offene Gärten Buchschlag 2026
@@ -24,7 +24,7 @@ LOCATION:Buchschlag
 END:VEVENT
 BEGIN:VEVENT
 UID:event-20260725-2@dreieich
-DTSTAMP:20261004T212034Z
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20260725
 DTEND;VALUE=DATE:20260726
 SUMMARY:🎈Kerb Warmup auf dem Lindenplatz 2026
@@ -32,7 +32,7 @@ LOCATION:Lindenplatz\, Dreieich-Sprendlingen
 END:VEVENT
 BEGIN:VEVENT
 UID:event-20260730-3@dreieich
-DTSTAMP:20261004T212034Z
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20260730
 DTEND;VALUE=DATE:20260803
 SUMMARY:🍷Weinfest Langen 2026
@@ -41,129 +41,111 @@ LOCATION:Langen
 END:VEVENT
 BEGIN:VEVENT
 UID:event-20260814-4@dreieich
-DTSTAMP:20261004T212034Z
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260819
 SUMMARY:🎈310. Sprendlinger Kerb 2026
-DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
+DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\n\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\n\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\n\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
 LOCATION:Sprendlingen
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20260905-5@dreieich
-DTSTAMP:20261004T212034Z
-DTSTART;VALUE=DATE:20260905
-DTEND;VALUE=DATE:20260910
-SUMMARY:🎈Langener Kerb 2026
-DESCRIPTION:Langener Kerb am ersten September-Wochenende.
-LOCATION:Langen
-END:VEVENT
-BEGIN:VEVENT
-UID:event-20260906-6@dreieich
-DTSTAMP:20261004T212034Z
-DTSTART;VALUE=DATE:20260906
-DTEND;VALUE=DATE:20260907
-SUMMARY:🎨Art Promenade Langen 2026
-DESCRIPTION:Art Promenade.
-LOCATION:Langen
-END:VEVENT
-BEGIN:VEVENT
-UID:event-20260906-7@dreieich
-DTSTAMP:20261004T212034Z
-DTSTART;VALUE=DATE:20260906
-DTEND;VALUE=DATE:20260907
-SUMMARY:🛍️Langener Markt 2026
-DESCRIPTION:Langener Markt.
-LOCATION:Langen
-END:VEVENT
-BEGIN:VEVENT
-UID:event-20260918-8@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20260918-5@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260922
 SUMMARY:🎈250. Götzenhainer Kerb 2026
-DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
+DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\n\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\n\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\n\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
 LOCATION:Götzenhain
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20261030-9@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20261030-6@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261104
 SUMMARY:🎈Offenthaler Kerb 2026
-DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
+DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\n\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\n\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\n\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
 LOCATION:Offenthal
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20261127-10@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20261127-7@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
 SUMMARY:🎅🏼Adventsmarkt Sprendlingen
-DESCRIPTION:1. Advent Adventsmarkt Sprendlingen Lindenplatz\, Sprendlingen\nFreitag von 17–21 Uhr\nSamstag und Sonntag von 15–21 Uhr\nSeit 2000.\nVeranstalter: AKTIVes Dreieich e.V.
+DESCRIPTION:1. Advent Adventsmarkt Sprendlingen Lindenplatz\, Sprendlingen\n\nFreitag von 17–21 Uhr\nSamstag und Sonntag von 15–21 Uhr\n\nSeit 2000.\nVeranstalter: AKTIVes Dreieich e.V.
 LOCATION:Lindenplatz\, Sprendlingen
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20261205-11@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20261205-8@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261207
 SUMMARY:🎅🏼Hayner Weihnachtsmarkt
-DESCRIPTION:2. und 3. Advent: Hayner Weihnachtsmarkt Dreieichenhain\, Fahrgasse\nSamstag je von 15–20:30 Uhr\nSonntag je von 14–20 Uhr\nSeit 1978.\n2028: ⭐️5o Jahre.
+DESCRIPTION:2. Advent: Hayner Weihnachtsmarkt Dreieichenhain\, Fahrgasse\n\nSamstag von 15–20:30 Uhr\nSonntag von 14–20 Uhr\n\nSeit 1978.\n2028: ⭐️5o Jahre.
 LOCATION:Fahrgasse\, Dreieichenhain
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20261219-12@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20261212-9@dreieich
+DTSTAMP:20261004T213741Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261214
+SUMMARY:🎅🏼Hayner Weihnachtsmarkt
+DESCRIPTION:3. Advent: Hayner Weihnachtsmarkt Dreieichenhain\, Fahrgasse\n\nSamstag von 15–20:30 Uhr\nSonntag von 14–20 Uhr\n\nSeit 1978.\n2028: ⭐️5o Jahre.
+LOCATION:Fahrgasse\, Dreieichenhain
+END:VEVENT
+BEGIN:VEVENT
+UID:event-20261219-10@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261221
 SUMMARY:🎅🏼Weihnachtsmarkt Offenthal
-DESCRIPTION:4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, im Kirchgarten und am Alten Rathaus\nSamstag von 16–22 Uhr\nSonntag von 14–20 Uhr\nWenn Weihnachten auf einen Sonntag fällt:\nFreitag von 16–22 Uhr\nSamstag von 14–20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
+DESCRIPTION:4. Advent: Weihnachtsmarkt Offenthal\n\nKirchgasse\, im Kirchgarten und am Alten Rathaus\n\nSamstag von 16–22 Uhr\nSonntag von 14–20 Uhr\n\nWenn Weihnachten auf einen Sonntag fällt:\nFreitag von 16–22 Uhr\nSamstag von 14–20 Uhr\n\nVeranstalter: Kulturverein Dreieich e.V.
 LOCATION:Kirchgasse\, Offenthal
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270101-13@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270101-11@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:⭐️5o Jahre Dreieich – Eröffnung
 LOCATION:Dreieich
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270117-14@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270117-12@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:⭐️5o Jahre Dreieich – Neujahrskonzert / Akademische Feier
 LOCATION:Dreieich
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270514-15@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270514-13@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270514
 DTEND;VALUE=DATE:20270520
 SUMMARY:🎈309. Hayner Kerb 2027
-DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
+DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\n\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\n\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\n\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
 LOCATION:Dreieichenhain
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270618-16@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270618-14@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270618
 DTEND;VALUE=DATE:20270621
 SUMMARY:🎈Altstadtfest Neu-Isenburg 2027
 LOCATION:Neu-Isenburg
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270620-17@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270620-15@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270621
 SUMMARY:🌿Offene Gärten Buchschlag 2027
 LOCATION:Buchschlag
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270729-18@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270729-16@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270729
 DTEND;VALUE=DATE:20270802
 SUMMARY:🍷Weinfest Langen 2027
@@ -171,92 +153,74 @@ DESCRIPTION:Jährliches Weinfest in Langen.
 LOCATION:Langen
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270731-19@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270731-17@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270731
 DTEND;VALUE=DATE:20270801
 SUMMARY:🎈Kerb Warmup auf dem Lindenplatz 2027
 LOCATION:Lindenplatz\, Dreieich-Sprendlingen
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270813-20@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270813-18@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270813
 DTEND;VALUE=DATE:20270818
 SUMMARY:🎈311. Sprendlinger Kerb 2027
-DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
+DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\n\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\n\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\n\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
 LOCATION:Sprendlingen
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20270904-21@dreieich
-DTSTAMP:20261004T212034Z
-DTSTART;VALUE=DATE:20270904
-DTEND;VALUE=DATE:20270909
-SUMMARY:🎈Langener Kerb 2027
-DESCRIPTION:Langener Kerb am ersten September-Wochenende.
-LOCATION:Langen
-END:VEVENT
-BEGIN:VEVENT
-UID:event-20270905-22@dreieich
-DTSTAMP:20261004T212034Z
-DTSTART;VALUE=DATE:20270905
-DTEND;VALUE=DATE:20270906
-SUMMARY:🎨Art Promenade Langen 2027
-DESCRIPTION:Art Promenade.
-LOCATION:Langen
-END:VEVENT
-BEGIN:VEVENT
-UID:event-20270905-23@dreieich
-DTSTAMP:20261004T212034Z
-DTSTART;VALUE=DATE:20270905
-DTEND;VALUE=DATE:20270906
-SUMMARY:🛍️Langener Markt 2027
-DESCRIPTION:Langener Markt.
-LOCATION:Langen
-END:VEVENT
-BEGIN:VEVENT
-UID:event-20270917-24@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20270917-19@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20270917
 DTEND;VALUE=DATE:20270921
 SUMMARY:🎈251. Götzenhainer Kerb 2027
-DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
+DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\n\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\n\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\n\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
 LOCATION:Götzenhain
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20271029-25@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20271029-20@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20271029
 DTEND;VALUE=DATE:20271103
 SUMMARY:🎈Offenthaler Kerb 2027
-DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
+DESCRIPTION:Die Kerben und ihre Termine 2027 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 14.05.2027 – Mi 19.05.2027\n\nKerb Sprendlingen\nFr 13.08.2027 – Di 17.08.2027\n\nKerb Götzenhain\nFr 17.09.2027 – Mo 20.09.2027\n\nKerb Offenthal\nFr 29.10.2027 – Di 02.11.2027
 LOCATION:Offenthal
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20271126-26@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20271126-21@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20271126
 DTEND;VALUE=DATE:20271129
 SUMMARY:🎅🏼Adventsmarkt Sprendlingen
-DESCRIPTION:1. Advent Adventsmarkt Sprendlingen Lindenplatz\, Sprendlingen\nFreitag von 17–21 Uhr\nSamstag und Sonntag von 15–21 Uhr\nSeit 2000.\nVeranstalter: AKTIVes Dreieich e.V.
+DESCRIPTION:1. Advent Adventsmarkt Sprendlingen Lindenplatz\, Sprendlingen\n\nFreitag von 17–21 Uhr\nSamstag und Sonntag von 15–21 Uhr\n\nSeit 2000.\nVeranstalter: AKTIVes Dreieich e.V.
 LOCATION:Lindenplatz\, Sprendlingen
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20271204-27@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20271204-22@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20271204
-DTEND;VALUE=DATE:20271213
+DTEND;VALUE=DATE:20271206
 SUMMARY:🎅🏼Hayner Weihnachtsmarkt
-DESCRIPTION:2. und 3. Advent: Hayner Weihnachtsmarkt Dreieichenhain\, Fahrgasse\nSamstag je von 15–20:30 Uhr\nSonntag je von 14–20 Uhr\nSeit 1978.\n2028: ⭐️5o Jahre.
+DESCRIPTION:2. Advent: Hayner Weihnachtsmarkt Dreieichenhain\, Fahrgasse\n\nSamstag von 15–20:30 Uhr\nSonntag von 14–20 Uhr\n\nSeit 1978.\n2028: ⭐️5o Jahre.
 LOCATION:Fahrgasse\, Dreieichenhain
 END:VEVENT
 BEGIN:VEVENT
-UID:event-20271218-28@dreieich
-DTSTAMP:20261004T212034Z
+UID:event-20271211-23@dreieich
+DTSTAMP:20261004T213741Z
+DTSTART;VALUE=DATE:20271211
+DTEND;VALUE=DATE:20271213
+SUMMARY:🎅🏼Hayner Weihnachtsmarkt
+DESCRIPTION:3. Advent: Hayner Weihnachtsmarkt Dreieichenhain\, Fahrgasse\n\nSamstag von 15–20:30 Uhr\nSonntag von 14–20 Uhr\n\nSeit 1978.\n2028: ⭐️5o Jahre.
+LOCATION:Fahrgasse\, Dreieichenhain
+END:VEVENT
+BEGIN:VEVENT
+UID:event-20271218-24@dreieich
+DTSTAMP:20261004T213741Z
 DTSTART;VALUE=DATE:20271218
 DTEND;VALUE=DATE:20271220
 SUMMARY:🎅🏼Weihnachtsmarkt Offenthal
-DESCRIPTION:4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, im Kirchgarten und am Alten Rathaus\nSamstag von 16–22 Uhr\nSonntag von 14–20 Uhr\nWenn Weihnachten auf einen Sonntag fällt:\nFreitag von 16–22 Uhr\nSamstag von 14–20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
+DESCRIPTION:4. Advent: Weihnachtsmarkt Offenthal\n\nKirchgasse\, im Kirchgarten und am Alten Rathaus\n\nSamstag von 16–22 Uhr\nSonntag von 14–20 Uhr\n\nWenn Weihnachten auf einen Sonntag fällt:\nFreitag von 16–22 Uhr\nSamstag von 14–20 Uhr\n\nVeranstalter: Kulturverein Dreieich e.V.
 LOCATION:Kirchgasse\, Offenthal
 END:VEVENT
 END:VCALENDAR
