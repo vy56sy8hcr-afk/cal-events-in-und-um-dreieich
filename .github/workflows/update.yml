@@ -352,3 +352,4 @@ jobs:
           else
             git commit -m "Kalender automatisch aktualisieren"
             git push
+          fi
