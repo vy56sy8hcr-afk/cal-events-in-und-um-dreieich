@@ -231,45 +231,76 @@ jobs:
               )
           # Weihnachtsmärkte Dreieich.
           for year in range(START.year, END.year + 1):
+
               a1 = first_advent(year)
               a2 = a1 + timedelta(days=7)
               a3 = a1 + timedelta(days=14)
               a4 = a1 + timedelta(days=21)
+
+              # 1. Advent – Sprendlingen
               add(
                   a1 - timedelta(days=2),
                   a1 + timedelta(days=1),
                   "🎅🏼Adventsmarkt Sprendlingen",
                   """1. Advent Adventsmarkt Sprendlingen Lindenplatz, Sprendlingen
+
           Freitag von 17–21 Uhr
           Samstag und Sonntag von 15–21 Uhr
+
           Seit 2000.
           Veranstalter: AKTIVes Dreieich e.V.""",
                   "Lindenplatz, Sprendlingen"
               )
+
+              # 2. Advent – Hayner Weihnachtsmarkt
               add(
                   a2 - timedelta(days=1),
-                  a3 + timedelta(days=1),
+                  a2 + timedelta(days=1),
                   "🎅🏼Hayner Weihnachtsmarkt",
-                  """2. und 3. Advent: Hayner Weihnachtsmarkt Dreieichenhain, Fahrgasse
-          Samstag je von 15–20:30 Uhr
-          Sonntag je von 14–20 Uhr
+                  """2. Advent: Hayner Weihnachtsmarkt Dreieichenhain, Fahrgasse
+
+          Samstag von 15–20:30 Uhr
+          Sonntag von 14–20 Uhr
+
           Seit 1978.
           2028: ⭐️5o Jahre.""",
                   "Fahrgasse, Dreieichenhain"
               )
+
+              # 3. Advent – Hayner Weihnachtsmarkt
+              add(
+                  a3 - timedelta(days=1),
+                  a3 + timedelta(days=1),
+                  "🎅🏼Hayner Weihnachtsmarkt",
+                  """3. Advent: Hayner Weihnachtsmarkt Dreieichenhain, Fahrgasse
+
+          Samstag von 15–20:30 Uhr
+          Sonntag von 14–20 Uhr
+
+          Seit 1978.
+          2028: ⭐️5o Jahre.""",
+                  "Fahrgasse, Dreieichenhain"
+              )
+
+              # 4. Advent – Weihnachtsmarkt Offenthal
               add(
                   a4 - timedelta(days=1),
                   a4 + timedelta(days=1),
                   "🎅🏼Weihnachtsmarkt Offenthal",
                   """4. Advent: Weihnachtsmarkt Offenthal
+
           Kirchgasse, im Kirchgarten und am Alten Rathaus
+
           Samstag von 16–22 Uhr
           Sonntag von 14–20 Uhr
+
           Wenn Weihnachten auf einen Sonntag fällt:
           Freitag von 16–22 Uhr
           Samstag von 14–20 Uhr
+
           Veranstalter: Kulturverein Dreieich e.V.""",
                   "Kirchgasse, Offenthal"
+              )
               )
           # 50 Jahre Dreieich – bekannte Termine.
           if START <= date(2027, 1, 1) <= END:
