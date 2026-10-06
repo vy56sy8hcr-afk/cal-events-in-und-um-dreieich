@@ -105,22 +105,6 @@
    "ende": "2026-08-22"
   },
   {
-   "key": "party-joahrn-2026",
-   "typ": "einzel",
-   "titel": "Party zwische de Joahrn Langen",
-   "start": "2026-12-29",
-   "ende": "2026-12-29",
-   "notiz": "Jahnplatz, 17–22 Uhr\nVeranstalter: Verkehrs- und Verschönerungsverein Langen e. V."
-  },
-  {
-   "key": "fahrgass-classics-2026",
-   "typ": "einzel",
-   "titel": "▼ 🛍️Fahrgass' Classics",
-   "start": "2026-05-03",
-   "ende": "2026-05-03",
-   "notiz": "Werbegemeinschaft Dreieichenhain"
-  },
-  {
    "key": "altstadttage-2026",
    "typ": "einzel",
    "titel": "▼ 🛍️Haaner Altstadttage",
@@ -204,6 +188,22 @@
    "start": "2027-06-23",
    "ende": "2027-08-08",
    "notiz": "Burgfestspiele Dreieichenhain\n23.06.2027 – 08.08.2027"
+  },
+  {
+   "key": "party-joahrn-2026-a",
+   "typ": "einzel",
+   "titel": "Party zwische de Joahrn Langen",
+   "start": "2026-12-28",
+   "ende": "2026-12-28",
+   "notiz": "Jahnplatz, 17–22 Uhr\nVeranstalter: Verkehrs- und Verschönerungsverein Langen e. V."
+  },
+  {
+   "key": "party-joahrn-2026-b",
+   "typ": "einzel",
+   "titel": "Party zwische de Joahrn Langen",
+   "start": "2026-12-29",
+   "ende": "2026-12-29",
+   "notiz": "Jahnplatz, 17–22 Uhr\nVeranstalter: Verkehrs- und Verschönerungsverein Langen e. V."
   }
  ]
 }
