@@ -59,6 +59,21 @@ def nach_so(d):
 def zo(x): return x.replace("0", "o")   # Null immer als kleines o
 def f(d): return f"{WD[d.weekday()]} {d:%d.%m.%Y}"
 
+WM_BLOCK = (
+    "WEIHNACHTSMÄRKTE IN DREIEICH\n\n"
+    "1. Advent Adventsmarkt Sprendlingen Lindenplatz, Sprendlingen, beginnend am Freitag\n"
+    "Freitag von 17-21 Uhr\nSamstag und Sonntag von 15-21 Uhr\n"
+    "seit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranstalter: AKTIVes Dreieich e.V.\n\n"
+    "2. und 3. Advent: Hayner Weihnachtsmarkt Dreieichenhain, Fahrgasse\n"
+    "Samstag je von 15-20:30 Uhr\nSonntag je von 14-20 Uhr\n"
+    "Seit 1978. In 2027 werden 50 Jahre gefeiert.\n\n"
+    "4. Advent: Weihnachtsmarkt Offenthal\n"
+    "Kirchgasse, im Kirchgarten und am Alten Rathaus\n"
+    "Samstag von 16-22 Uhr\nSonntag von 14-20 Uhr\n"
+    "bzw. wenn Weihnachten auf Sonntag fällt, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n"
+    "Veranstalter: Kulturverein Dreieich e.V."
+)
+
 ITEMS = {}   # key -> dict(start, ende, titel, notiz)
 
 def einzel(key, titel, start, ende=None, notiz=""):
@@ -104,7 +119,7 @@ def regeln(y):
     b = zwischen(y, 9, 4, 6, 12)
     einzel(f"hayner-burgfest-{y}", "▼ 🏰Hayner Burgfest", b, b + timedelta(2))
     einzel(f"hayner-toepfermarkt-{y}", "▼ 🎨Hayner Töpfermarkt", letzter(y, 9, 6))
-    einzel(f"stadtfest-{y}", "▼ 🎈Stadtfest", D(y, 10, 3))
+    einzel(f"stadtfest-{y}", "▼🎈🛍️Stadtfest VoF", D(y, 10, 3))
     bs = zwischen(y, 6, 2, 23, 29)    # Burgfestspiele (Rhythmus als Reserve, 2 Stichproben)
     pfeil(f"burgfestspiele-{y}", "🌀", "Burgfestspiele Dreieichenhain", bs, bs + timedelta(46), wort=True,
           notiz=f"Burgfestspiele Dreieichenhain\n{bs:%d.%m.%Y} – {(bs + timedelta(46)):%d.%m.%Y}")
@@ -115,6 +130,7 @@ def regeln(y):
     hn = "Hayner Weihnachtsmarkt\nDreieichenhain, Fahrgasse\nSa 15–20:30 Uhr, So 14–20 Uhr\nseit 1978 (2027: 50 Jahre)"
     of = ("Weihnachtsmarkt Offenthal\nKirchgasse, im Kirchgarten und am Alten Rathaus\nSa 16–22 Uhr, So 14–20 Uhr "
           "(fällt Weihnachten auf einen Sonntag: Fr 16–22 Uhr, Sa 14–20 Uhr)\nVeranstalter: Kulturverein Dreieich e.V.")
+    ad = hn = of = WM_BLOCK
     einzel(f"adventsmarkt-sprendlingen-{y}", "▼ 🎅🏼Adventsmarkt Sprendlingen, Lindenplatz (1. Advent)", a1 - timedelta(2), a1, ad)
     einzel(f"hayner-wm-2-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (2. Advent)", a1 + timedelta(6), a1 + timedelta(7), hn)
     einzel(f"hayner-wm-3-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (3. Advent)", a1 + timedelta(13), a1 + timedelta(14), hn)
@@ -131,7 +147,7 @@ def regeln(y):
     einzel(f"weinfest-langen-{y}", "🍷Weinfest Langen", w, w + timedelta(3))
     so1 = nth(y, 9, 6, 1)
     einzel(f"langener-kerb-{y}", "🎈Langener Kerb", so1 - timedelta(1), so1 + timedelta(2))
-    einzel(f"langener-markt-{y}", "🛍️Langener Markt", so1)
+    einzel(f"langener-markt-{y}", "🛍️Langener Markt VoF", so1)
     einzel(f"art-promenade-{y}", "🎨Art Promenade Langen", so1)
     gf = nth(y, 9, 4, 3)
     einzel(f"gartenfest-langen-{y}", "🌿Fürstliches Gartenfest Langen", gf, gf + timedelta(2))
@@ -156,6 +172,20 @@ def regeln(y):
     einzel(f"weinfest-dietzenbach-{y}", "🍷Weinfest Dietzenbach", d4, d4 + timedelta(9))
     h3 = nth(y, 8, 2, 3)
     einzel(f"weinfest-heusenstamm-{y}", "🍷Weinfest Heusenstamm", h3, h3 + timedelta(5))
+    # --- Verkaufsoffene Sonntage, Weisser Sonntag, Faschingsumzuege ---
+    mai1 = nth(y, 5, 6, 1)
+    einzel(f"fahrgass-classics-{y}", "▼🎈🛍️Fahrgass' Classics VoF", mai1, notiz=(
+        "Verkaufsoffener Sonntag 12-18 Uhr mit Ausstellung von Oldtimern, Motorrädern, historischen Landmaschinen, "
+        "Traktoren und Fahrrädern.\n\nImmer am ersten Sonntag im Mai in der schönen Dreieichenhainer Altstadt.\n\n"
+        "www.dreieichenhain.com/veranstaltungen/"))
+    einzel(f"siebenschlaefer-maimarkt-{y}", "🛍️Siebenschläfer-Maimarkt Langen VoF", mai1,
+           notiz="Wassergasse, Langen\nImmer am ersten Sonntag im Mai")
+    einzel(f"weisser-sonntag-{y}", "! Achtung: weißer Sonntag", ostern + timedelta(7), notiz=(
+        "In der katholischen Kirche ist der Weiße Sonntag traditionell der Tag für die gemeinsame feierliche "
+        "Erstkommunion der Kinder. Ist somit für verkaufsoffenen Feiertag sehr problematisch !"))
+    rosenmontag = ostern - timedelta(48)
+    einzel(f"faschingsumzug-goetzenhain-{y}", "▼ Faschingsumzug Götzenhain", rosenmontag - timedelta(1), notiz="Beginn 14.11 Uhr")
+    einzel(f"faschingsumzug-sprendlingen-{y}", "▼ Faschingsumzug Sprendlingen", rosenmontag + timedelta(1), notiz="Beginn 15.11 Uhr")
 
 def lade_bestaetigt(pfad="termine.json"):
     if not os.path.exists(pfad): return
