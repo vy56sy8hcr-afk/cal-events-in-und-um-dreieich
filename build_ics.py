@@ -161,7 +161,7 @@ def regeln(y):
     einzel(f"wm-ni-{y}", "🎅🏼Weihnachtsmarkt N-I", a1 + timedelta(6), a1 + timedelta(7))
     rm = ostern - timedelta(48)
     einzel(f"rathaussturm-ni-{y}", "Rathaussturm N-I", rm - timedelta(9))
-    einzel(f"lumpenmontag-ni-{y}", "🎈Lumpenmontagsumzug N-I", rm)
+    einzel(f"lumpenmontag-ni-{y}", "Lumpenmontagsumzug N-I", rm)
     # --- Umland ---
     einzel(f"schlossgrabenfest-{y}", "🎈Schlossgrabenfest Darmstadt", pfingsten - timedelta(3), pfingsten + timedelta(1))
     sa1 = nth(y, 7, 5, 1)
