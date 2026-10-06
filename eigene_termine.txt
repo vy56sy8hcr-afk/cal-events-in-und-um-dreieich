@@ -1,0 +1,12 @@
+# Eigene Termine - eine Zeile pro Termin, Felder getrennt durch |
+# von | bis | modus | titel | notiz
+#
+# modus  !  = einmaliger fester Termin (bleibt genau so)
+# modus  ?  = neuer Termin, der spaeter gegen die Quellen abgeglichen wird
+#
+# Datum immer JJJJ-MM-TT. Zeile mit "- key" loescht einen berechneten Termin.
+#
+# Beispiele (mit # davor, zum Aktivieren # entfernen):
+# 2027-05-01 | 2027-05-02 | ! | ▼ 🎈Beispielfest | Notiz optional
+# 2027-08-14 | 2027-08-14 | ? | ▼ 🎨Beispielmarkt
+# - rathaussturm-ni-2027
