@@ -2,7 +2,7 @@
 """Baut cal-events-in-und-um-dreieich.ics aus Rhythmus-Regeln (dieses Skript)
 und bestaetigten Terminen (termine.json). Bestaetigte Termine haben Vorrang.
 Fenster: heute -6 Monate bis +16 Monate."""
-import json, os, sys, uuid
+import hashlib, json, os, sys, uuid
 from datetime import date, timedelta
 
 AUSGABE = "cal-events-in-und-um-dreieich.ics"
@@ -144,7 +144,7 @@ def regeln(y):
     einzel(f"weinfest-ni-{y}", "🍷Weinfest N-I", wn, wn + timedelta(9))
     einzel(f"wm-ni-{y}", "🎅🏼Weihnachtsmarkt N-I", a1 + timedelta(6), a1 + timedelta(7))
     rm = ostern - timedelta(48)
-    einzel(f"rathaussturm-ni-{y}", "🎈Rathaussturm N-I", rm - timedelta(9))
+    einzel(f"rathaussturm-ni-{y}", "Rathaussturm N-I", rm - timedelta(9))
     einzel(f"lumpenmontag-ni-{y}", "🎈Lumpenmontagsumzug N-I", rm)
     # --- Umland ---
     einzel(f"schlossgrabenfest-{y}", "🎈Schlossgrabenfest Darmstadt", pfingsten - timedelta(3), pfingsten + timedelta(1))
@@ -173,6 +173,42 @@ def lade_bestaetigt(pfad="termine.json"):
         else:
             pfeil(key, t["emoji"], t["name"], s, e, t.get("notiz", ""), wort=(typ == "pfeil_wort"))
 
+def ohne_leerzeichen(t):
+    """Zwischen Emoji und Text darf nie ein Leerzeichen stehen."""
+    out = []; prev = False
+    for ch in t:
+        o = ord(ch)
+        emo = 0x1F000 <= o <= 0x1FAFF or 0x2600 <= o <= 0x27BF or 0x2B00 <= o <= 0x2BFF or o in (0xFE0F, 0x200D)
+        if ch == " " and prev: continue
+        out.append(ch); prev = emo
+    return "".join(out)
+
+def lade_eigene(pfad="eigene_termine.txt"):
+    """Eigene Termine ohne Code-Aenderung. Zeile: von | bis | modus | titel | notiz
+    modus ! = einmaliger fester Termin, ? = neuer Termin, wird mit den Quellen abgeglichen.
+    Zeile '- key' loescht einen berechneten Termin."""
+    abgleich = []
+    if os.path.exists(pfad):
+        for z in open(pfad, encoding="utf-8").read().splitlines():
+            z = z.strip()
+            if not z or z.startswith("#"): continue
+            if z.startswith("- "):
+                key = z[2:].strip()
+                for k in [k for k in ITEMS if k == key or k.startswith(key + "#")]: del ITEMS[k]
+                continue
+            teile = [t.strip() for t in z.split("|")]
+            if len(teile) < 4: print("Zeile uebersprungen:", z); continue
+            try:
+                von, bis = D.fromisoformat(teile[0]), D.fromisoformat(teile[1] or teile[0])
+            except ValueError:
+                print("Datum nicht lesbar:", z); continue
+            modus, titel = teile[2] or "!", teile[3]
+            notiz = teile[4].replace("\\n", "\n") if len(teile) > 4 else ""
+            einzel(f"eigen-{von:%Y%m%d}-{hashlib.md5(titel.encode("utf-8")).hexdigest()[:8]}", titel, von, bis, notiz)
+            if modus == "?": abgleich.append(f"{von} bis {bis}: {titel}")
+    with open("abgleich.txt", "w", encoding="utf-8") as fh:
+        fh.write("# Termine mit Modus ?: werden gegen die Quellen abgeglichen\n" + "\n".join(abgleich) + ("\n" if abgleich else ""))
+
 def esc(s): return s.replace("\\", "\\\\").replace("\n", "\\n").replace(",", "\\,").replace(";", "\\;")
 
 def falten(zeile):
@@ -189,6 +225,7 @@ def main():
     von, bis = add_months(h, -6), add_months(h, 16)
     for y in range(von.year, bis.year + 1): regeln(y)
     lade_bestaetigt()
+    lade_eigene()
     L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Veranstaltungen Dreieich Langen N-I//DE", "CALSCALE:GREGORIAN",
          "X-WR-CALNAME:Veranstaltungen Dreieich Langen N-I", "X-WR-TIMEZONE:Europe/Berlin",
          "REFRESH-INTERVAL;VALUE=DURATION:PT12H", "X-PUBLISHED-TTL:PT12H"]
@@ -196,10 +233,10 @@ def main():
     for key, it in sorted(ITEMS.items(), key=lambda kv: (kv[1]["start"], kv[1]["titel"])):
         if not (von <= it["start"] <= bis): continue
         n += 1
-        uid = uuid.uuid5(uuid.NAMESPACE_URL, "events-dreieich|" + key)
+        uid = uuid.uuid5(uuid.NAMESPACE_URL, "events-dreieich-v2|" + key)
         L += ["BEGIN:VEVENT", f"UID:{uid}@events-dreieich", "DTSTAMP:20260101T000000Z",
               f"DTSTART;VALUE=DATE:{it['start']:%Y%m%d}", f"DTEND;VALUE=DATE:{(it['ende'] + timedelta(1)):%Y%m%d}",
-              falten("SUMMARY:" + esc(it["titel"]))]
+              falten("SUMMARY:" + esc(ohne_leerzeichen(it["titel"])))]
         if it["notiz"]: L.append(falten("DESCRIPTION:" + esc(it["notiz"])))
         L.append("END:VEVENT")
     L.append("END:VCALENDAR")
