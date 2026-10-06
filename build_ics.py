@@ -115,10 +115,10 @@ def regeln(y):
     einzel(f"weinfest-buergerpark-{y}", "▼ 🍷Weinfest Bürgerpark Sprendlingen", wf, wf + timedelta(4),
            "Weinfest im Bürgerpark Sprendlingen\nVeranstalter: AKTIVes Dreieich e.V.")
     j = nth(y, 6, 5, 3)
-    einzel(f"offene-gaerten-{y}", "▼ 🌿Offene Gärten Buchschlag", j, j + timedelta(1))
+    einzel(f"offene-gaerten-{y}", "▼🌿Offene Gärten Buchschlag", j, j + timedelta(1))
     b = zwischen(y, 9, 4, 6, 12)
-    einzel(f"hayner-burgfest-{y}", "▼ 🏰Hayner Burgfest", b, b + timedelta(2))
-    einzel(f"hayner-toepfermarkt-{y}", "▼ 🎨Hayner Töpfermarkt", letzter(y, 9, 6))
+    einzel(f"hayner-burgfest-{y}", "▼🏰Hayner Burgfest", b, b + timedelta(2))
+    einzel(f"hayner-toepfermarkt-{y}", "▼🎨Hayner Töpfermarkt", letzter(y, 9, 6))
     einzel(f"stadtfest-{y}", "▼🎈🛍️Stadtfest VoF", D(y, 10, 3))
     bs = zwischen(y, 6, 2, 23, 29)    # Burgfestspiele (Rhythmus als Reserve, 2 Stichproben)
     pfeil(f"burgfestspiele-{y}", "🌀", "Burgfestspiele Dreieichenhain", bs, bs + timedelta(46), wort=True,
@@ -131,11 +131,11 @@ def regeln(y):
     of = ("Weihnachtsmarkt Offenthal\nKirchgasse, im Kirchgarten und am Alten Rathaus\nSa 16–22 Uhr, So 14–20 Uhr "
           "(fällt Weihnachten auf einen Sonntag: Fr 16–22 Uhr, Sa 14–20 Uhr)\nVeranstalter: Kulturverein Dreieich e.V.")
     ad = hn = of = WM_BLOCK
-    einzel(f"adventsmarkt-sprendlingen-{y}", "▼ 🎅🏼Adventsmarkt Sprendlingen, Lindenplatz (1. Advent)", a1 - timedelta(2), a1, ad)
-    einzel(f"hayner-wm-2-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (2. Advent)", a1 + timedelta(6), a1 + timedelta(7), hn)
-    einzel(f"hayner-wm-3-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (3. Advent)", a1 + timedelta(13), a1 + timedelta(14), hn)
+    einzel(f"adventsmarkt-sprendlingen-{y}", "▼🎅🏼Adventsmarkt Sprendlingen, Lindenplatz (1. Advent)", a1 - timedelta(2), a1, ad)
+    einzel(f"hayner-wm-2-{y}", "▼🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (2. Advent)", a1 + timedelta(6), a1 + timedelta(7), hn)
+    einzel(f"hayner-wm-3-{y}", "▼🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (3. Advent)", a1 + timedelta(13), a1 + timedelta(14), hn)
     if D(y, 12, 25).weekday() == 6:
-        einzel(f"offenthal-wm-{y}", "▼ 🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", D(y, 12, 23), D(y, 12, 24), of)
+        einzel(f"offenthal-wm-{y}", "▼🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", D(y, 12, 23), D(y, 12, 24), of)
     else:
         einzel(f"offenthal-wm-{y}", "▼ 🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", a1 + timedelta(20), a1 + timedelta(21), of)
     # --- Langen ---
