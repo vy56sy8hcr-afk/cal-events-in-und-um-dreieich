@@ -105,11 +105,11 @@ def regeln(y):
             f"Kerb Sprendlingen\n{f(spr[0])} – {f(spr[1])}\n\nKerb Götzenhain\n{f(goet[0])} – {f(goet[1])}\n\n"
             f"Kerb Offenthal\n{f(off[0])} – {f(off[1])}")
     k = y - 2026
-    einzel(f"haaner-kerb-{y}", f"▼ 🎈{308 + k}. Haaner Kerb", *hain, notiz=note)
-    einzel(f"sprendlinger-kerb-{y}", f"▼ 🎈{310 + k}. Sprendlinger Kerb", *spr, notiz=note)
-    einzel(f"goetzenhainer-kerb-{y}", f"▼ 🎈{250 + k}. Götzenhainer Kerb", *goet, notiz=note)
-    einzel(f"offenthaler-kerb-{y}", "▼ 🎈Offenthaler Kerb", *off, notiz=note)
-    einzel(f"kerb-warmup-{y}", "▼ 🎈Kerb-Warmup Lindenplatz", spr[0] - timedelta(13), notiz="Kerb-Warmup Lindenplatz")
+    einzel(f"haaner-kerb-{y}", f"▼🎈{308 + k}. Haaner Kerb", *hain, notiz=note)
+    einzel(f"sprendlinger-kerb-{y}", f"▼🎈{310 + k}. Sprendlinger Kerb", *spr, notiz=note)
+    einzel(f"goetzenhainer-kerb-{y}", f"▼🎈{250 + k}. Götzenhainer Kerb", *goet, notiz=note)
+    einzel(f"offenthaler-kerb-{y}", "▼🎈Offenthaler Kerb", *off, notiz=note)
+    einzel(f"kerb-warmup-{y}", "▼🎈Kerb-Warmup Lindenplatz", spr[0] - timedelta(13), notiz="Kerb-Warmup Lindenplatz")
     # --- Dreieich: weitere ---
     wf = fronleichnam - timedelta(1)
     einzel(f"weinfest-buergerpark-{y}", "▼ 🍷Weinfest Bürgerpark Sprendlingen", wf, wf + timedelta(4),
