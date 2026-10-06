@@ -555,7 +555,7 @@ UID:bca5f1ce-cdcf-56d7-90ed-7ee589756b3e@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270208
 DTEND;VALUE=DATE:20270209
-SUMMARY:🎈Lumpenmontagsumzug N-I
+SUMMARY:Lumpenmontagsumzug N-I
 END:VEVENT
 BEGIN:VEVENT
 UID:e1d22e10-a9e4-56ff-aced-be663b4f0e24@events-dreieich
