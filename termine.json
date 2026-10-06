@@ -1,0 +1,209 @@
+{
+ "_hinweis": "Bestaetigte Termine. Ein Eintrag mit gleichem 'key' wie ein Rhythmus-Termin (z. B. burgfestspiele-2026) ersetzt diesen. 'skip': true entfernt einen Termin. Typ: einzel | pfeil | pfeil_wort. Datum: JJJJ-MM-TT.",
+ "termine": [
+  {
+   "key": "altstadtfest-ni-2026",
+   "typ": "einzel",
+   "titel": "🎈Altstadtfest N-I",
+   "start": "2026-06-12",
+   "ende": "2026-06-14"
+  },
+  {
+   "key": "zeppelinheim-2026",
+   "typ": "einzel",
+   "titel": "Stadtteilfest Zeppelinheim N-I",
+   "start": "2026-06-05",
+   "ende": "2026-06-07"
+  },
+  {
+   "key": "gravenbruch-2026",
+   "typ": "einzel",
+   "titel": "Stadtteilfest Gravenbruch N-I",
+   "start": "2026-08-21",
+   "ende": "2026-08-23"
+  },
+  {
+   "key": "tag-der-nationen-2026",
+   "typ": "einzel",
+   "titel": "🎈Tag der Nationen N-I",
+   "start": "2026-08-29",
+   "ende": "2026-08-29"
+  },
+  {
+   "key": "faire-woche-2026",
+   "typ": "einzel",
+   "titel": "🌿Faire Woche N-I",
+   "start": "2026-09-11",
+   "ende": "2026-09-25"
+  },
+  {
+   "key": "weltkindertag-2026",
+   "typ": "einzel",
+   "titel": "🎈Weltkindertag N-I",
+   "start": "2026-09-27",
+   "ende": "2026-09-27"
+  },
+  {
+   "key": "schlemmershoppen-2026-07",
+   "typ": "einzel",
+   "titel": "▼ ☀️🍴SchlemmerShoppen",
+   "start": "2026-07-09",
+   "ende": "2026-07-09",
+   "notiz": "Do 17–22 Uhr, Dr.-Walter-Lübcke-Platz / Egenberger Parkplatz"
+  },
+  {
+   "key": "schlemmershoppen-2026-08",
+   "typ": "einzel",
+   "titel": "▼ ☀️🍴SchlemmerShoppen",
+   "start": "2026-08-20",
+   "ende": "2026-08-20"
+  },
+  {
+   "key": "schlemmershoppen-2026-09",
+   "typ": "einzel",
+   "titel": "▼ ☀️🍴SchlemmerShoppen",
+   "start": "2026-09-10",
+   "ende": "2026-09-10"
+  },
+  {
+   "key": "jazz-in-der-burg-2026",
+   "typ": "einzel",
+   "titel": "▼ 🎵Jazz in der Burg",
+   "start": "2026-07-18",
+   "ende": "2026-07-19",
+   "notiz": "Sa 18.07. Jazz in der Burg, So 19.07. Blues Morning\nBurg Hayn, Fahrgasse 52"
+  },
+  {
+   "key": "hooschebaa-2026",
+   "typ": "einzel",
+   "titel": "▼ 🎈Hooschebaa-Fest Lindenplatz",
+   "start": "2026-08-28",
+   "ende": "2026-08-30",
+   "notiz": "Hooschebaa-Fest, Lindenplatz Sprendlingen"
+  },
+  {
+   "key": "hooschebaa-2027",
+   "typ": "einzel",
+   "titel": "▼ 🎈Hooschebaa-Fest Lindenplatz",
+   "start": "2027-06-04",
+   "ende": "2027-06-06",
+   "notiz": "Hooschebaa-Fest, Lindenplatz Sprendlingen"
+  },
+  {
+   "key": "juz-2026",
+   "typ": "einzel",
+   "titel": "▼❕ JUZ Sprendlingen 5o Jahre",
+   "start": "2026-09-26",
+   "ende": "2026-09-26",
+   "notiz": "50 Jahre JUZ Sprendlingen"
+  },
+  {
+   "key": "cars-cava-2026",
+   "typ": "einzel",
+   "titel": "Cars&Cava in Langen",
+   "start": "2026-08-22",
+   "ende": "2026-08-22"
+  },
+  {
+   "key": "party-joahrn-2026",
+   "typ": "einzel",
+   "titel": "Party zwische de Joahrn Langen",
+   "start": "2026-12-29",
+   "ende": "2026-12-29",
+   "notiz": "Jahnplatz, 17–22 Uhr\nVeranstalter: Verkehrs- und Verschönerungsverein Langen e. V."
+  },
+  {
+   "key": "fahrgass-classics-2026",
+   "typ": "einzel",
+   "titel": "▼ 🛍️Fahrgass' Classics",
+   "start": "2026-05-03",
+   "ende": "2026-05-03",
+   "notiz": "Werbegemeinschaft Dreieichenhain"
+  },
+  {
+   "key": "altstadttage-2026",
+   "typ": "einzel",
+   "titel": "▼ 🛍️Haaner Altstadttage",
+   "start": "2026-09-19",
+   "ende": "2026-09-20",
+   "notiz": "Werbegemeinschaft Dreieichenhain, Fahrgasse"
+  },
+  {
+   "key": "silvestersause-2026",
+   "typ": "einzel",
+   "titel": "▼⭐️5o Silvestersause, Bürgerhaus Sprendlingen",
+   "start": "2026-12-31",
+   "ende": "2026-12-31",
+   "notiz": "Startschuss ins 50. Jubiläumsjahr Dreieich"
+  },
+  {
+   "key": "mapping-2027",
+   "typ": "einzel",
+   "titel": "▼⭐️5o Videoinstallation/Mapping am Rathaus",
+   "start": "2027-01-01",
+   "ende": "2027-01-01",
+   "notiz": "50 Jahre Dreieich: Startschuss ins Jubiläumsjahr"
+  },
+  {
+   "key": "neujahrskonzert-2027",
+   "typ": "einzel",
+   "titel": "▼⭐️5o Neujahrskonzert mit Akademischer Feier",
+   "start": "2027-01-17",
+   "ende": "2027-01-17",
+   "notiz": "50 Jahre Dreieich"
+  },
+  {
+   "key": "parkschwimmbad-2027",
+   "typ": "einzel",
+   "titel": "▼⭐️5o 100 Jahre Parkschwimmbad",
+   "start": "2027-09-04",
+   "ende": "2027-09-04",
+   "notiz": "50 Jahre Dreieich"
+  },
+  {
+   "key": "kunsttage-2026-fruehjahr",
+   "typ": "pfeil",
+   "emoji": "🎨",
+   "name": "34. Kunsttage Dreieich",
+   "start": "2026-04-16",
+   "ende": "2026-05-03",
+   "notiz": "Frühjahrsausstellung der Kunsttage Dreieich\nKunstInitiative Dreieich und Bürgerhäuser Dreieich"
+  },
+  {
+   "key": "kunsttage-2026-herbst",
+   "typ": "pfeil",
+   "emoji": "🎨",
+   "name": "34. Kunsttage Dreieich",
+   "start": "2026-10-22",
+   "ende": "2026-11-08",
+   "notiz": "KUNST in der BURG\nKunsttage Dreieich"
+  },
+  {
+   "key": "musiktage-2026",
+   "typ": "pfeil",
+   "emoji": "🎵",
+   "name": "24. Dreieicher Musiktage",
+   "start": "2026-04-19",
+   "ende": "2026-05-10",
+   "notiz": "24. Dreieicher Musiktage\nVeranstalter: Bürgerhäuser Dreieich"
+  },
+  {
+   "key": "burgfestspiele-2026",
+   "typ": "pfeil_wort",
+   "emoji": "🌀",
+   "name": "Burgfestspiele Dreieichenhain",
+   "start": "2026-06-24",
+   "ende": "2026-08-09",
+   "notiz": "Burgfestspiele Dreieichenhain\n24.06.2026 – 09.08.2026"
+  },
+  {
+   "key": "burgfestspiele-2027",
+   "typ": "pfeil_wort",
+   "emoji": "🌀",
+   "name": "Burgfestspiele Dreieichenhain",
+   "start": "2027-06-23",
+   "ende": "2027-08-08",
+   "notiz": "Burgfestspiele Dreieichenhain\n23.06.2027 – 08.08.2027"
+  }
+ ]
+}
