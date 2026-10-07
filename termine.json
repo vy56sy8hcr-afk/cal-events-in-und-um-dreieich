@@ -1,5 +1,5 @@
 {
- "_hinweis": "Bestaetigte Termine. Ein Eintrag mit gleichem 'key' wie ein Rhythmus-Termin (z. B. burgfestspiele-2026) ersetzt diesen. 'skip': true entfernt einen Termin. Typ: einzel | pfeil | pfeil_wort. Datum: JJJJ-MM-TT.",
+ "_hinweis": "Bestaetigte Termine. Ein Eintrag mit gleichem 'key' wie ein Rhythmus-Termin (z. B. burgfestspiele-2026) ersetzt diesen. 'skip': true entfernt einen Termin. Typ: einzel | pfeil | pfeil_wort. Datum: JJJJ-MM-TT. 'vorlaeufig': true = darf von der Quellen-Abfrage ueberschrieben werden.",
  "termine": [
   {
    "key": "altstadtfest-ni-2026",
@@ -87,7 +87,8 @@
    "titel": "▼ 🎈Hooschebaa-Fest Lindenplatz",
    "start": "2027-06-04",
    "ende": "2027-06-06",
-   "notiz": "Hooschebaa-Fest, Lindenplatz Sprendlingen"
+   "notiz": "Hooschebaa-Fest, Lindenplatz Sprendlingen",
+   "vorlaeufig": true
   },
   {
    "key": "juz-2026",
@@ -118,7 +119,8 @@
    "titel": "▼⭐️5o Silvestersause, Bürgerhaus Sprendlingen",
    "start": "2026-12-31",
    "ende": "2026-12-31",
-   "notiz": "Startschuss ins 50. Jubiläumsjahr Dreieich"
+   "notiz": "Startschuss ins 50. Jubiläumsjahr Dreieich",
+   "vorlaeufig": true
   },
   {
    "key": "mapping-2027",
