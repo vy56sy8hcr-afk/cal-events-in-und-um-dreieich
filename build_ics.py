@@ -105,20 +105,20 @@ def regeln(y):
             f"Kerb Sprendlingen\n{f(spr[0])} – {f(spr[1])}\n\nKerb Götzenhain\n{f(goet[0])} – {f(goet[1])}\n\n"
             f"Kerb Offenthal\n{f(off[0])} – {f(off[1])}")
     k = y - 2026
-    einzel(f"haaner-kerb-{y}", f"▼🎈{308 + k}. Haaner Kerb", *hain, notiz=note)
-    einzel(f"sprendlinger-kerb-{y}", f"▼🎈{310 + k}. Sprendlinger Kerb", *spr, notiz=note)
-    einzel(f"goetzenhainer-kerb-{y}", f"▼🎈{250 + k}. Götzenhainer Kerb", *goet, notiz=note)
-    einzel(f"offenthaler-kerb-{y}", "▼🎈Offenthaler Kerb", *off, notiz=note)
-    einzel(f"kerb-warmup-{y}", "▼🎈Kerb-Warmup Lindenplatz", spr[0] - timedelta(13), notiz="Kerb-Warmup Lindenplatz")
+    einzel(f"haaner-kerb-{y}", f"▼ 🎈{308 + k}. Haaner Kerb", *hain, notiz=note)
+    einzel(f"sprendlinger-kerb-{y}", f"▼ 🎈{310 + k}. Sprendlinger Kerb", *spr, notiz=note)
+    einzel(f"goetzenhainer-kerb-{y}", f"▼ 🎈{250 + k}. Götzenhainer Kerb", *goet, notiz=note)
+    einzel(f"offenthaler-kerb-{y}", "▼ 🎈Offenthaler Kerb", *off, notiz=note)
+    einzel(f"kerb-warmup-{y}", "▼ 🎈Kerb-Warmup Lindenplatz", spr[0] - timedelta(13), notiz="Kerb-Warmup Lindenplatz")
     # --- Dreieich: weitere ---
     wf = fronleichnam - timedelta(1)
     einzel(f"weinfest-buergerpark-{y}", "▼ 🍷Weinfest Bürgerpark Sprendlingen", wf, wf + timedelta(4),
            "Weinfest im Bürgerpark Sprendlingen\nVeranstalter: AKTIVes Dreieich e.V.")
     j = nth(y, 6, 5, 3)
-    einzel(f"offene-gaerten-{y}", "▼🌿Offene Gärten Buchschlag", j, j + timedelta(1))
+    einzel(f"offene-gaerten-{y}", "▼ 🌿Offene Gärten Buchschlag", j, j + timedelta(1))
     b = zwischen(y, 9, 4, 6, 12)
-    einzel(f"hayner-burgfest-{y}", "▼🏰Hayner Burgfest", b, b + timedelta(2))
-    einzel(f"hayner-toepfermarkt-{y}", "▼🎨Hayner Töpfermarkt", letzter(y, 9, 6))
+    einzel(f"hayner-burgfest-{y}", "▼ 🏰Hayner Burgfest", b, b + timedelta(2))
+    einzel(f"hayner-toepfermarkt-{y}", "▼ 🎨Hayner Töpfermarkt", letzter(y, 9, 6))
     einzel(f"stadtfest-{y}", "▼🎈🛍️Stadtfest VoF", D(y, 10, 3))
     bs = zwischen(y, 6, 2, 23, 29)    # Burgfestspiele (Rhythmus als Reserve, 2 Stichproben)
     pfeil(f"burgfestspiele-{y}", "🌀", "Burgfestspiele Dreieichenhain", bs, bs + timedelta(46), wort=True,
@@ -131,11 +131,11 @@ def regeln(y):
     of = ("Weihnachtsmarkt Offenthal\nKirchgasse, im Kirchgarten und am Alten Rathaus\nSa 16–22 Uhr, So 14–20 Uhr "
           "(fällt Weihnachten auf einen Sonntag: Fr 16–22 Uhr, Sa 14–20 Uhr)\nVeranstalter: Kulturverein Dreieich e.V.")
     ad = hn = of = WM_BLOCK
-    einzel(f"adventsmarkt-sprendlingen-{y}", "▼🎅🏼Adventsmarkt Sprendlingen, Lindenplatz (1. Advent)", a1 - timedelta(2), a1, ad)
-    einzel(f"hayner-wm-2-{y}", "▼🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (2. Advent)", a1 + timedelta(6), a1 + timedelta(7), hn)
-    einzel(f"hayner-wm-3-{y}", "▼🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (3. Advent)", a1 + timedelta(13), a1 + timedelta(14), hn)
+    einzel(f"adventsmarkt-sprendlingen-{y}", "▼ 🎅🏼Adventsmarkt Sprendlingen, Lindenplatz (1. Advent)", a1 - timedelta(2), a1, ad)
+    einzel(f"hayner-wm-2-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (2. Advent)", a1 + timedelta(6), a1 + timedelta(7), hn)
+    einzel(f"hayner-wm-3-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (3. Advent)", a1 + timedelta(13), a1 + timedelta(14), hn)
     if D(y, 12, 25).weekday() == 6:
-        einzel(f"offenthal-wm-{y}", "▼🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", D(y, 12, 23), D(y, 12, 24), of)
+        einzel(f"offenthal-wm-{y}", "▼ 🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", D(y, 12, 23), D(y, 12, 24), of)
     else:
         einzel(f"offenthal-wm-{y}", "▼ 🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", a1 + timedelta(20), a1 + timedelta(21), of)
     # --- Langen ---
@@ -161,7 +161,7 @@ def regeln(y):
     einzel(f"wm-ni-{y}", "🎅🏼Weihnachtsmarkt N-I", a1 + timedelta(6), a1 + timedelta(7))
     rm = ostern - timedelta(48)
     einzel(f"rathaussturm-ni-{y}", "Rathaussturm N-I", rm - timedelta(9))
-    einzel(f"lumpenmontag-ni-{y}", "Lumpenmontagsumzug N-I", rm)
+    einzel(f"lumpenmontag-ni-{y}", "🎈Lumpenmontagsumzug N-I", rm)
     # --- Umland ---
     einzel(f"schlossgrabenfest-{y}", "🎈Schlossgrabenfest Darmstadt", pfingsten - timedelta(3), pfingsten + timedelta(1))
     sa1 = nth(y, 7, 5, 1)
@@ -187,11 +187,14 @@ def regeln(y):
     einzel(f"faschingsumzug-goetzenhain-{y}", "▼ Faschingsumzug Götzenhain", rosenmontag - timedelta(1), notiz="Beginn 14.11 Uhr")
     einzel(f"faschingsumzug-sprendlingen-{y}", "▼ Faschingsumzug Sprendlingen", rosenmontag + timedelta(1), notiz="Beginn 15.11 Uhr")
 
+FEST = set()   # Schluessel aus termine.json ohne "vorlaeufig"
+
 def lade_bestaetigt(pfad="termine.json"):
     if not os.path.exists(pfad): return
     daten = json.load(open(pfad, encoding="utf-8"))
     for t in daten.get("termine", []):
         key = t["key"]
+        if not t.get("vorlaeufig"): FEST.add(key)
         if t.get("skip"):
             for k in [k for k in ITEMS if k == key or k.startswith(key + "#")]: del ITEMS[k]
             continue
@@ -239,6 +242,24 @@ def lade_eigene(pfad="eigene_termine.txt"):
     with open("abgleich.txt", "w", encoding="utf-8") as fh:
         fh.write("# Termine mit Modus ?: werden gegen die Quellen abgeglichen\n" + "\n".join(abgleich) + ("\n" if abgleich else ""))
 
+def lade_gefunden(pfad="gefunden.json"):
+    """Von pruefe_quellen.py gefundene Termine: ueberschreiben nur das Datum von
+    berechneten oder vorlaeufigen Terminen, nie von bestaetigten (termine.json)."""
+    if not os.path.exists(pfad): return
+    try:
+        daten = json.load(open(pfad, encoding="utf-8"))
+    except ValueError:
+        print("gefunden.json nicht lesbar - ignoriert"); return
+    for g in daten.get("gefunden", []):
+        key = g.get("key")
+        if key in FEST or key not in ITEMS: continue
+        try:
+            s_, e_ = D.fromisoformat(g["start"]), D.fromisoformat(g.get("ende", g["start"]))
+        except (KeyError, ValueError):
+            continue
+        ITEMS[key]["start"], ITEMS[key]["ende"] = s_, e_
+        print("Quelle:", key, s_, e_)
+
 def esc(s): return s.replace("\\", "\\\\").replace("\n", "\\n").replace(",", "\\,").replace(";", "\\;")
 
 def falten(zeile):
@@ -255,6 +276,7 @@ def main():
     von, bis = add_months(h, -6), add_months(h, 16)
     for y in range(von.year, bis.year + 1): regeln(y)
     lade_bestaetigt()
+    lade_gefunden()
     lade_eigene()
     L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Veranstaltungen Dreieich Langen N-I//DE", "CALSCALE:GREGORIAN",
          "X-WR-CALNAME:Veranstaltungen Dreieich Langen N-I", "X-WR-TIMEZONE:Europe/Berlin",
@@ -266,7 +288,8 @@ def main():
         uid = uuid.uuid5(uuid.NAMESPACE_URL, "events-dreieich-v2|" + key)
         L += ["BEGIN:VEVENT", f"UID:{uid}@events-dreieich", "DTSTAMP:20260101T000000Z",
               f"DTSTART;VALUE=DATE:{it['start']:%Y%m%d}", f"DTEND;VALUE=DATE:{(it['ende'] + timedelta(1)):%Y%m%d}",
-              falten("SUMMARY:" + esc(ohne_leerzeichen(it["titel"])))]
+              falten("SUMMARY:" + esc(ohne_leerzeichen(it["titel"]))),
+              "TRANSP:TRANSPARENT", "X-MICROSOFT-CDO-BUSYSTATUS:FREE"]
         if it["notiz"]: L.append(falten("DESCRIPTION:" + esc(it["notiz"])))
         L.append("END:VEVENT")
     L.append("END:VCALENDAR")
