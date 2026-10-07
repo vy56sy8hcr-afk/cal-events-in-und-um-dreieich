@@ -1,0 +1,169 @@
+{
+ "_hinweis": "datum = Seiten mit festem Satz, aus dem das Datum eines bekannten Termins gelesen wird (korrigiert den Termin automatisch). beobachten = Presse- und Kalenderseiten, aus denen nur Vorschlaege in vorschlaege.txt entstehen (kommen nie automatisch in den Kalender). grossstaedte = noch leer, hier kommen Adressen fuer Frankfurt, Bad Homburg, Oberursel, Hanau, Darmstadt, Mainz hinein.",
+ "datum": [
+  {
+   "key": "langener-markt-{jahr}",
+   "typ": "einzeltag",
+   "url": "https://www.gewerbeverein-langen.de/verkaufsoffener-sonntag/",
+   "muster": "Langener Markt findet am (\\d{1,2})\\. ([A-Za-zäöüÄÖÜ]+) (\\d{4})"
+  },
+  {
+   "key": "hooschebaa-{jahr}",
+   "typ": "zeitraum",
+   "url": "https://www.stg1848.de/693/hooschebaafest.html",
+   "muster": "Hooschebaa-Fest findet vom (\\d{1,2})\\. ?- ?(\\d{1,2})\\. ([A-Za-zäöüÄÖÜ]+) (\\d{4})"
+  }
+ ],
+ "stichworte": [
+  "Kerb",
+  "Weinfest",
+  "Altstadtfest",
+  "Stadtfest",
+  "Stadtteilfest",
+  "Straßenfest",
+  "Laternenfest",
+  "Weihnachtsmarkt",
+  "Adventsmarkt",
+  "Afterwork",
+  "After-Work",
+  "Verkaufsoffener Sonntag",
+  "Festspiele",
+  "Open Air",
+  "Kunsttage",
+  "Musiktage",
+  "Burgfest"
+ ],
+ "beobachten": [
+  {
+   "stadt": "dietzenbach",
+   "art": "Presse",
+   "url": "https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/"
+  },
+  {
+   "stadt": "dreieich",
+   "art": "Presse",
+   "url": "https://www.dreieich.de/rathaus-buergerservice/aktuelles/pressemitteilungen/"
+  },
+  {
+   "stadt": "egelsbach",
+   "art": "Presse",
+   "url": "https://www.egelsbach.de/rathaus-politik/aktuelles/pressemitteilungen/"
+  },
+  {
+   "stadt": "hainburg",
+   "art": "Presse",
+   "url": "https://www.hainburg.de/aktuelles/pressemitteilungen/"
+  },
+  {
+   "stadt": "heusenstamm",
+   "art": "Presse",
+   "url": "https://www.heusenstamm.de/de/rathaus-und-service/aktuelles/pressemitteilungen"
+  },
+  {
+   "stadt": "langen",
+   "art": "Presse",
+   "url": "https://www.langen.de/de/aktuelles-aus-dem-rathaus/"
+  },
+  {
+   "stadt": "mainhausen",
+   "art": "Presse",
+   "url": "https://www.mainhausen.de/aktuelles/pressemitteilungen"
+  },
+  {
+   "stadt": "muehlheim",
+   "art": "Presse",
+   "url": "https://www.muehlheim.de/pressemitteilungen"
+  },
+  {
+   "stadt": "neu-isenburg",
+   "art": "Presse",
+   "url": "https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/"
+  },
+  {
+   "stadt": "obertshausen",
+   "art": "Presse",
+   "url": "https://www.obertshausen.de/de/rathaus-service/aktuelles/pressemitteilungen"
+  },
+  {
+   "stadt": "rodgau",
+   "art": "Presse",
+   "url": "https://www.rodgau.de/de/aktuelles/pressemeldungen/"
+  },
+  {
+   "stadt": "roedermark",
+   "art": "Presse",
+   "url": "https://www.roedermark.de/rathaus-service/aktuelles/pressemitteilungen/"
+  },
+  {
+   "stadt": "seligenstadt",
+   "art": "Presse",
+   "url": "https://www.seligenstadt.de/rathaus-politik/aktuelles/pressemitteilungen/"
+  },
+  {
+   "stadt": "dietzenbach",
+   "art": "Kalender",
+   "url": "https://www.dietzenbach.de/Kultur-Freizeit/Veranstaltungen/"
+  },
+  {
+   "stadt": "dreieich",
+   "art": "Kalender",
+   "url": "https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/"
+  },
+  {
+   "stadt": "egelsbach",
+   "art": "Kalender",
+   "url": "https://www.egelsbach.de/kultur-freizeit/veranstaltungen/kalender/"
+  },
+  {
+   "stadt": "hainburg",
+   "art": "Kalender",
+   "url": "https://www.hainburg.de/kultur-freizeit/veranstaltungskalender/"
+  },
+  {
+   "stadt": "heusenstamm",
+   "art": "Kalender",
+   "url": "https://www.heusenstamm.de/de/kultur-und-freizeit/veranstaltungen/veranstaltungskalender"
+  },
+  {
+   "stadt": "langen",
+   "art": "Kalender",
+   "url": "https://www.langen.de/de/feste-und-maerkte.html"
+  },
+  {
+   "stadt": "mainhausen",
+   "art": "Kalender",
+   "url": "https://www.mainhausen.de/kultur-freizeit/veranstaltungskalender"
+  },
+  {
+   "stadt": "muehlheim",
+   "art": "Kalender",
+   "url": "https://www.muehlheim.de/veranstaltungskalender"
+  },
+  {
+   "stadt": "neu-isenburg",
+   "art": "Kalender",
+   "url": "https://www.neu-isenburg.de/kultur_und_freizeit/veranstaltungskalender/"
+  },
+  {
+   "stadt": "obertshausen",
+   "art": "Kalender",
+   "url": "https://www.obertshausen.de/de/kultur-freizeit/veranstaltungen/veranstaltungskalender"
+  },
+  {
+   "stadt": "rodgau",
+   "art": "Kalender",
+   "url": "https://www.rodgau.de/de/kultur-freizeit/veranstaltungen/"
+  },
+  {
+   "stadt": "roedermark",
+   "art": "Kalender",
+   "url": "https://www.roedermark.de/kultur-freizeit/veranstaltungen/veranstaltungskalender/"
+  },
+  {
+   "stadt": "seligenstadt",
+   "art": "Kalender",
+   "url": "https://www.seligenstadt.de/tourismus-kultur/veranstaltungen/veranstaltungskalender/"
+  }
+ ],
+ "grossstaedte": []
+}
