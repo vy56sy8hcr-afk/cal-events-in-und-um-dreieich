@@ -14,7 +14,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Quellen prüfen
-        continue-on-error: true
         run: python pruefe_quellen.py
       - name: ICS erzeugen
         run: python build_ics.py
