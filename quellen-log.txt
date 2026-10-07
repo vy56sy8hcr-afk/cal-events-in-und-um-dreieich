@@ -1,0 +1,29 @@
+# Lauf vom 2026-10-07
+OK langener-markt-2026 2026-09-06 bis 2026-09-06
+KEIN TREFFER https://www.stg1848.de/693/hooschebaafest.html
+OK 27004 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
+FEHLER https://www.dreieich.de/rathaus-buergerservice/aktuelles/pressemitteilungen/: HTTP Error 404: Not Found
+FEHLER https://www.egelsbach.de/rathaus-politik/aktuelles/pressemitteilungen/: HTTP Error 404: Not Found
+FEHLER https://www.hainburg.de/aktuelles/pressemitteilungen/: HTTP Error 404: Not Found
+FEHLER https://www.heusenstamm.de/de/rathaus-und-service/aktuelles/pressemitteilungen: HTTP Error 404: Not Found
+FEHLER https://www.langen.de/de/aktuelles-aus-dem-rathaus/: HTTP Error 404: Not Found
+FEHLER https://www.mainhausen.de/aktuelles/pressemitteilungen: HTTP Error 404: Not Found
+FEHLER https://www.muehlheim.de/pressemitteilungen: HTTP Error 404: Not Found
+OK 9018 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
+FEHLER https://www.obertshausen.de/de/rathaus-service/aktuelles/pressemitteilungen: HTTP Error 404: Not Found
+OK 40180 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
+FEHLER https://www.roedermark.de/rathaus-service/aktuelles/pressemitteilungen/: HTTP Error 404: Not Found
+FEHLER https://www.seligenstadt.de/rathaus-politik/aktuelles/pressemitteilungen/: HTTP Error 404: Not Found
+FEHLER https://www.dietzenbach.de/Kultur-Freizeit/Veranstaltungen/: HTTP Error 404: Not Found
+OK 8437 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
+FEHLER https://www.egelsbach.de/kultur-freizeit/veranstaltungen/kalender/: HTTP Error 404: Not Found
+FEHLER https://www.hainburg.de/kultur-freizeit/veranstaltungskalender/: HTTP Error 404: Not Found
+FEHLER https://www.heusenstamm.de/de/kultur-und-freizeit/veranstaltungen/veranstaltungskalender: HTTP Error 404: Not Found
+OK 20674 Zeichen https://www.langen.de/de/feste-und-maerkte.html
+FEHLER https://www.mainhausen.de/kultur-freizeit/veranstaltungskalender: HTTP Error 404: Not Found
+OK 6224 Zeichen https://www.muehlheim.de/veranstaltungskalender
+FEHLER https://www.neu-isenburg.de/kultur_und_freizeit/veranstaltungskalender/: HTTP Error 404: Not Found
+FEHLER https://www.obertshausen.de/de/kultur-freizeit/veranstaltungen/veranstaltungskalender: HTTP Error 404: Not Found
+FEHLER https://www.rodgau.de/de/kultur-freizeit/veranstaltungen/: HTTP Error 404: Not Found
+FEHLER https://www.roedermark.de/kultur-freizeit/veranstaltungen/veranstaltungskalender/: HTTP Error 404: Not Found
+FEHLER https://www.seligenstadt.de/tourismus-kultur/veranstaltungen/veranstaltungskalender/: HTTP Error 404: Not Found
