@@ -10,5 +10,4 @@
 # 2027-05-01 | 2027-05-02 | ! | ▼ 🎈Beispielfest | Notiz optional
 # 2027-08-14 | 2027-08-14 | ? | ▼ 🎨Beispielmarkt
 # - rathaussturm-ni-2027
-2027-06-18 | 2027-06-20 | ! | 🎈Altstadtfest N-I
 
