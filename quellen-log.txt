@@ -1,11 +1,11 @@
-# Lauf vom 2026-10-07
+# Lauf vom 2026-10-08
 OK langener-markt-2026 2026-09-06 bis 2026-09-06
 KEIN TREFFER https://www.stg1848.de/693/hooschebaafest.html
 OK 27004 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
 OK 9018 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
 OK 41269 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
 OK 8409 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
-OK 20674 Zeichen https://www.langen.de/de/feste-und-maerkte.html
+FEHLER https://www.langen.de/de/feste-und-maerkte.html: The read operation timed out
 OK 6212 Zeichen https://www.muehlheim.de/veranstaltungskalender
 OK 18002 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
 OK 18002 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
@@ -15,6 +15,6 @@ OK 7115 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungska
 OK 27616 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
 OK 55709 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
-OK 17524 Zeichen https://www.langen.de/de/pressemitteilungen.html
-OK 15479 Zeichen https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
-OK 14736 Zeichen https://www.langen.de/de/aktuelles-kultur-freizeit.html
+FEHLER https://www.langen.de/de/pressemitteilungen.html: <urlopen error timed out>
+FEHLER https://www.langen.de/de/aktuelles-aus-dem-rathaus.html: <urlopen error timed out>
+FEHLER https://www.langen.de/de/aktuelles-kultur-freizeit.html: <urlopen error timed out>
