@@ -5,6 +5,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: kalender
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,6 +17,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Quellen prüfen
+        continue-on-error: true
         run: python pruefe_quellen.py
       - name: ICS erzeugen
         run: python build_ics.py
@@ -26,6 +30,6 @@ jobs:
             echo "Keine Änderungen"
           else
             git commit -m "Kalender aktualisiert $(date -u +%F)"
-            git pull --rebase
+            git pull --rebase -X theirs
             git push
           fi
