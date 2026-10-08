@@ -6,6 +6,24 @@
    "typ": "einzeltag",
    "url": "https://www.gewerbeverein-langen.de/verkaufsoffener-sonntag/",
    "muster": "Langener Markt findet am (\\d{1,2})\\. ([A-Za-zäöüÄÖÜ]+) (\\d{4})"
+  },
+  {
+   "key": "laternenfest-bad-homburg-{jahr}",
+   "typ": "zeitraum_num",
+   "url": "https://laternenfest.de/",
+   "muster": "Laternenfest\\s+\\d{4}\\W{0,4}\\s*(\\d{2})\\.(\\d{2})\\.\\s*bis\\s*(\\d{2})\\.(\\d{2})\\.(\\d{4})"
+  },
+  {
+   "key": "brunnenfest-oberursel-{jahr}",
+   "typ": "zeitraum",
+   "url": "https://www.vereinsring-oberursel.de/brunnenfest/",
+   "muster": "Brunnenfest.{0,120}?vom\\s+(\\d{1,2})\\.\\s*bis\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})"
+  },
+  {
+   "key": "johannisnacht-mainz-{jahr}",
+   "typ": "zeitraum",
+   "url": "https://www.mainzer-johannisnacht.de/",
+   "muster": "Johannisnacht.{0,120}?(\\d{1,2})\\.\\s*(?:bis|-|–)\\s*(\\d{1,2})\\.\\s*(Juni)\\s+(\\d{4})"
   }
  ],
  "stichworte": [
@@ -25,7 +43,15 @@
   "Open Air",
   "Kunsttage",
   "Musiktage",
-  "Burgfest"
+  "Burgfest",
+  "Mittelaltermarkt",
+  "Nikolausmarkt",
+  "Weinmarkt",
+  "Johannisnacht",
+  "Brunnenfest",
+  "Lamboyfest",
+  "Apfelwein",
+  "Streuobst"
  ],
  "beobachten": [
   {
@@ -126,7 +152,7 @@
   {
    "stadt": "mainhausen",
    "art": "Presse",
-   "url": "https://www.mainhausen.de/pressemeldungen"
+   "url": "https://www.mainhausen.de/"
   },
   {
    "stadt": "obertshausen",
@@ -167,13 +193,141 @@
    "stadt": "dietzenbach",
    "art": "Kalender",
    "url": "https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/"
+  },
+  {
+   "stadt": "muehlheim",
+   "art": "Presse",
+   "url": "https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/"
+  },
+  {
+   "stadt": "rodgau",
+   "art": "Kalender",
+   "url": "https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/"
+  },
+  {
+   "stadt": "mainhausen",
+   "art": "Kalender",
+   "url": "https://www.mainhausen.de/events"
+  },
+  {
+   "stadt": "fachwerkstrasse",
+   "art": "Weihnachtsmaerkte",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html"
+  },
+  {
+   "stadt": "fachwerkstrasse",
+   "art": "Dreieich",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Dreieich.html"
+  },
+  {
+   "stadt": "fachwerkstrasse",
+   "art": "Seligenstadt",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Seligenstadt.html"
+  },
+  {
+   "stadt": "fachwerkstrasse",
+   "art": "Hanau-Steinheim",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Hanau-Steinheim.html"
+  },
+  {
+   "stadt": "fachwerkstrasse",
+   "art": "Oberursel",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Westerwald-ueber-Lahntal-und-Taunus-zum-Main/Oberursel.html"
+  },
+  {
+   "stadt": "fachwerkstrasse",
+   "art": "Kronberg",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Westerwald-ueber-Lahntal-und-Taunus-zum-Main/Kronberg-im-Taunus.html"
+  },
+  {
+   "stadt": "fachwerkstrasse",
+   "art": "Frankfurt-Hoechst",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Westerwald-ueber-Lahntal-und-Taunus-zum-Main/Frankfurt-am-Main-Stadtteil-Hoechst.html"
+  },
+  {
+   "stadt": "apfelweinroute",
+   "art": "Start",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/"
+  },
+  {
+   "stadt": "apfelweinroute",
+   "art": "Main-Taunus",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Zwischen-Main-Taunus/Aktionskalender/Veranstaltungen-M%C3%A4rkte/"
+  },
+  {
+   "stadt": "apfelweinroute",
+   "art": "Main-Kinzig",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/"
+  },
+  {
+   "stadt": "apfelweinroute",
+   "art": "Wetterau",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Wetterau/Aktionskalender/Veranstaltungen-M%C3%A4rkte/"
+  },
+  {
+   "stadt": "apfelweinroute",
+   "art": "Streuobst-Portal",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/"
+  },
+  {
+   "stadt": "apfelweinroute",
+   "art": "Kreis-Offenbach",
+   "url": "https://www.kreis-offenbach.de/Freizeit/Entdecken/Touren-Routen/Hessische-Apfelwein-und-Obstwiesenroute/Termine-rund-um-die-Route/"
   }
  ],
- "grossstaedte": [],
+ "grossstaedte": [
+  {
+   "stadt": "frankfurt",
+   "art": "Feste",
+   "url": "https://frankfurt.de/frankfurt-entdecken-und-erleben/stadtportrait/frankfurter-feste"
+  },
+  {
+   "stadt": "frankfurt",
+   "art": "Museumsuferfest",
+   "url": "https://www.visitfrankfurt.travel/erleben/feste-und-veranstaltungen/museumsuferfest"
+  },
+  {
+   "stadt": "bad-homburg",
+   "art": "Laternenfest",
+   "url": "https://www.bad-homburg.de/de/erleben/ausgehen/feste-und-festivals/laternenfest"
+  },
+  {
+   "stadt": "oberursel",
+   "art": "Brunnenfest",
+   "url": "https://www.vereinsring-oberursel.de/brunnenfest/"
+  },
+  {
+   "stadt": "hanau",
+   "art": "Festspiele",
+   "url": "https://festspiele.hanau.de/"
+  },
+  {
+   "stadt": "hanau",
+   "art": "Lamboyfest",
+   "url": "https://www.hanau.de/freizeit/veranstaltungskalender/veranstaltungen/183871.html"
+  },
+  {
+   "stadt": "darmstadt",
+   "art": "Heinerfest",
+   "url": "https://www.heinerfest.de/"
+  },
+  {
+   "stadt": "darmstadt",
+   "art": "Veranstaltungen",
+   "url": "https://www.darmstadt-guide.de/veranstaltungen/"
+  },
+  {
+   "stadt": "mainz",
+   "art": "Johannisnacht",
+   "url": "https://www.mainzer-johannisnacht.de/"
+  },
+  {
+   "stadt": "mainz",
+   "art": "Weinfeste",
+   "url": "https://diemainzerwinzer.de/sommerweinfeste/"
+  }
+ ],
  "offen_adresse_fehlt": [
-  "Mühlheim Presse",
-  "Rodgau Kalender",
-  "Mainhausen Kalender (Monatsseiten)",
-  "Frankfurt, Bad Homburg, Oberursel, Hanau, Darmstadt, Mainz (noch keine Adressen)"
+  "Darmstadt/Mainz/Frankfurt: weitere Kalender nach Bedarf"
  ]
 }
