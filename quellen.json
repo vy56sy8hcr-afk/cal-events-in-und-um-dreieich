@@ -1,17 +1,11 @@
 {
- "_hinweis": "datum = Seiten mit festem Satz, aus dem das Datum eines bekannten Termins gelesen wird (korrigiert den Termin automatisch). beobachten = Presse- und Kalenderseiten, aus denen nur Vorschlaege in vorschlaege.txt entstehen (kommen nie automatisch in den Kalender). grossstaedte = noch leer, hier kommen Adressen fuer Frankfurt, Bad Homburg, Oberursel, Hanau, Darmstadt, Mainz hinein. offen_adresse_fehlt = Adressen aus der urspruenglichen Liste lieferten Fehler 404 und sind noch nicht ersetzt.",
+ "_hinweis": "datum = Seiten mit festem Satz, aus dem das Datum eines bekannten Termins gelesen wird (korrigiert den Termin automatisch). beobachten = Presse- und Kalenderseiten, aus denen nur Vorschlaege in vorschlaege.txt entstehen (kommen nie automatisch in den Kalender). grossstaedte = hier kommen Adressen fuer Frankfurt, Bad Homburg, Oberursel, Hanau, Darmstadt, Mainz hinein. offen_adresse_fehlt = noch keine funktionierende Adresse.",
  "datum": [
   {
    "key": "langener-markt-{jahr}",
    "typ": "einzeltag",
    "url": "https://www.gewerbeverein-langen.de/verkaufsoffener-sonntag/",
    "muster": "Langener Markt findet am (\\d{1,2})\\. ([A-Za-zäöüÄÖÜ]+) (\\d{4})"
-  },
-  {
-   "key": "hooschebaa-{jahr}",
-   "typ": "zeitraum",
-   "url": "https://www.stg1848.de/693/hooschebaafest.html",
-   "muster": "Hooschebaa\\W{0,3}fest\\s+findet\\s+vom\\s+(\\d{1,2})\\.\\s*[-–—]\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})"
   }
  ],
  "stichworte": [
@@ -118,17 +112,68 @@
    "stadt": "langen",
    "art": "Kalender",
    "url": "https://www.langen.de/de/aktuelles-kultur-freizeit.html"
+  },
+  {
+   "stadt": "hainburg",
+   "art": "Presse",
+   "url": "https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/"
+  },
+  {
+   "stadt": "hainburg",
+   "art": "Kalender",
+   "url": "https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/"
+  },
+  {
+   "stadt": "mainhausen",
+   "art": "Presse",
+   "url": "https://www.mainhausen.de/pressemeldungen"
+  },
+  {
+   "stadt": "obertshausen",
+   "art": "Presse",
+   "url": "https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen"
+  },
+  {
+   "stadt": "obertshausen",
+   "art": "Kalender",
+   "url": "https://www.kultur-obertshausen.de/"
+  },
+  {
+   "stadt": "roedermark",
+   "art": "Presse",
+   "url": "https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html"
+  },
+  {
+   "stadt": "roedermark",
+   "art": "Kalender",
+   "url": "https://roedermark.de/kultur-freizeit/veranstaltungskalender.html"
+  },
+  {
+   "stadt": "seligenstadt",
+   "art": "Presse",
+   "url": "https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/"
+  },
+  {
+   "stadt": "seligenstadt",
+   "art": "Kalender",
+   "url": "https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/"
+  },
+  {
+   "stadt": "seligenstadt",
+   "art": "Kalender",
+   "url": "https://www.unser-seligenstadt.de/veranstaltungskalender"
+  },
+  {
+   "stadt": "dietzenbach",
+   "art": "Kalender",
+   "url": "https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/"
   }
  ],
  "grossstaedte": [],
  "offen_adresse_fehlt": [
-  "Hainburg Presse+Kalender",
-  "Mainhausen Presse+Kalender",
   "Mühlheim Presse",
-  "Obertshausen Presse+Kalender",
-  "Rödermark Presse+Kalender",
-  "Seligenstadt Presse+Kalender",
-  "Dietzenbach Kalender",
-  "Rodgau Kalender"
+  "Rodgau Kalender",
+  "Mainhausen Kalender (Monatsseiten)",
+  "Frankfurt, Bad Homburg, Oberursel, Hanau, Darmstadt, Mainz (noch keine Adressen)"
  ]
 }
