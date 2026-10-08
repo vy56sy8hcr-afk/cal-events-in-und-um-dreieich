@@ -6,7 +6,8 @@
    "typ": "einzel",
    "titel": "🎈Altstadtfest N-I",
    "start": "2026-06-12",
-   "ende": "2026-06-14"
+   "ende": "2026-06-14",
+   "vorlaeufig": true
   },
   {
    "key": "zeppelinheim-2026",
@@ -46,7 +47,7 @@
   {
    "key": "schlemmershoppen-2026-07",
    "typ": "einzel",
-   "titel": "▼ ☀️🍴SchlemmerShoppen",
+   "titel": "▼☀️🍴SchlemmerShoppen",
    "start": "2026-07-09",
    "ende": "2026-07-09",
    "notiz": "Do 17–22 Uhr, Dr.-Walter-Lübcke-Platz / Egenberger Parkplatz"
@@ -54,14 +55,14 @@
   {
    "key": "schlemmershoppen-2026-08",
    "typ": "einzel",
-   "titel": "▼ ☀️🍴SchlemmerShoppen",
+   "titel": "▼☀️🍴SchlemmerShoppen",
    "start": "2026-08-20",
    "ende": "2026-08-20"
   },
   {
    "key": "schlemmershoppen-2026-09",
    "typ": "einzel",
-   "titel": "▼ ☀️🍴SchlemmerShoppen",
+   "titel": "▼☀️🍴SchlemmerShoppen",
    "start": "2026-09-10",
    "ende": "2026-09-10"
   },
@@ -206,6 +207,14 @@
    "start": "2026-12-29",
    "ende": "2026-12-29",
    "notiz": "Jahnplatz, 17–22 Uhr\nVeranstalter: Verkehrs- und Verschönerungsverein Langen e. V."
+  },
+  {
+   "key": "altstadtfest-ni-2027",
+   "typ": "einzel",
+   "titel": "🎈Altstadtfest N-I",
+   "start": "2027-06-18",
+   "ende": "2027-06-20",
+   "vorlaeufig": true
   }
  ]
 }
