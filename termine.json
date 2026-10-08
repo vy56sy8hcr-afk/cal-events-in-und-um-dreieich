@@ -215,6 +215,13 @@
    "start": "2027-06-18",
    "ende": "2027-06-20",
    "vorlaeufig": true
+  },
+  {
+   "key": "mittelaltermarkt-heusenstamm-2026",
+   "typ": "einzel",
+   "titel": "Mittelaltermarkt Heusenstamm",
+   "start": "2026-10-10",
+   "ende": "2026-10-11"
   }
  ]
 }
