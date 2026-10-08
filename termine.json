@@ -222,6 +222,24 @@
    "titel": "Mittelaltermarkt Heusenstamm",
    "start": "2026-10-10",
    "ende": "2026-10-11"
+  },
+  {
+   "key": "lamboyfest-hanau-2026",
+   "typ": "einzel",
+   "titel": "🎈Lamboyfest Hanau",
+   "start": "2026-06-12",
+   "ende": "2026-06-14",
+   "vorlaeufig": true
+  },
+  {
+   "key": "festspiele-hanau-2027",
+   "typ": "pfeil_wort",
+   "emoji": "🎭",
+   "name": "Brüder Grimm Festspiele Hanau",
+   "start": "2027-05-07",
+   "ende": "2027-07-31",
+   "praefix": "",
+   "notiz": "Brüder Grimm Festspiele Hanau\n43. Spielzeit, 07.05.2027 – 31.07.2027"
   }
  ]
 }
