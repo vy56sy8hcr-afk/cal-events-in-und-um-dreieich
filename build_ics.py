@@ -81,10 +81,10 @@ def einzel(key, titel, start, ende=None, notiz=""):
 
 def rng(s, e): return f"({zo(f'{s:%d.%m.}')} - {zo(f'{e.day:02d}.{e.month}.{e.year}')})"
 
-def pfeil(key, emoji, name, s, e, notiz="", wort=False):
+def pfeil(key, emoji, name, s, e, notiz="", wort=False, pre="▼ "):
     r = rng(s, e); n = PFEIL_TAGE - 1
-    t1 = f"▼ —>{emoji}{name} " + ("Eröffnung " if wort else "") + r
-    t2 = f"▼ <—{emoji}{name} " + ("Ende " if wort else "") + r
+    t1 = f"{pre}—>{emoji}{name} " + ("Eröffnung " if wort else "") + r
+    t2 = f"{pre}<—{emoji}{name} " + ("Ende " if wort else "") + r
     ITEMS[key + "#anfang"] = dict(start=s, ende=s + timedelta(n), titel=t1, notiz=notiz)
     ITEMS[key + "#ende"] = dict(start=e - timedelta(n), ende=e, titel=t2, notiz=notiz)
 
@@ -167,13 +167,25 @@ def regeln(y):
     einzel(f"rathaussturm-ni-{y}", "Rathaussturm N-I", rm - timedelta(9))
     einzel(f"lumpenmontag-ni-{y}", "Lumpenmontagsumzug N-I", rm)
     # --- Umland ---
-    einzel(f"schlossgrabenfest-{y}", "🎈Schlossgrabenfest Darmstadt", pfingsten - timedelta(3), pfingsten + timedelta(1))
+    einzel(f"schlossgrabenfest-{y}", "🎈Schlossgrabenfest Darmstadt", pfingsten - timedelta(3), pfingsten)
     sa1 = nth(y, 7, 5, 1)
     einzel(f"heinerfest-{y}", "🎈🎵Heinerfest Darmstadt", sa1 - timedelta(2), sa1 + timedelta(2))
     einzel(f"rembruecker-{y}", "🍷Rembrücker Weintage", o, o + timedelta(2))
     einzel(f"weinwoche-rodgau-{y}", "🍷Weinwoche Rodgau", o, o + timedelta(9))
     d4 = nth(y, 7, 4, 4)
     einzel(f"weinfest-dietzenbach-{y}", "🍷Weinfest Dietzenbach", d4, d4 + timedelta(9))
+    # --- grosse Feste Frankfurt, Bad Homburg, Oberursel, Hanau, Mainz ---
+    lf = letzter(y, 8, 4)
+    einzel(f"laternenfest-bad-homburg-{y}", "🎈Laternenfest Bad Homburg", lf, lf + timedelta(3))
+    einzel(f"museumsuferfest-{y}", "🎈Museumsuferfest Frankfurt", lf, lf + timedelta(2))
+    einzel(f"brunnenfest-oberursel-{y}", "🎈Brunnenfest Oberursel", pfingsten + timedelta(5), pfingsten + timedelta(8))
+    jn = zwischen(y, 6, 4, 19, 25)
+    einzel(f"johannisnacht-mainz-{y}", "🎈Johannisnacht Mainz", jn, jn + timedelta(3))
+    wm1 = letzter(y, 8, 3)
+    einzel(f"weinmarkt-mainz-1-{y}", "🍷Mainzer Weinmarkt", wm1, wm1 + timedelta(3))
+    einzel(f"weinmarkt-mainz-2-{y}", "🍷Mainzer Weinmarkt", wm1 + timedelta(7), wm1 + timedelta(10))
+    pfeil(f"wm-frankfurt-{y}", "🎅🏼", "Frankfurter Weihnachtsmarkt", a1 - timedelta(6), D(y, 12, 22), pre="")
+    einzel(f"rosenmontag-mainz-{y}", "Mainzer Rosenmontagszug", ostern - timedelta(48))
     h3 = nth(y, 8, 2, 3)
     einzel(f"weinfest-heusenstamm-{y}", "🍷Weinfest Heusenstamm", h3, h3 + timedelta(5))
     # --- Verkaufsoffene Sonntage, Weisser Sonntag, Faschingsumzuege ---
@@ -208,7 +220,7 @@ def lade_bestaetigt(pfad="termine.json"):
         if typ == "einzel":
             einzel(key, t["titel"], s, e, t.get("notiz", ""))
         else:
-            pfeil(key, t["emoji"], t["name"], s, e, t.get("notiz", ""), wort=(typ == "pfeil_wort"))
+            pfeil(key, t["emoji"], t["name"], s, e, t.get("notiz", ""), wort=(typ == "pfeil_wort"), pre=t.get("praefix", "▼ "))
 
 def ohne_leerzeichen(t):
     """Zwischen Emoji und Text darf nie ein Leerzeichen stehen.
