@@ -2,7 +2,7 @@
 """Baut cal-events-in-und-um-dreieich.ics aus Rhythmus-Regeln (dieses Skript)
 und bestaetigten Terminen (termine.json). Bestaetigte Termine haben Vorrang.
 Fenster: heute -6 Monate bis +16 Monate."""
-import hashlib, json, os, sys, uuid
+import hashlib, json, os, re, sys, uuid
 from datetime import date, timedelta
 
 AUSGABE = "cal-events-in-und-um-dreieich.ics"
@@ -159,9 +159,13 @@ def regeln(y):
     wn = zwischen(y, 8, 4, 7, 13)
     einzel(f"weinfest-ni-{y}", "🍷Weinfest N-I", wn, wn + timedelta(9))
     einzel(f"wm-ni-{y}", "🎅🏼Weihnachtsmarkt N-I", a1 + timedelta(6), a1 + timedelta(7))
+    einzel(f"wm-dietzenbach-{y}", "🎅🏼Weihnachtsmarkt Dietzenbach", a1 - timedelta(1), a1, "Altstadt Dietzenbach")
+    einzel(f"adventsmarkt-rembruecken-{y}", "🎅🏼Adventsmarkt Rembrücken", a1 - timedelta(1), a1,
+           "Platz vor der Alten Schule, Hauptstraße 23\nBeginn 14:00 Uhr")
+    einzel(f"nikolausmarkt-heusenstamm-{y}", "🎅🏼St. Nikolausmarkt Heusenstamm", a1 + timedelta(6), a1 + timedelta(7))
     rm = ostern - timedelta(48)
     einzel(f"rathaussturm-ni-{y}", "Rathaussturm N-I", rm - timedelta(9))
-    einzel(f"lumpenmontag-ni-{y}", "🎈Lumpenmontagsumzug N-I", rm)
+    einzel(f"lumpenmontag-ni-{y}", "Lumpenmontagsumzug N-I", rm)
     # --- Umland ---
     einzel(f"schlossgrabenfest-{y}", "🎈Schlossgrabenfest Darmstadt", pfingsten - timedelta(3), pfingsten + timedelta(1))
     sa1 = nth(y, 7, 5, 1)
@@ -207,7 +211,9 @@ def lade_bestaetigt(pfad="termine.json"):
             pfeil(key, t["emoji"], t["name"], s, e, t.get("notiz", ""), wort=(typ == "pfeil_wort"))
 
 def ohne_leerzeichen(t):
-    """Zwischen Emoji und Text darf nie ein Leerzeichen stehen."""
+    """Zwischen Emoji und Text darf nie ein Leerzeichen stehen.
+    Der Weihnachtsmann wird immer mit Hautton gebaut (auch wenn er beim Kopieren ohne ankam)."""
+    t = re.sub("\U0001F385\U0001F3FC?", "\U0001F385\U0001F3FC", t)
     out = []; prev = False
     for ch in t:
         o = ord(ch)
