@@ -140,7 +140,7 @@ def regeln(y):
         einzel(f"offenthal-wm-{y}", "▼ 🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", a1 + timedelta(20), a1 + timedelta(21), of)
     # --- Langen ---
     himmel = ostern + timedelta(39)
-    einzel(f"countryfest-langen-{y}", "🎈Countryfest Langen", himmel, himmel + timedelta(1), notiz="Biergarten hinter der Neuen Stadthalle Langen. Live Musik und Linedance von 11 bis 14 Uhr, Musik bis 18 Uhr. Eintritt frei!")
+    einzel(f"countryfest-langen-{y}", "🎈Countryfest Langen", himmel, himmel + timedelta(0), notiz="Biergarten hinter der Neuen Stadthalle Langen. Live Musik und Linedance von 11 bis 14 Uhr, Musik bis 18 Uhr. Eintritt frei!")
     e = nth(y, 6, 4, 3)
     einzel(f"ebbelwoifest-{y}", "🎈Ebbelwoifest Langen", e, e + timedelta(3))
     w = zwischen(y, 8, 3, 6, 12)
