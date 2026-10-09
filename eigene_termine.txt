@@ -11,3 +11,16 @@
 # 2027-08-14 | 2027-08-14 | ? | ▼ 🎨Beispielmarkt
 # - rathaussturm-ni-2027
 
+Diese Zeilen setzt du ans Ende von eigene_termine.txt. Mit der Raute davor sind sie nur Anschauung und werden ignoriert:
+
+# Beispiel fest, ein Tag:
+# 2027-01-17 | 2027-01-17 | ! | ▼⭐️5oNeujahrskonzert |
+
+# Beispiel fest, mehrere Tage, mit Notiz:
+# 2027-06-04 | 2027-06-06 | ! | ▼🎈Beispielfest | Beginn 11 Uhr
+
+# Beispiel vorläufig, wird mit Quellen abgeglichen:
+# 2027-06-04 | 2027-06-06 | ? | ▼🎈Hooschebaa-Fest |
+
+
+
