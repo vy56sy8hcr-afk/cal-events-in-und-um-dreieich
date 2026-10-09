@@ -113,7 +113,7 @@ def regeln(y):
     # --- Dreieich: weitere ---
     wf = fronleichnam - timedelta(1)
     einzel(f"weinfest-buergerpark-{y}", "▼ 🍷Weinfest Bürgerpark Sprendlingen", wf, wf + timedelta(4),
-           "Weinfest im Bürgerpark Sprendlingen\nVeranstalter: AKTIVes Dreieich e.V.")
+           "Weinfest im Bürgerpark Sprendlingen\nVeranstalter: AKTIVes Dreieich e.V.\nbeginnt immer 1 Tag vor Fronleichnam")
     j = nth(y, 6, 5, 3)
     einzel(f"offene-gaerten-{y}", "▼ 🌿Offene Gärten Buchschlag", j, j + timedelta(1))
     b = zwischen(y, 9, 4, 6, 12)
