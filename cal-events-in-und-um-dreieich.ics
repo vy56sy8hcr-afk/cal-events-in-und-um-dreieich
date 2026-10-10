@@ -262,20 +262,6 @@ DESCRIPTION:Sa 18.07. Jazz in der Burg\, So 19.07. Blues Morning\nBurg Hay
  n\, Fahrgasse 52
 END:VEVENT
 BEGIN:VEVENT
-UID:7703213f-41d6-5fa5-a721-29bec28a7cbd@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20260723
-DTEND;VALUE=DATE:20260724
-SUMMARY:🌓🌓🌓
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
- 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
- 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
- 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
-  je nach Jahr ein Tag Abweichung
-END:VEVENT
-BEGIN:VEVENT
 UID:d8ea96de-00d6-553a-8c94-88340f752a75@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260724
@@ -440,20 +426,6 @@ DTEND;VALUE=DATE:20260907
 SUMMARY:🍷Mainzer Weinmarkt
 TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
-END:VEVENT
-BEGIN:VEVENT
-UID:9f8b3f66-20bc-5db1-ba7e-9a428aede680@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20260904
-DTEND;VALUE=DATE:20260905
-SUMMARY:🌓🌓🌓
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
- 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
- 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
- 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
-  je nach Jahr ein Tag Abweichung
 END:VEVENT
 BEGIN:VEVENT
 UID:7fd69587-8cdb-5098-a26e-1a454948aa34@events-dreieich
@@ -1063,20 +1035,6 @@ TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 END:VEVENT
 BEGIN:VEVENT
-UID:69a662e3-c858-5083-abc9-5c299286e68a@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270723
-DTEND;VALUE=DATE:20270724
-SUMMARY:🌓🌓🌓
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
- 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
- 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
- 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
-  je nach Jahr ein Tag Abweichung
-END:VEVENT
-BEGIN:VEVENT
 UID:af042f52-62f0-52ed-8ae8-0bde1f89eee1@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270723
@@ -1216,20 +1174,6 @@ SUMMARY:▼⭐️5o 100 Jahre Parkschwimmbad
 TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 DESCRIPTION:50 Jahre Dreieich
-END:VEVENT
-BEGIN:VEVENT
-UID:acc8e434-2a1b-5b00-81af-a19a72e129cd@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270904
-DTEND;VALUE=DATE:20270905
-SUMMARY:🌓🌓🌓
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
- 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
- 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
- 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
-  je nach Jahr ein Tag Abweichung
 END:VEVENT
 BEGIN:VEVENT
 UID:a4e23a23-d48b-5f94-ba3c-4c55490758fd@events-dreieich
