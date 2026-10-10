@@ -35,6 +35,9 @@
 #> fachwerkstrasse | Winterzauber | - | https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html | des Jahres: Der Dillenburger Winterzauber lädt vom 23. November bis einschließlich 30. Dezember 2026 zum gemütlichen Verweilen, Genießen und gemeinsamen Erleben ein. Das liebevoll g
 2026-11-23 | 2026-11-23 | ? | Winterzauber | 
 
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | nd naturgemäßen Obstbaum- und Streuobstwiesenpflege. Die einzelnen Module haben jeweils einen jahreszeitlichen Schwerpunkt. Wer an allen acht Modulen ... Datum: 27. November 2026
+2026-11-27 | 2026-11-27 | ? | Streuobst | 
+
 #> heusenstamm | Adventsmarkt | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | r) Samstag, 28. November 2026 Adventsmarkt Rembrücken — Kultur, Sport & Ehrenamt Adventsmarkt Rembrücken Kultur, Sport & Ehrenamt Platz vor der Alten Schule, Hauptstraße 23 28.11.202
 2026-11-28 | 2026-11-28 | ? | Adventsmarkt Heusenstamm | 
 
@@ -53,6 +56,9 @@
 #> fachwerkstrasse | Adventsmarkt | - | https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html | am 12.12.2026 Öffnungszeiten Adventsmarkt und Kleiner Budenzauber: Montag bis Donnerstag: 15:00 bis 20:00 Uhr Freitag: 15:00 bis 21:00 Uhr Samstag: 11:00 bis 21:00 Uhr Sonntag: 12:0
 2026-12-12 | 2026-12-12 | ? | Adventsmarkt | 
 
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | in Theorie und Praxis auf der Streuobstwiese. Die Module finden samstags und sonntags von 9 bis 17 Uhr statt. Kursleiter ist ... Datum: 18. Dezember 2026 GlühÄpplerFest Textanriss
+2026-12-18 | 2026-12-18 | ? | Streuobst | 
+
 #> heusenstamm | Winterzauber | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | t. Nikolausmarkt : 05.+06.12. Winterzauber in der Alten Linde: 28.+29.12. Änderungen vorbehalten. Sonntag, 11. Oktober 2026 Mittelaltermarkt — Kultur, Sport & Ehrenamt Mittelaltermar
 2026-12-28 | 2026-12-29 | ? | Winterzauber Heusenstamm | 
 
@@ -68,14 +74,8 @@
 #> dreieich | Frühjahrsausstellung | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | m 1. Januar 2027 ab 18.30 Uhr Frühjahrsausstellung vom 29.April bis 17. Mai 2027 Kunst in der Burg vom 23. Juni bis 8. August 2027 Herbstausstellung vom 18. November bis 5. Dezember 2027 All
 2027-04-29 | 2027-05-17 | ? | Frühjahrsausstellung | 
 
-#> dreieich | Kunst in der Burg | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | vom 29.April bis 17. Mai 2027 Kunst in der Burg vom 23. Juni bis 8. August 2027 Herbstausstellung vom 18. November bis 5. Dezember 2027 Alle Künstler.innen + Gäste der Kunsttage Dreieich
-2027-06-23 | 2027-08-08 | ? | Kunst in der Burg | 
-
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | chstämmiger Obstbäume und von Streuobstwiesen rund ums Jahr lernen Textanriss überspringen Auch im Jahr 2027 bietet Mirko Franz wieder die Obstbaumpflege-Ausbildung mit dem Schwer
 2027-11-06 | 2027-11-06 | ? | Streuobst | 
-
-#> dreieich | Kunsttage | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | le Künstler.innen + Gäste der Kunsttage Dreieich von 1990-2025 Veröffentlicht am: Mi, 30.04.2025 Alle Künstler.innen und Gäste der Kunsttage Dreieich von 1990 - 2025 sind auf eine
-2027-11-18 | 2027-12-05 | ? | Kunsttage | 
 
 #> dreieich | Herbstausstellung | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | m 23. Juni bis 8. August 2027 Herbstausstellung vom 18. November bis 5. Dezember 2027 Alle Künstler.innen + Gäste der Kunsttage Dreieich von 1990-2025 Veröffentlicht am: Mi, 30.04.2025 Al
 2027-11-18 | 2027-12-05 | ? | Herbstausstellung | 
