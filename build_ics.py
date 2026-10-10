@@ -203,7 +203,7 @@ def regeln(y):
     einzel(f"faschingsumzug-goetzenhain-{y}", "▼ Faschingsumzug Götzenhain", rosenmontag - timedelta(1), notiz="Beginn 14.11 Uhr")
     einzel(f"faschingsumzug-sprendlingen-{y}", "▼ Faschingsumzug Sprendlingen", rosenmontag + timedelta(1), notiz="Beginn 15.11 Uhr")
     dn = "🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 23.07.: bürgerliche Dämmerung, der Himmel ist noch deutlich hell\nBis 17.08.: nautische Dämmerung, der Horizont ist noch zu erkennen\nBis 04.09.: astronomische Dämmerung, danach ist es um 22 Uhr Nacht\nCa. Werte, je nach Jahr ein Tag Abweichung"
-    einzel(f"daemmerung-22-nautisch-{y}", "🌓🌓🌓", D(y, 8, 17), notiz=dn)
+    einzel(f"daemmerung-22-nautisch-{y}", "🌓🌓🌓", D(y, 9, 1), notiz=dn)
 
 FEST = set()   # Schluessel aus termine.json ohne "vorlaeufig"
 
