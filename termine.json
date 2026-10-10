@@ -2,6 +2,33 @@
  "_hinweis": "Bestaetigte Termine. Ein Eintrag mit gleichem 'key' wie ein Rhythmus-Termin (z. B. burgfestspiele-2026) ersetzt diesen. 'skip': true entfernt einen Termin. Typ: einzel | pfeil | pfeil_wort. Datum: JJJJ-MM-TT. 'vorlaeufig': true = darf von der Quellen-Abfrage ueberschrieben werden.",
  "termine": [
   {
+ "key": "kunsttage-fruehjahr-2027",
+ "typ": "pfeil",
+ "emoji": "🎨",
+ "name": "35. Kunsttage Dreieich",
+ "start": "2027-04-29",
+ "ende": "2027-05-17",
+ "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+},
+{
+ "key": "kunsttage-burg-2027",
+ "typ": "pfeil",
+ "emoji": "🎨",
+ "name": "35. Kunsttage Dreieich Kunst in der Burg",
+ "start": "2027-06-23",
+ "ende": "2027-08-08",
+ "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+},
+{
+ "key": "kunsttage-herbst-2027",
+ "typ": "pfeil",
+ "emoji": "🎨",
+ "name": "35. Kunsttage Dreieich",
+ "start": "2027-11-18",
+ "ende": "2027-12-05",
+ "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+},
+  {
    "key": "altstadtfest-ni-2026",
    "typ": "einzel",
    "titel": "🎈Altstadtfest N-I",
