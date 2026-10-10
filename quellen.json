@@ -42,6 +42,9 @@
   "Festspiele",
   "Open Air",
   "Kunsttage",
+  "Frühjahrsausstellung",
+  "Herbstausstellung",
+  "Kunst in der Burg",
   "Musiktage",
   "Burgfest",
   "Mittelaltermarkt",
@@ -55,6 +58,11 @@
   "Winterzauber"
  ],
  "beobachten": [
+  {
+   "stadt": "dreieich",
+   "art": "Kunsttage",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+  },
   {
    "stadt": "dietzenbach",
    "art": "Presse",
