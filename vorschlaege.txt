@@ -11,6 +11,9 @@
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | ppte Museum in Hanau ein, die Streuobstwiesenkultur und Apfelgeschichte(n) kennenzulernen. ... Datum: 10. Oktober 2026 Uhrzeit: 14:00 Uhr Apfelmarkt Niederhöchstadt Textanriss übe
 2026-10-10 | 2026-10-10 | ? | Streuobst | 
 
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | Der OGV bietet Äpfel von den Streuobstwiesen, Birnen, Quitten sowie hausgemachte Gelees und Honig an. Datum: 11. Oktober 2026 Uhrzeit: 11:00 bis 17:00 Uhr Reiskirchener Kelterfes
+2026-10-11 | 2026-10-11 | ? | Streuobst | 
+
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/ | ppte Museum in Hanau ein, die Streuobstwiesenkultur und Apfelgeschichte(n) kennenzulernen. ... Datum: 17. Oktober 2026 Uhrzeit: 10:00 bis 11:00 Uhr Tausch- und Verschenkbörse Text
 2026-10-17 | 2026-10-17 | ? | Streuobst | 
 
@@ -20,11 +23,23 @@
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/ | ber 2025 bis 24. Oktober 2026 Streuobst von Anfang an - Bronze Textanriss überspringen Das praktische Wissen um die Bewirtschaftung von Streuobstwiesen ist vielfach verloren gegan
 2026-10-24 | 2026-10-24 | ? | Streuobst | 
 
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | kanntgegeben. Infos unter www.streuobst-roedermark.de oder per E-Mail an: info@streuobstroedermark.de Datum: 07. November 2026 Uhrzeit: 09:00 bis 17:00 Uhr Obstbaumpflege-Ausbildu
+2026-11-07 | 2026-11-07 | ? | Streuobst | 
+
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/ | er 2026 bis 14. November 2026 Streuobst von Anfang an - Kurs Bronze (Modul 1) Textanriss überspringen Während der einjährigen Ausbildung werden insgesamt vier Module angeboten. Si
+2026-11-14 | 2026-11-14 | ? | Streuobst | 
+
 #> darmstadt | Weihnachtsmarkt | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.darmstadt-guide.de/veranstaltungen/ | icht-darmstadt.de Darmstädter Weihnachtsmarkt Datum: 16.11. – 23.12.2026 Der Darmstädter Weihnachtsmarkt verwandelt die Innenstadt jedes Jahr in eine festlich geschmückte Winterwelt. Ku
 2026-11-16 | 2026-12-23 | ? | Weihnachtsmarkt Darmstadt | 
 
+#> fachwerkstrasse | Winterzauber | - | https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html | des Jahres: Der Dillenburger Winterzauber lädt vom 23. November bis einschließlich 30. Dezember 2026 zum gemütlichen Verweilen, Genießen und gemeinsamen Erleben ein. Das liebevoll g
+2026-11-23 | 2026-11-23 | ? | Winterzauber | 
+
 #> heusenstamm | Adventsmarkt | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | r) Samstag, 28. November 2026 Adventsmarkt Rembrücken — Kultur, Sport & Ehrenamt Adventsmarkt Rembrücken Kultur, Sport & Ehrenamt Platz vor der Alten Schule, Hauptstraße 23 28.11.202
 2026-11-28 | 2026-11-28 | ? | Adventsmarkt Heusenstamm | 
+
+#> fachwerkstrasse | Winterzauber | - | https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html | eitere Highlights im Zuge des Winterzaubers und weitere Informationen unter dillenburg.live Frankfurt am Main (Stadtteil Höchst) 28.11.2026 - 29.11.2026 Beginn: 13:00 Uhr Ende: 19:00
+2026-11-28 | 2026-11-28 | ? | Winterzauber | 
 
 #> heusenstamm | Adventsmarkt | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | r. Sonntag, 29. November 2026 Adventsmarkt Rembrücken — Kultur, Sport & Ehrenamt Adventsmarkt Rembrücken Kultur, Sport & Ehrenamt Platz vor der Alten Schule, Hauptstraße 23 29.11.202
 2026-11-29 | 2026-11-29 | ? | Adventsmarkt Heusenstamm | 
@@ -32,8 +47,38 @@
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | bei der Bewirtschaftung Ihrer Streuobstwiese unterstützen und dabei auch den ... Datum: 01. Dezember 2025 bis 01. Dezember 2026 Landschaftsobstbauer werden Textanriss überspringen
 2026-12-01 | 2026-12-01 | ? | Streuobst | 
 
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/ | ags von 10 bis 13 Uhr auf der Streuobstwiese statt. Der Veranstaltungsort sowie die Höhe der ... Datum: 05. Dezember 2026 bis 06. Dezember 2026 Landschaftsobstbauer/-in werden (Mo
+2026-12-05 | 2026-12-05 | ? | Streuobst | 
+
 #> fachwerkstrasse | Adventsmarkt | - | https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html | am 12.12.2026 Öffnungszeiten Adventsmarkt und Kleiner Budenzauber: Montag bis Donnerstag: 15:00 bis 20:00 Uhr Freitag: 15:00 bis 21:00 Uhr Samstag: 11:00 bis 21:00 Uhr Sonntag: 12:0
 2026-12-12 | 2026-12-12 | ? | Adventsmarkt | 
+
+#> heusenstamm | Winterzauber | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | t. Nikolausmarkt : 05.+06.12. Winterzauber in der Alten Linde: 28.+29.12. Änderungen vorbehalten. Sonntag, 11. Oktober 2026 Mittelaltermarkt — Kultur, Sport & Ehrenamt Mittelaltermar
+2026-12-28 | 2026-12-29 | ? | Winterzauber Heusenstamm | 
+
+#> heusenstamm | Winterzauber | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | .de Montag, 28. Dezember 2026 Winterzauber-Markt im Centrum Alte Linde — Kultur, Sport & Ehrenamt Winterzauber-Markt im Centrum Alte Linde Kultur, Sport & Ehrenamt Marktplatz Einkauf
+2026-12-28 | 2026-12-28 | ? | Winterzauber Heusenstamm | 
+
+#> heusenstamm | Winterzauber | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | r Dienstag, 29. Dezember 2026 Winterzauber-Markt im Centrum Alte Linde — Kultur, Sport & Ehrenamt Winterzauber-Markt im Centrum Alte Linde Kultur, Sport & Ehrenamt Marktplatz Einkauf
+2026-12-29 | 2026-12-29 | ? | Winterzauber Heusenstamm | 
+
+#> dreieich | Kunsttage | - | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | 18.30 Uhr Upcoming 2027 - 35. Kunsttage Dreieich Veröffentlicht am: So, 20.09.2026 1. Januar 2027 ab 18.30 Uhr 50 Jahre Dreieich – Zeit, Erinnerung und Identität in Bewegung Video
+2027-01-01 | 2027-01-01 | ? | Kunsttage | 
+
+#> dreieich | Frühjahrsausstellung | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | m 1. Januar 2027 ab 18.30 Uhr Frühjahrsausstellung vom 29.April bis 17. Mai 2027 Kunst in der Burg vom 23. Juni bis 8. August 2027 Herbstausstellung vom 18. November bis 5. Dezember 2027 All
+2027-04-29 | 2027-05-17 | ? | Frühjahrsausstellung | 
+
+#> dreieich | Kunst in der Burg | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | vom 29.April bis 17. Mai 2027 Kunst in der Burg vom 23. Juni bis 8. August 2027 Herbstausstellung vom 18. November bis 5. Dezember 2027 Alle Künstler.innen + Gäste der Kunsttage Dreieich
+2027-06-23 | 2027-08-08 | ? | Kunst in der Burg | 
+
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | chstämmiger Obstbäume und von Streuobstwiesen rund ums Jahr lernen Textanriss überspringen Auch im Jahr 2027 bietet Mirko Franz wieder die Obstbaumpflege-Ausbildung mit dem Schwer
+2027-11-06 | 2027-11-06 | ? | Streuobst | 
+
+#> dreieich | Kunsttage | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | le Künstler.innen + Gäste der Kunsttage Dreieich von 1990-2025 Veröffentlicht am: Mi, 30.04.2025 Alle Künstler.innen und Gäste der Kunsttage Dreieich von 1990 - 2025 sind auf eine
+2027-11-18 | 2027-12-05 | ? | Kunsttage | 
+
+#> dreieich | Herbstausstellung | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | m 23. Juni bis 8. August 2027 Herbstausstellung vom 18. November bis 5. Dezember 2027 Alle Künstler.innen + Gäste der Kunsttage Dreieich von 1990-2025 Veröffentlicht am: Mi, 30.04.2025 Al
+2027-11-18 | 2027-12-05 | ? | Herbstausstellung | 
 
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | mer umfangreiches Wissen über Streuobstgehölze und Obstwiesen. Infos und Anmeldung unter www.lpv-mkk.de Datum: 01. September 2026 bis 31. Dezember 2027 Offenbacher Wochenmarkt Tex
 2027-12-31 | 2027-12-31 | ? | Streuobst | 

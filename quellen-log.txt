@@ -4,6 +4,7 @@ OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK brunnenfest-oberursel-2027 2027-05-21 bis 2027-05-24
 KEIN TREFFER https://www.mainzer-johannisnacht.de/
+OK 1974 Zeichen https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles
 OK 27004 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
 OK 9018 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
 OK 41289 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
@@ -58,4 +59,4 @@ OK 1638 Zeichen https://www.heinerfest.de/
 OK 6732 Zeichen https://www.darmstadt-guide.de/veranstaltungen/
 OK 4342 Zeichen https://www.mainzer-johannisnacht.de/
 OK 5230 Zeichen https://diemainzerwinzer.de/sommerweinfeste/
-VORSCHLAEGE 12 offen, davon 12 neu
+VORSCHLAEGE 27 offen, davon 15 neu
