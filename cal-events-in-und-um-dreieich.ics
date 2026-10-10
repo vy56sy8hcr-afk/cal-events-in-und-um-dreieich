@@ -323,20 +323,6 @@ DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\n\nHayner Kerb (
  1.09.2026\n\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
 END:VEVENT
 BEGIN:VEVENT
-UID:39e94b9b-14db-5776-9592-8c122bfc3325@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20260817
-DTEND;VALUE=DATE:20260818
-SUMMARY:🌓🌓🌓
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
- 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
- 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
- 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
-  je nach Jahr ein Tag Abweichung
-END:VEVENT
-BEGIN:VEVENT
 UID:aff26975-1355-55f9-93a2-03057f5573a8@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260819
@@ -417,6 +403,20 @@ DTEND;VALUE=DATE:20260830
 SUMMARY:🎈Tag der Nationen N-I
 TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:39e94b9b-14db-5776-9592-8c122bfc3325@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:🌓🌓🌓
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
+ 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
+ 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
+ 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
+  je nach Jahr ein Tag Abweichung
 END:VEVENT
 BEGIN:VEVENT
 UID:66c707b5-ff4e-57b5-a96f-bb35cc3b9c86@events-dreieich
@@ -1107,20 +1107,6 @@ TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 END:VEVENT
 BEGIN:VEVENT
-UID:ab5dadf7-9fd5-5e02-aeea-2527d0a297c4@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270817
-DTEND;VALUE=DATE:20270818
-SUMMARY:🌓🌓🌓
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
- 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
- 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
- 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
-  je nach Jahr ein Tag Abweichung
-END:VEVENT
-BEGIN:VEVENT
 UID:949d33df-229b-5fd2-b9b6-5c8d5c807d30@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270818
@@ -1155,6 +1141,20 @@ DTEND;VALUE=DATE:20270830
 SUMMARY:🎈Museumsuferfest Frankfurt
 TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:ab5dadf7-9fd5-5e02-aeea-2527d0a297c4@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:🌓🌓🌓
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+DESCRIPTION:🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 2
+ 3.07.: bürgerliche Dämmerung\, der Himmel ist noch deutlich hell\nBis 1
+ 7.08.: nautische Dämmerung\, der Horizont ist noch zu erkennen\nBis 04.0
+ 9.: astronomische Dämmerung\, danach ist es um 22 Uhr Nacht\nCa. Werte\,
+  je nach Jahr ein Tag Abweichung
 END:VEVENT
 BEGIN:VEVENT
 UID:35fa3aa1-d2db-5422-ab4d-126afb5e19e7@events-dreieich

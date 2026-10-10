@@ -8,7 +8,7 @@ OK 27004 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
 OK 9018 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
 OK 41289 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
 OK 8429 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
-OK 20674 Zeichen https://www.langen.de/de/feste-und-maerkte.html
+FEHLER https://www.langen.de/de/feste-und-maerkte.html: <urlopen error timed out>
 OK 6219 Zeichen https://www.muehlheim.de/veranstaltungskalender
 OK 18172 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
 OK 18172 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
@@ -16,21 +16,21 @@ OK 4827 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
 OK 4860 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
 OK 7474 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
 OK 27616 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
-OK 58458 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
+OK 57833 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
-OK 17801 Zeichen https://www.langen.de/de/pressemitteilungen.html
-OK 15544 Zeichen https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
-OK 14745 Zeichen https://www.langen.de/de/aktuelles-kultur-freizeit.html
+UEBERSPRUNGEN (Server antwortet nicht) https://www.langen.de/de/pressemitteilungen.html
+UEBERSPRUNGEN (Server antwortet nicht) https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
+UEBERSPRUNGEN (Server antwortet nicht) https://www.langen.de/de/aktuelles-kultur-freizeit.html
 OK 29947 Zeichen https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/
 OK 8437 Zeichen https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/
 OK 2824 Zeichen https://www.mainhausen.de/
 OK 6246 Zeichen https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen
 OK 1321 Zeichen https://www.kultur-obertshausen.de/
 OK 3949 Zeichen https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html
-OK 3243 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
+OK 2797 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
 OK 4730 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
 OK 1995 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
-OK 5369 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
+OK 5339 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
 OK 29360 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
 OK 7466 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
 OK 3341 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
@@ -58,3 +58,4 @@ OK 1638 Zeichen https://www.heinerfest.de/
 OK 6732 Zeichen https://www.darmstadt-guide.de/veranstaltungen/
 OK 4342 Zeichen https://www.mainzer-johannisnacht.de/
 OK 5230 Zeichen https://diemainzerwinzer.de/sommerweinfeste/
+VORSCHLAEGE 12 offen, davon 12 neu

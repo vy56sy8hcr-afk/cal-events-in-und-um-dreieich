@@ -1,0 +1,6 @@
+# Ablehnungen: ein Begriff pro Zeile (Gross/Klein egal). Passt der Begriff zu einem Treffer, kommt er nicht in vorschlaege.txt.
+lagerhof
+flohmarkt
+grünberg
+wolfhagen
+melsungen
