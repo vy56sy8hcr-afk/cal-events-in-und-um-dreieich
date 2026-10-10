@@ -20,5 +20,9 @@
 # Beispiel vorläufig, wird mit Quellen abgeglichen:
 # 2027-06-04 | 2027-06-06 | ? | ▼🎈Hooschebaa-Fest |
 
+# Beispiel fest, mehrere Tage, mit Notiz:
+2027-02-04 | 2027-02-04 | ! | ▼❌BeispielEvent | hier kann Text stehen
+
+
 
 
