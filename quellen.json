@@ -36,9 +36,11 @@
   "Laternenfest",
   "Weihnachtsmarkt",
   "Adventsmarkt",
+  "Adventszauber",
   "Afterwork",
   "After-Work",
   "Verkaufsoffener Sonntag",
+  "Verkaufsoffener Feiertag",
   "Festspiele",
   "Open Air",
   "Kunsttage",
@@ -55,7 +57,12 @@
   "Lamboyfest",
   "Apfelwein",
   "Streuobst",
-  "Winterzauber"
+  "Winterzauber",
+  "Jazz in der Burg",
+  "Blues Morning",
+  "Jazz am 1. Mai",
+  "Spezialmarkt",
+  "Kürbisfest"
  ],
  "beobachten": [
   {
