@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Liest taeglich die Quellen aus quellen.json.
-- "datum": korrigiert bekannte Termine -> gefunden.json
-- "beobachten"/"grossstaedte": sucht Stichworte mit Datum und schreibt NEUE Treffer als
-  fertige Zeilen (Format eigene_termine.txt) in vorschlaege.txt. Alte Vorschlaege bleiben stehen.
-  Nicht aufgenommen werden: Termine, die schon im Kalender, in termine.json oder
-  eigene_termine.txt stehen, und alles, was zu einem Begriff aus ablehnungen.txt passt.
+- "datum": liest Termine mit festem Satz -> gefunden.json (Kalender legt sie selbst an oder korrigiert sie)
+- "beobachten"/"grossstaedte":
+  * Advents-/Weihnachts-/Nikolausmaerkte aus Kalenderseiten im Kreis Offenbach -> gefunden.json ("auto"),
+    der Kalender nimmt sie selbst auf (nur bei eindeutigem Datum mit Jahr, nur wenn neu)
+  * alles andere: NEUE Treffer als fertige Zeilen fuer eigene_termine.txt in vorschlaege.txt
+    (alte bleiben stehen; Bekanntes und Begriffe aus ablehnungen.txt kommen nicht hinein)
 Faellt eine Seite aus, passiert nichts: der Kalender bleibt unveraendert.
 Protokoll: quellen-log.txt"""
-import html as htmllib, json, os, re, time, urllib.parse, urllib.request
+import html as htmllib, json, os, re, time, urllib.parse, urllib.request, uuid
 from datetime import date, timedelta
 
 MONATE = {"januar": 1, "februar": 2, "märz": 3, "maerz": 3, "april": 4, "mai": 5, "juni": 6, "juli": 7,
@@ -21,14 +22,20 @@ MUSTER = [
     ("C", re.compile(r"(\d{1,2})\.\s*" + MON + r"(?:\s+(\d{4}))?", re.I)),
     ("E", re.compile(r"(\d{1,2})\.(\d{1,2})\.\s?(\d{4})")),
 ]
-DATUM = re.compile(r"\b\d{1,2}\.\s?(?:\d{1,2}\.|(?:Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember))(?:\s?\d{2,4})?")
 LOG = []
 LAHM = set()   # Server, die nicht antworten: weitere Seiten werden uebersprungen
 RAUSCHEN = re.compile(r"Verkehrsbehinderung|Verkehrsinfo|Straßensperr|Sperrung|Bekanntmachung", re.I)
 AUSGABE = "cal-events-in-und-um-dreieich.ics"
-STADT_NAME = {"neu-isenburg": "N-I", "dreieich": "", "bad-homburg": "Bad Homburg", "fachwerkstrasse": "", "apfelweinroute": ""}
+UID_PREFIX = "events-dreieich-v2|"   # muss zu build_ics.py passen
+STADT_NAME = {"neu-isenburg": "N-I", "dreieich": "", "bad-homburg": "Bad Homburg", "fachwerkstrasse": "",
+              "apfelweinroute": "", "roedermark": "Rödermark", "muehlheim": "Mühlheim"}
 STADT_TOKEN = {"dreieich": ["▼"], "neu-isenburg": ["n-i", "isenburg"], "bad-homburg": ["homburg"],
-               "fachwerkstrasse": [], "apfelweinroute": []}
+               "heusenstamm": ["heusen", "rembr"], "fachwerkstrasse": [], "apfelweinroute": []}
+AUTO_STAEDTE = ["dietzenbach", "neu-isenburg", "rodgau", "dreieich", "langen", "muehlheim", "egelsbach", "heusenstamm",
+                "hainburg", "mainhausen", "obertshausen", "roedermark", "seligenstadt"]
+AUTO_WOERTER = ["Weihnachtsmarkt", "Adventsmarkt", "Nikolausmarkt"]
+AUTO_ARTEN = ["Kalender"]
+OHNE_VORSCHLAEGE = ["fachwerkstrasse", "apfelweinroute", "darmstadt"]
 KOPF = ("# Vorschlaege, Stand {heute}. Neue Treffer werden unten angefuegt, alte bleiben stehen.\n"
         "# Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).\n"
         "# Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.\n\n")
@@ -62,30 +69,51 @@ def als_text(h):
 def monat(name): return MONATE.get(name.lower())
 
 def finde(quelle, text):
-    """Gibt Liste (key, start, ende) zurueck."""
+    """Gibt Liste (key, start, ende, vorlage) zurueck."""
     out = []
     for m in re.finditer(quelle["muster"], text, re.I):
-        g = m.groups()
+        g = m.groups(); typ = quelle["typ"]
         try:
-            if quelle["typ"] == "einzeltag":
+            if typ == "einzeltag":                  # 28. August 2026
                 t, mo, j = int(g[0]), monat(g[1]), int(g[2]); s = e = date(j, mo, t)
-            elif quelle["typ"] == "zeitraum":      # 28. - 30. August 2026
+            elif typ == "zeitraum":                 # 28. - 30. August 2026
                 t1, t2, mo, j = int(g[0]), int(g[1]), monat(g[2]), int(g[3])
                 s, e = date(j, mo, t1), date(j, mo, t2)
-            elif quelle["typ"] == "zeitraum_num":   # 27.08. bis 30.08.2027
+            elif typ == "zeitraum_num":             # 27.08. bis 30.08.2027
                 d1, m1, d2, m2, j = (int(x) for x in g[:5])
                 s, e = date(j, m1, d1), date(j, m2, d2)
+            elif typ == "zeitraum_mon":             # 29. April bis 17. Mai 2027
+                t1, m1, t2, m2, j = int(g[0]), monat(g[1]), int(g[2]), monat(g[3]), int(g[4])
+                s, e = date(j, m1, t1), date(j, m2, t2)
+            elif typ == "zeitraum_voll":            # 28.11.2026 - 29.11.2026
+                d1, m1, y1, d2, m2, y2 = (int(x) for x in g[:6])
+                s, e = date(y1, m1, d1), date(y2, m2, d2)
+            elif typ == "tage_num":                 # 12. und 13.12.2026  /  02. - 06.07.2026
+                d1, d2, mo, j = (int(x) for x in g[:4])
+                s, e = date(j, mo, d1), date(j, mo, d2)
             else:
                 continue
         except (TypeError, ValueError):
             continue
         heute = date.today()
         if not (heute - timedelta(400) <= s <= heute + timedelta(700)) or e < s: continue
-        out.append((quelle["key"].format(jahr=s.year), s, e))
+        out.append((quelle["key"].format(jahr=s.year, datum=s.isoformat()), s, e, quelle.get("vorlage")))
     return out
 
-def datum_treffer(txt, heute):
-    """Alle Datumsangaben im Text: Liste (pos_von, pos_bis, start, ende)."""
+def sauber(text, a, b):
+    """Ausschnitt text[a:b] ohne abgeschnittene Woerter am Rand."""
+    a = max(0, a); b = min(len(text), b)
+    if a > 0 and not text[a - 1].isspace():
+        k = text.find(" ", a)
+        if 0 <= k < b: a = k + 1
+    if b < len(text) and not text[b].isspace():
+        k = text.rfind(" ", a, b)
+        if k > a: b = k
+    return text[a:b].strip()
+
+def datum_treffer(txt, heute, streng=False):
+    """Alle Datumsangaben im Text: Liste (pos_von, pos_bis, start, ende).
+    streng: nur mit ausdruecklicher Jahreszahl (Zahlendatum nur mit Uhrzeit dahinter)."""
     wj = re.search(r"\b(20\d\d)\b", txt)
     wj = int(wj.group(1)) if wj else None
     belegt, out = [], []
@@ -94,6 +122,8 @@ def datum_treffer(txt, heute):
             a, b = m.span()
             if any(a < y and x < b for x, y in belegt): continue
             g = m.groups()
+            jahr_da = g[{"A": 3, "B": 4, "D": 4, "C": 2, "E": 2}[art]]
+            if streng and not jahr_da: continue
             try:
                 if art == "A":
                     y = int(g[3]) if g[3] else (wj or heute.year); mo = monat(g[2])
@@ -110,6 +140,7 @@ def datum_treffer(txt, heute):
                 else:
                     vor = txt[max(0, a - 12):a].lower(); nach = txt[b:b + 8].strip().lower()
                     if "datum" in vor or nach.startswith("mehr"): continue   # Veroeffentlichungsdatum
+                    if streng and not re.match(r"\s*\d{1,2}:\d{2}", txt[b:b + 8]): continue
                     s = e = date(int(g[2]), int(g[1]), int(g[0]))
             except (TypeError, ValueError):
                 continue
@@ -117,16 +148,40 @@ def datum_treffer(txt, heute):
             belegt.append((a, b)); out.append((a, b, s, e))
     return out
 
+def kandidaten(text, woerter, heute, streng=False, maxdist=130):
+    """Liefert (wort, start, ende, ausschnitt, fenster), je Wort hoechstens 3 Treffer."""
+    out = []
+    for wort in woerter:
+        n = 0
+        for m in re.finditer(re.escape(wort), text, re.I):
+            a0 = max(0, m.start() - 90); fenster = text[a0: m.end() + 220]
+            if RAUSCHEN.search(fenster): continue
+            ks, ke = m.start() - a0, m.end() - a0
+            best = None
+            for a, b, s, e in datum_treffer(fenster, heute, streng):
+                dist = max(0, a - ke) if a >= ke else max(0, ks - b) + 30
+                if dist <= maxdist and (best is None or dist < best[0]): best = (dist, s, e)
+            if not best: continue
+            _, s, e = best
+            if s < heute or s > heute + timedelta(520): continue
+            out.append((wort, s, e, sauber(fenster, ks - 30, ke + 140).replace("|", "/"), fenster))
+            n += 1
+            if n >= 3: break
+    return out
+
 def d8(x): return date(int(x[:4]), int(x[4:6]), int(x[6:8]))
 
-def bekannt_laden():
-    """Liste (start, ende, titel_klein) aus Kalenderdatei, termine.json und eigene_termine.txt."""
+def uid_von(key): return f"{uuid.uuid5(uuid.NAMESPACE_URL, UID_PREFIX + key)}@events-dreieich"
+
+def bekannt_laden(ohne_uids=()):
+    """Liste (start, ende, titel_klein) aus Kalenderdatei (ohne die genannten UIDs), termine.json und eigene_termine.txt."""
     liste = []
     if os.path.exists(AUSGABE):
         txt = open(AUSGABE, encoding="utf-8").read().replace("\r\n ", "").replace("\n ", "")
         for blk in txt.split("BEGIN:VEVENT")[1:]:
             t = re.search(r"SUMMARY:(.*)", blk); s = re.search(r"DTSTART;VALUE=DATE:(\d{8})", blk)
-            e = re.search(r"DTEND;VALUE=DATE:(\d{8})", blk)
+            e = re.search(r"DTEND;VALUE=DATE:(\d{8})", blk); u = re.search(r"UID:(\S+)", blk)
+            if u and u.group(1).strip() in ohne_uids: continue
             if t and s and e: liste.append((d8(s.group(1)), d8(e.group(1)) - timedelta(1), t.group(1).strip().lower()))
     if os.path.exists("termine.json"):
         try:
@@ -173,69 +228,29 @@ def vorschlaege_laden(heute, bekannt, abl, pfad="vorschlaege.txt"):
         komm = None
     return out
 
+def alt_laden(pfad="gefunden.json"):
+    try:
+        d = json.load(open(pfad, encoding="utf-8"))
+        return list(d.get("gefunden", [])), list(d.get("auto", []))
+    except Exception:
+        return [], []
+
+def behalten(alt, neu, heute):
+    """Alte Eintraege, die schon vorbei sind (bis 190 Tage), bleiben; zukuenftige gelten nur, wenn neu wieder gefunden."""
+    keys = {x["key"] for x in neu}
+    out = []
+    for x in alt:
+        try: e = date.fromisoformat(x["ende"])
+        except (KeyError, ValueError): continue
+        if x.get("key") not in keys and heute - timedelta(190) <= e < heute: out.append(x)
+    return out
+
 def main():
     heute = date.today()
     q = json.load(open("quellen.json", encoding="utf-8"))
+    alt_gef, alt_auto = alt_laden()
+
+    # 1) "datum": feste Saetze
     gefunden = {}
     for quelle in q.get("datum", []):
-        try:
-            text = als_text(hole(quelle["url"]))
-            treffer = finde(quelle, text)
-            if not treffer: log(f"KEIN TREFFER {quelle['url']}")
-            for key, s, e in treffer:
-                gefunden[key] = {"key": key, "start": s.isoformat(), "ende": e.isoformat()}
-                log(f"OK {key} {s} bis {e}")
-        except Exception as ex:
-            log(f"FEHLER {quelle['url']}: {ex}")
-    json.dump({"gefunden": list(gefunden.values())}, open("gefunden.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-
-    bekannt = bekannt_laden(); abl = ablehnungen_laden()
-    bestand = vorschlaege_laden(heute, bekannt, abl)
-    neu = 0
-    for quelle in q.get("beobachten", []) + q.get("grossstaedte", []):
-        url = quelle["url"]; stadt = quelle.get("stadt", "")
-        host = urllib.parse.urlparse(url).netloc
-        if host in LAHM:
-            log(f"UEBERSPRUNGEN (Server antwortet nicht) {url}"); continue
-        try:
-            text = als_text(hole(url))
-            if len(text) < 800: log(f"WENIG TEXT (vermutlich nur JavaScript) {url}")
-            else: log(f"OK {len(text)} Zeichen {url}")
-            for wort in q.get("stichworte", []):
-                n = 0
-                for m in re.finditer(re.escape(wort), text, re.I):
-                    a0 = max(0, m.start() - 90); fenster = text[a0: m.end() + 220]
-                    if RAUSCHEN.search(fenster): continue
-                    ks, ke = m.start() - a0, m.end() - a0
-                    best = None
-                    for a, b, s, e in datum_treffer(fenster, heute):
-                        if s < heute or s > heute + timedelta(520): continue
-                        dist = max(0, a - ke) if a >= ke else max(0, ks - b) + 30
-                        if dist <= 130 and (best is None or dist < best[0]): best = (dist, s, e)
-                    if not best: continue
-                    _, s, e = best
-                    titel = f"{wort} {STADT_NAME.get(stadt, stadt.capitalize())}".strip()
-                    key = (s, e, titel.lower())
-                    if key in bestand or ist_bekannt(s, e, wort, stadt, bekannt): continue
-                    if any(x in (titel + " " + fenster).lower() for x in abl): continue
-                    hinweis = "ueber 7 Tage: Pfeil-Termine in termine.json" if (e - s).days >= 7 else "-"
-                    ausschnitt = fenster[max(0, ks - 30): ke + 140].strip().replace("|", "/")
-                    bestand[key] = (f"#> {stadt} | {wort} | {hinweis} | {url} | {ausschnitt}", f"{s} | {e} | ? | {titel} | ", s)
-                    neu += 1; n += 1
-                    if n >= 3: break
-        except Exception as ex:
-            log(f"FEHLER {url}: {ex}")
-            if "timed out" in str(ex): LAHM.add(host)
-    eintraege = sorted(bestand.values(), key=lambda x: x[2])[:250]
-    with open("vorschlaege.txt", "w", encoding="utf-8") as f:
-        f.write(KOPF.format(heute=heute))
-        for komm, zeile, _ in eintraege: f.write(komm + "\n" + zeile + "\n\n")
-    log(f"VORSCHLAEGE {len(eintraege)} offen, davon {neu} neu")
-    with open("quellen-log.txt", "w", encoding="utf-8") as f:
-        f.write(f"# Lauf vom {heute}\n" + "\n".join(LOG) + "\n")
-
-if __name__ == "__main__":
-    try:
-        main()
-    except Exception as ex:      # nie den Kalender gefaehrden
-        print("Quellen-Abfrage abgebrochen:", ex)
+        try
