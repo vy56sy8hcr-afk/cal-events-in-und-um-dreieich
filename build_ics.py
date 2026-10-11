@@ -88,6 +88,17 @@ def pfeil(key, emoji, name, s, e, notiz="", wort=False, pre="▼ "):
     ITEMS[key + "#anfang"] = dict(start=s, ende=s + timedelta(n), titel=t1, notiz=notiz)
     ITEMS[key + "#ende"] = dict(start=e - timedelta(n), ende=e, titel=t2, notiz=notiz)
 
+# Pfeil-Termine, die sich aus gefunden.json selbst anlegen (auch fuer neue Jahre).
+# key-Praefix: (Emoji, Name mit {n}, Zaehlung n0 im Jahr j0, Jahr j0, mit Woertern, Praefix, Notiz)
+VORLAGEN = {
+    "kunsttage-fruehjahr": ("🎨", "{n}. Kunsttage Dreieich", 35, 2027, False, "▼ ", "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"),
+    "kunsttage-burg": ("🎨", "{n}. Kunsttage Dreieich Kunst in der Burg", 35, 2027, False, "▼ ", "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"),
+    "kunsttage-herbst": ("🎨", "{n}. Kunsttage Dreieich", 35, 2027, False, "▼ ", "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"),
+    "musiktage": ("🎼", "{n}. Dreieicher Musiktage", 25, 2027, False, "▼ ", "{n}. Dreieicher Musiktage\nVeranstalter: Bürgerhäuser Dreieich"),
+    "burgfestspiele": ("🌀", "Burgfestspiele Dreieichenhain", 0, 0, True, "▼ ", "Burgfestspiele Dreieichenhain\n{s:%d.%m.%Y} – {e:%d.%m.%Y}"),
+    "festspiele-hanau": ("🎭", "Brüder Grimm Festspiele Hanau", 43, 2027, True, "", "Brüder Grimm Festspiele Hanau\n{n}. Spielzeit, {s:%d.%m.%Y} – {e:%d.%m.%Y}"),
+}
+
 def regeln(y):
     ostern = easter(y)
     pfingsten = ostern + timedelta(49)
