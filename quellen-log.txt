@@ -1,4 +1,4 @@
-# Lauf vom 2026-10-10
+# Lauf vom 2026-10-11
 OK langener-markt-2026 2026-09-06 bis 2026-09-06
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
@@ -15,7 +15,7 @@ OK 18172 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemit
 OK 18172 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
 OK 4827 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
 OK 4860 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
-OK 7474 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
+OK 7372 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
 OK 27616 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
 OK 57833 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
@@ -32,7 +32,7 @@ OK 2797 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.htm
 OK 4730 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
 OK 1995 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
 OK 5339 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
-OK 29360 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
+OK 29421 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
 OK 7466 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
 OK 3341 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
 FEHLER https://www.mainhausen.de/events: HTTP Error 404: Not Found
@@ -47,7 +47,7 @@ OK 9702 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-un
 OK 4594 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Zwischen-Main-Taunus/Aktionskalender/Veranstaltungen-M%C3%A4rkte/
 OK 6917 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 6088 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Wetterau/Aktionskalender/Veranstaltungen-M%C3%A4rkte/
-OK 18032 Zeichen https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/
+OK 18282 Zeichen https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/
 OK 13549 Zeichen https://www.kreis-offenbach.de/Freizeit/Entdecken/Touren-Routen/Hessische-Apfelwein-und-Obstwiesenroute/Termine-rund-um-die-Route/
 FEHLER https://frankfurt.de/frankfurt-entdecken-und-erleben/stadtportrait/frankfurter-feste: HTTP Error 403: Forbidden
 OK 8945 Zeichen https://www.visitfrankfurt.travel/erleben/feste-und-veranstaltungen/museumsuferfest
@@ -59,4 +59,4 @@ OK 1638 Zeichen https://www.heinerfest.de/
 OK 6732 Zeichen https://www.darmstadt-guide.de/veranstaltungen/
 OK 4342 Zeichen https://www.mainzer-johannisnacht.de/
 OK 5230 Zeichen https://diemainzerwinzer.de/sommerweinfeste/
-VORSCHLAEGE 28 offen, davon 0 neu
+VORSCHLAEGE 28 offen, davon 3 neu

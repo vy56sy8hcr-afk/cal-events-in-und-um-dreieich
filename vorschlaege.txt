@@ -1,15 +1,6 @@
-# Vorschlaege, Stand 2026-10-10. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-10-11. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
-
-#> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 15.08. Weinfest : 19.- 24.08. Kerb Rembrücken : 12.-14.09. Kerb Heusenstamm : 18.-20.09. Fest der Kinderrechte: 27.09. Mittelaltermarkt: 10.+11.10. Adventsmarkt Rembrücken: 2
-2026-10-10 | 2026-10-11 | ? | Kerb Heusenstamm | 
-
-#> heusenstamm | Weinfest | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 01.08. Weißes Dinner : 15.08. Weinfest : 19.- 24.08. Kerb Rembrücken : 12.-14.09. Kerb Heusenstamm : 18.-20.09. Fest der Kinderrechte: 27.09. Mittelaltermarkt: 10.+11.10. Advents
-2026-10-10 | 2026-10-11 | ? | Weinfest Heusenstamm | 
-
-#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | ppte Museum in Hanau ein, die Streuobstwiesenkultur und Apfelgeschichte(n) kennenzulernen. ... Datum: 10. Oktober 2026 Uhrzeit: 14:00 Uhr Apfelmarkt Niederhöchstadt Textanriss übe
-2026-10-10 | 2026-10-10 | ? | Streuobst | 
 
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | Der OGV bietet Äpfel von den Streuobstwiesen, Birnen, Quitten sowie hausgemachte Gelees und Honig an. Datum: 11. Oktober 2026 Uhrzeit: 11:00 bis 17:00 Uhr Reiskirchener Kelterfes
 2026-10-11 | 2026-10-11 | ? | Streuobst | 
@@ -44,6 +35,12 @@
 #> fachwerkstrasse | Winterzauber | - | https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html | eitere Highlights im Zuge des Winterzaubers und weitere Informationen unter dillenburg.live Frankfurt am Main (Stadtteil Höchst) 28.11.2026 - 29.11.2026 Beginn: 13:00 Uhr Ende: 19:00
 2026-11-28 | 2026-11-28 | ? | Winterzauber | 
 
+#> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | Kerb Rembrücken : 12.-14.09. Kerb Heusenstamm : 18.-20.09. Fest der Kinderrechte: 27.09. Mittelaltermarkt: 10.+11.10. Adventsmarkt Rembrücken: 28.+29.11. St. Nikolausmarkt :
+2026-11-28 | 2026-11-29 | ? | Kerb Heusenstamm | 
+
+#> heusenstamm | Mittelaltermarkt | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | Fest der Kinderrechte: 27.09. Mittelaltermarkt: 10.+11.10. Adventsmarkt Rembrücken: 28.+29.11. St. Nikolausmarkt : 05.+06.12. Winterzauber in der Alten Linde: 28.+29.12. Änderungen vorbe
+2026-11-28 | 2026-11-29 | ? | Mittelaltermarkt Heusenstamm | 
+
 #> heusenstamm | Adventsmarkt | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | r. Sonntag, 29. November 2026 Adventsmarkt Rembrücken — Kultur, Sport & Ehrenamt Adventsmarkt Rembrücken Kultur, Sport & Ehrenamt Platz vor der Alten Schule, Hauptstraße 23 29.11.202
 2026-11-29 | 2026-11-29 | ? | Adventsmarkt Heusenstamm | 
 
@@ -76,6 +73,9 @@
 
 #> dreieich | Frühjahrsausstellung | ueber 7 Tage: Pfeil-Termine in termine.json | https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles | m 1. Januar 2027 ab 18.30 Uhr Frühjahrsausstellung vom 29.April bis 17. Mai 2027 Kunst in der Burg vom 23. Juni bis 8. August 2027 Herbstausstellung vom 18. November bis 5. Dezember 2027 All
 2027-04-29 | 2027-05-17 | ? | Frühjahrsausstellung | 
+
+#> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | 17:00 Uhr Seminar Lebensraum Streuobstwiese Textanriss überspringen Modul 5 der Obstbaumpflege-Ausbildung Baumwart Streuobst 2027 der Wetterauer Obstbaumschnittschule Mirko Franz
+2027-05-15 | 2027-05-15 | ? | Streuobst | 
 
 #> apfelweinroute | Streuobst | - | https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/ | chstämmiger Obstbäume und von Streuobstwiesen rund ums Jahr lernen Textanriss überspringen Auch im Jahr 2027 bietet Mirko Franz wieder die Obstbaumpflege-Ausbildung mit dem Schwer
 2027-11-06 | 2027-11-06 | ? | Streuobst | 
