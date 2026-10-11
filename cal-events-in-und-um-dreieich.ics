@@ -725,6 +725,18 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  ag von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
 END:VEVENT
 BEGIN:VEVENT
+UID:3d43f414-41c0-5ef0-ab2c-4185bd1815c3@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261214
+SUMMARY:🎅🏼Main Kurisumasu Offenbach
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+DESCRIPTION:Der japanische Weihnachtsmarkt im Büsing Palais Offenbach\nHe
+ rrnstraße 82\, 63065 Offenbach\nVeranstalter: Japanisches Kultur und Spr
+ achzentrum e. V.\nwww.main-kurisumasu.de
+END:VEVENT
+BEGIN:VEVENT
 UID:72872dea-24be-5f9d-89cc-cb57f7eb3dab@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261219
@@ -1500,6 +1512,18 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
   und am Alten Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw.
   wenn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamst
  ag von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
+END:VEVENT
+BEGIN:VEVENT
+UID:69c70e17-aba5-5cfa-9406-6c916e70f8bb@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271211
+DTEND;VALUE=DATE:20271213
+SUMMARY:🎅🏼Main Kurisumasu Offenbach
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+DESCRIPTION:Der japanische Weihnachtsmarkt im Büsing Palais Offenbach\nHe
+ rrnstraße 82\, 63065 Offenbach\nVeranstalter: Japanisches Kultur und Spr
+ achzentrum e. V.\nwww.main-kurisumasu.de
 END:VEVENT
 BEGIN:VEVENT
 UID:5447c894-63c7-5aca-8903-b5b8d5f23844@events-dreieich
