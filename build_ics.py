@@ -276,7 +276,8 @@ def lade_eigene(pfad="eigene_termine.txt"):
 
 def lade_gefunden(pfad="gefunden.json"):
     """Von pruefe_quellen.py gefundene Termine: ueberschreiben nur das Datum von
-    berechneten oder vorlaeufigen Terminen, nie von bestaetigten (termine.json)."""
+    berechneten oder vorlaeufigen Terminen, nie von bestaetigten (termine.json).
+    Pfeil-Termine aus VORLAGEN werden bei Bedarf neu angelegt."""
     if not os.path.exists(pfad): return
     try:
         daten = json.load(open(pfad, encoding="utf-8"))
@@ -284,13 +285,24 @@ def lade_gefunden(pfad="gefunden.json"):
         print("gefunden.json nicht lesbar - ignoriert"); return
     for g in daten.get("gefunden", []):
         key = g.get("key")
-        if key in FEST or key not in ITEMS: continue
+        if key in FEST: continue
         try:
             s_, e_ = D.fromisoformat(g["start"]), D.fromisoformat(g.get("ende", g["start"]))
         except (KeyError, ValueError):
             continue
-        ITEMS[key]["start"], ITEMS[key]["ende"] = s_, e_
-        print("Quelle:", key, s_, e_)
+        if key in ITEMS:
+            ITEMS[key]["start"], ITEMS[key]["ende"] = s_, e_
+            print("Quelle:", key, s_, e_)
+            continue
+        basis, _, jahr = (key or "").rpartition("-")
+        v = VORLAGEN.get(basis)
+        if not v or not jahr.isdigit(): continue
+        if not (1 <= (e_ - s_).days <= 200) or not (heute() - timedelta(60) <= s_ <= heute() + timedelta(550)): continue
+        emoji, name, n0, j0, wort, pre, notiz = v
+        n = n0 + int(jahr) - j0
+        for k in [k for k in ITEMS if k.startswith(key + "#")]: del ITEMS[k]
+        pfeil(key, emoji, name.format(n=n), s_, e_, notiz.format(n=n, s=s_, e=e_), wort=wort, pre=pre)
+        print("Quelle (Pfeil):", key, s_, e_)
 
 def esc(s): return s.replace("\\", "\\\\").replace("\n", "\\n").replace(",", "\\,").replace(";", "\\;")
 
