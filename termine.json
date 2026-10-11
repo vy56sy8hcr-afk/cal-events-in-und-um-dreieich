@@ -2,6 +2,15 @@
  "_hinweis": "Bestaetigte Termine. Ein Eintrag mit gleichem 'key' wie ein Rhythmus-Termin (z. B. burgfestspiele-2026) ersetzt diesen. 'skip': true entfernt einen Termin. Typ: einzel | pfeil | pfeil_wort. Datum: JJJJ-MM-TT. 'vorlaeufig': true = darf von der Quellen-Abfrage ueberschrieben werden.",
  "termine": [
   {
+   "key": "musiktage-2027",
+   "typ": "pfeil",
+   "emoji": "🎼",
+   "name": "25. Dreieicher Musiktage",
+   "start": "2027-04-11",
+   "ende": "2027-05-02",
+   "notiz": "25. Dreieicher Musiktage\nVeranstalter: Bürgerhäuser Dreieich"
+  },
+  {
  "key": "kunsttage-fruehjahr-2027",
  "typ": "pfeil",
  "emoji": "🎨",
