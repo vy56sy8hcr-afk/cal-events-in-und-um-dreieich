@@ -204,6 +204,7 @@ def regeln(y):
     einzel(f"faschingsumzug-sprendlingen-{y}", "▼ Faschingsumzug Sprendlingen", rosenmontag + timedelta(1), notiz="Beginn 15.11 Uhr")
     dn = "🌓 Um 22 Uhr (Sommerzeit) noch Dämmerung in Dreieich\nBis 23.07.: bürgerliche Dämmerung, der Himmel ist noch deutlich hell\nBis 17.08.: nautische Dämmerung, der Horizont ist noch zu erkennen\nBis 04.09.: astronomische Dämmerung, danach ist es um 22 Uhr Nacht\nCa. Werte, je nach Jahr ein Tag Abweichung"
     einzel(f"daemmerung-22-nautisch-{y}", "🌓🌓🌓", D(y, 9, 1), notiz=dn)
+    einzel(f"jazz-am-1-mai-{y}", "▼ 🎵Jazz am 1. Mai", D(y, 5, 1), notiz="Konzert im Bürgerhaus Dreieich")
 
 FEST = set()   # Schluessel aus termine.json ohne "vorlaeufig"
 
