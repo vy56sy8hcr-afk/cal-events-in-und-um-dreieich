@@ -3,17 +3,118 @@
   {
    "key": "langener-markt-2026",
    "start": "2026-09-06",
-   "ende": "2026-09-06"
+   "ende": "2026-09-06",
+   "url": "https://www.gewerbeverein-langen.de/verkaufsoffener-sonntag/"
   },
   {
    "key": "laternenfest-bad-homburg-2027",
    "start": "2027-08-27",
-   "ende": "2027-08-30"
+   "ende": "2027-08-30",
+   "url": "https://laternenfest.de/"
   },
   {
    "key": "brunnenfest-oberursel-2027",
    "start": "2027-05-21",
-   "ende": "2027-05-24"
+   "ende": "2027-05-24",
+   "url": "https://www.vereinsring-oberursel.de/brunnenfest/"
+  },
+  {
+   "key": "kunsttage-fruehjahr-2027",
+   "start": "2027-04-29",
+   "ende": "2027-05-17",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "vorlage": "kunsttage-fruehjahr"
+  },
+  {
+   "key": "kunsttage-burg-2027",
+   "start": "2027-06-23",
+   "ende": "2027-08-08",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "vorlage": "kunsttage-burg"
+  },
+  {
+   "key": "kunsttage-herbst-2027",
+   "start": "2027-11-18",
+   "ende": "2027-12-05",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "vorlage": "kunsttage-herbst"
+  },
+  {
+   "key": "burgfestspiele-2027",
+   "start": "2027-06-23",
+   "ende": "2027-08-08",
+   "url": "https://www.buergerhaeuser-dreieich.de/burgfestspiele",
+   "vorlage": "burgfestspiele"
+  },
+  {
+   "key": "festspiele-hanau-2027",
+   "start": "2027-05-07",
+   "ende": "2027-07-31",
+   "url": "https://festspiele.hanau.de/",
+   "vorlage": "festspiele-hanau"
+  },
+  {
+   "key": "weihnachtsmarkt-darmstadt-2026",
+   "start": "2026-11-16",
+   "ende": "2026-12-23",
+   "url": "https://www.darmstadt-guide.de/veranstaltungen/",
+   "vorlage": "weihnachtsmarkt-darmstadt"
+  },
+  {
+   "key": "heinerfest-2026",
+   "start": "2026-07-02",
+   "ende": "2026-07-06",
+   "url": "https://www.darmstadt-guide.de/veranstaltungen/"
+  },
+  {
+   "key": "schlossgrabenfest-2026",
+   "start": "2026-05-21",
+   "ende": "2026-05-24",
+   "url": "https://www.darmstadt-guide.de/veranstaltungen/"
+  },
+  {
+   "key": "weihnachtsmarkt-hoechst-2026",
+   "start": "2026-11-28",
+   "ende": "2026-11-29",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html",
+   "vorlage": "weihnachtsmarkt-hoechst"
+  },
+  {
+   "key": "adventsmarkt-seligenstadt-2026",
+   "start": "2026-11-28",
+   "ende": "2026-12-20",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html",
+   "vorlage": "adventsmarkt-seligenstadt"
+  },
+  {
+   "key": "main-kurisumasu-2026",
+   "start": "2026-12-12",
+   "ende": "2026-12-13",
+   "url": "https://main-kurisumasu.de/"
+  },
+  {
+   "key": "tauschboerse-2026-10-17",
+   "start": "2026-10-17",
+   "ende": "2026-10-17",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/",
+   "vorlage": "tauschboerse"
+  },
+  {
+   "key": "gluehaepplerfest-2026-12-18",
+   "start": "2026-12-18",
+   "ende": "2026-12-18",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/",
+   "vorlage": "gluehaepplerfest"
+  }
+ ],
+ "auto": [
+  {
+   "key": "auto|heusenstamm|nikolausmarkt|2026-10-12",
+   "start": "2026-10-12",
+   "ende": "2026-10-12",
+   "titel": "Nikolausmarkt Heusenstamm",
+   "stadt": "heusenstamm",
+   "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender"
   }
  ]
 }
