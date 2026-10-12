@@ -2,12 +2,6 @@
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
-#> dreieich | Festspiele | - | https://www.buergerhaeuser-dreieich.de/programm | NN Theater Köln bei den Burgfestspielen Dreieichenhain 2027. Infos & Tickets Ort: Burg Hayn Veranstalter: Bürgerhäuser Dreieich Sa, 07.11.2026, 19:00 Uhr Kabarett & Comedy 3 Oak
-2026-11-07 | 2026-11-07 | ? | Festspiele | 
-
-#> dreieich | Burgfest | - | https://www.buergerhaeuser-dreieich.de/programm | vom NN Theater Köln bei den Burgfestspielen Dreieichenhain 2027. Infos & Tickets Ort: Burg Hayn Veranstalter: Bürgerhäuser Dreieich Sa, 07.11.2026, 19:00 Uhr Kabarett & Comedy
-2026-11-07 | 2026-11-07 | ? | Burgfest | 
-
 #> heusenstamm | Winterzauber | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | Nikolausmarkt : 05.+06.12. Winterzauber in der Alten Linde: 28.+29.12. Änderungen vorbehalten. Montag, 12. Oktober 2026 Mobiles Bürgerbüro — Bürgerbüro Mobiles Bürgerbüro
 2026-12-28 | 2026-12-29 | ? | Winterzauber Heusenstamm | 
 
