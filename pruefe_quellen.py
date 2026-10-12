@@ -33,7 +33,7 @@ STADT_TOKEN = {"dreieich": ["▼"], "neu-isenburg": ["n-i", "isenburg"], "bad-ho
                "heusenstamm": ["heusen", "rembr"], "fachwerkstrasse": [], "apfelweinroute": []}
 AUTO_STAEDTE = ["dietzenbach", "neu-isenburg", "rodgau", "dreieich", "langen", "muehlheim", "egelsbach", "heusenstamm",
                 "hainburg", "mainhausen", "obertshausen", "roedermark", "seligenstadt"]
-AUTO_WOERTER = ["Weihnachtsmarkt", "Adventsmarkt", "Nikolausmarkt"]
+AUTO_WOERTER = ["Weihnachtsmarkt", "Adventsmarkt", "Nikolausmarkt", "Winterzauber"]
 AUTO_ARTEN = ["Kalender"]
 OHNE_VORSCHLAEGE = ["fachwerkstrasse", "apfelweinroute", "darmstadt"]
 KOPF = ("# Vorschlaege, Stand {heute}. Neue Treffer werden unten angefuegt, alte bleiben stehen.\n"
