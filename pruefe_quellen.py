@@ -300,7 +300,8 @@ def main():
                     if key in auto_neu or ist_bekannt(s, e, wort, stadt, bekannt): continue
                     if any(x in (titel + " " + fenster).lower() for x in abl): continue
                     auto_neu[key] = {"key": key, "start": s.isoformat(), "ende": e.isoformat(),
-                                     "titel": titel, "stadt": stadt, "url": url}
+                                     "name": titel, "pre": "▼ " if stadt == "dreieich" else "",
+                                     "stadt": stadt, "url": url}
                     auto_spans.add((wort.lower(), s))
                     log(f"AUTO {titel} {s} bis {e}")
             if stadt in OHNE_VORSCHLAEGE: continue
