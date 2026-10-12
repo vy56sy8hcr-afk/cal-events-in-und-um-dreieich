@@ -23,5 +23,5 @@
 # Beispiel fest, mehrere Tage, mit Notiz:
 2027-01-03 | 2027-01-03 | ! | ▼❌BeispielEvent | hier kann Text stehen
 
-2026-12-28 | 2026-12-29 | ! | 🎅🏼Winterzauber Heusenstamm |  16-21 Uhr Marktplatz Einkaufszentrum Alte Linde, Leibnizstraße
+# 2026-12-28 | 2026-12-29 | ! | 🎅🏼Winterzauber Heusenstamm |  16-21 Uhr Marktplatz Einkaufszentrum Alte Linde, Leibnizstraße
 
