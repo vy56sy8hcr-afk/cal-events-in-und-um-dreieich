@@ -246,6 +246,18 @@ def behalten(alt, neu, heute):
         if x.get("key") not in keys and heute - timedelta(190) <= e < heute: out.append(x)
     return out
 
+AUTO_OHNE_JAHR = ["Winterzauber"]   # Datum auch ohne Jahr, wenn es zwischen 24. und 31.12. liegt
+
+def auto_kandidaten(text, heute):
+    out = kandidaten(text, AUTO_WOERTER, heute, streng=True)
+    for k in kandidaten(text, AUTO_OHNE_JAHR, heute):
+        s, e = k[1], k[2]
+        if s.month == 12 and 24 <= s.day <= 31 and e.month == 12 and s <= e and e.day <= 31:
+            gleich = [x for x in out if x[0] == k[0] and x[1] == s]
+            if gleich and max(x[2] for x in gleich) >= e: continue   # laengerer Zeitraum gewinnt
+            out = [x for x in out if x not in gleich] + [k]
+    return out
+
 def noch_gueltig(x, heute):
     try: return date.fromisoformat(x["ende"]) >= heute
     except (KeyError, ValueError): return False
@@ -294,7 +306,7 @@ def main():
             name = STADT_NAME.get(stadt, stadt.capitalize())
             auto_spans = set()
             if stadt in AUTO_STAEDTE and quelle.get("art") in AUTO_ARTEN:
-                for wort, s, e, ausschnitt, fenster in kandidaten(text, AUTO_WOERTER, heute, streng=True):
+                for wort, s, e, ausschnitt, fenster in auto_kandidaten(text, heute):
                     titel = f"{wort} {name}".strip()
                     key = f"auto|{stadt}|{wort.lower()}|{s.isoformat()}"
                     if key in auto_neu or ist_bekannt(s, e, wort, stadt, bekannt): continue
