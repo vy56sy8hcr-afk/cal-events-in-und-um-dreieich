@@ -7,8 +7,8 @@
   * alles andere: NEUE Treffer als fertige Zeilen fuer eigene_termine.txt in vorschlaege.txt
     (alte bleiben stehen; Bekanntes und Begriffe aus ablehnungen.txt kommen nicht hinein)
 Faellt eine Seite aus, passiert nichts: der Kalender bleibt unveraendert.
-Protokoll: quellen-log.txt"""
-import html as htmllib, json, os, re, time, urllib.parse, urllib.request, uuid
+Protokoll: quellen-log.txt (bei Abbruch steht dort ABGEBROCHEN mit der Fehlermeldung)"""
+import html as htmllib, json, os, re, time, traceback, urllib.parse, urllib.request, uuid
 from datetime import date, timedelta
 
 MONATE = {"januar": 1, "februar": 2, "märz": 3, "maerz": 3, "april": 4, "mai": 5, "juni": 6, "juli": 7,
@@ -245,12 +245,100 @@ def behalten(alt, neu, heute):
         if x.get("key") not in keys and heute - timedelta(190) <= e < heute: out.append(x)
     return out
 
+def noch_gueltig(x, heute):
+    try: return date.fromisoformat(x["ende"]) >= heute
+    except (KeyError, ValueError): return False
+
 def main():
     heute = date.today()
     q = json.load(open("quellen.json", encoding="utf-8"))
     alt_gef, alt_auto = alt_laden()
 
     # 1) "datum": feste Saetze
-    gefunden = {}
+    gefunden, datum_fehler = {}, False
     for quelle in q.get("datum", []):
-        try
+        try:
+            text = als_text(hole(quelle["url"]))
+            treffer = finde(quelle, text)
+            if not treffer: log(f"KEIN TREFFER {quelle['url']}")
+            for key, s, e, vorlage in treffer:
+                eintrag = {"key": key, "start": s.isoformat(), "ende": e.isoformat(), "url": quelle["url"]}
+                if vorlage: eintrag["vorlage"] = vorlage
+                gefunden[key] = eintrag
+                log(f"OK {key} {s} bis {e}")
+        except Exception as ex:
+            datum_fehler = True
+            log(f"FEHLER {quelle['url']}: {ex}")
+    neu_gef = list(gefunden.values())
+    gef_liste = neu_gef + behalten(alt_gef, neu_gef, heute)
+    if datum_fehler:     # Seite ausgefallen: bisherige Eintraege bleiben
+        vorh = {x["key"] for x in gef_liste}
+        gef_liste += [x for x in alt_gef if x.get("key") not in vorh and noch_gueltig(x, heute)]
+
+    # 2) Beobachten: Maerkte automatisch, alles andere als Vorschlag
+    ohne = {uid_von(x["key"]) for x in alt_auto if x.get("key")}
+    bekannt = bekannt_laden(ohne); abl = ablehnungen_laden()
+    bestand = vorschlaege_laden(heute, bekannt, abl)
+    auto_neu, auto_fehler, neu = {}, set(), 0
+    for quelle in q.get("beobachten", []) + q.get("grossstaedte", []):
+        url = quelle["url"]; stadt = quelle.get("stadt", "")
+        host = urllib.parse.urlparse(url).netloc
+        if host in LAHM:
+            log(f"UEBERSPRUNGEN (Server antwortet nicht) {url}"); auto_fehler.add(url); continue
+        try:
+            text = als_text(hole(url))
+            if len(text) < 800: log(f"WENIG TEXT (vermutlich nur JavaScript) {url}")
+            else: log(f"OK {len(text)} Zeichen {url}")
+            name = STADT_NAME.get(stadt, stadt.capitalize())
+            auto_spans = set()
+            if stadt in AUTO_STAEDTE and quelle.get("art") in AUTO_ARTEN:
+                for wort, s, e, ausschnitt, fenster in kandidaten(text, AUTO_WOERTER, heute, streng=True):
+                    titel = f"{wort} {name}".strip()
+                    key = f"auto|{stadt}|{wort.lower()}|{s.isoformat()}"
+                    if key in auto_neu or ist_bekannt(s, e, wort, stadt, bekannt): continue
+                    if any(x in (titel + " " + fenster).lower() for x in abl): continue
+                    auto_neu[key] = {"key": key, "start": s.isoformat(), "ende": e.isoformat(),
+                                     "titel": titel, "stadt": stadt, "url": url}
+                    auto_spans.add((wort.lower(), s))
+                    log(f"AUTO {titel} {s} bis {e}")
+            if stadt in OHNE_VORSCHLAEGE: continue
+            for wort, s, e, ausschnitt, fenster in kandidaten(text, q.get("stichworte", []), heute):
+                if (wort.lower(), s) in auto_spans: continue
+                titel = f"{wort} {name}".strip()
+                key = (s, e, titel.lower())
+                if key in bestand or ist_bekannt(s, e, wort, stadt, bekannt): continue
+                if any(x in (titel + " " + fenster).lower() for x in abl): continue
+                hinweis = "ueber 7 Tage: Pfeil-Termine in termine.json" if (e - s).days >= 7 else "-"
+                bestand[key] = (f"#> {stadt} | {wort} | {hinweis} | {url} | {ausschnitt}", f"{s} | {e} | ? | {titel} | ", s)
+                neu += 1
+        except Exception as ex:
+            log(f"FEHLER {url}: {ex}")
+            auto_fehler.add(url)
+            if "timed out" in str(ex): LAHM.add(host)
+
+    neu_auto = list(auto_neu.values())
+    auto = neu_auto + behalten(alt_auto, neu_auto, heute)
+    vorh = {x["key"] for x in auto}
+    for x in alt_auto:   # Seite ausgefallen: Eintraege dieser Seite bleiben
+        if x.get("url") in auto_fehler and x.get("key") not in vorh and noch_gueltig(x, heute): auto.append(x)
+    json.dump({"gefunden": gef_liste, "auto": auto}, open("gefunden.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    log(f"AUTO {len(auto)} Markt-Eintraege, GEFUNDEN {len(gef_liste)}")
+
+    eintraege = sorted(bestand.values(), key=lambda x: x[2])[:250]
+    with open("vorschlaege.txt", "w", encoding="utf-8") as f:
+        f.write(KOPF.format(heute=heute))
+        for komm, zeile, _ in eintraege: f.write(komm + "\n" + zeile + "\n\n")
+    log(f"VORSCHLAEGE {len(eintraege)} offen, davon {neu} neu")
+    with open("quellen-log.txt", "w", encoding="utf-8") as f:
+        f.write(f"# Lauf vom {heute}\n" + "\n".join(LOG) + "\n")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as ex:      # nie den Kalender gefaehrden, aber den Fehler sichtbar machen
+        print("Quellen-Abfrage abgebrochen:", ex)
+        try:
+            with open("quellen-log.txt", "w", encoding="utf-8") as f:
+                f.write(f"# Lauf vom {date.today()}\nABGEBROCHEN: {ex}\n\n{traceback.format_exc()}\n" + "\n".join(LOG) + "\n")
+        except Exception:
+            pass
