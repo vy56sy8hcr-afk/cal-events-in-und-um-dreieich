@@ -1,5 +1,5 @@
 {
- "_hinweis": "datum = Seiten mit festem Satz, aus dem das Datum eines bekannten Termins gelesen wird (korrigiert den Termin automatisch). beobachten = Presse- und Kalenderseiten, aus denen nur Vorschlaege in vorschlaege.txt entstehen (kommen nie automatisch in den Kalender). grossstaedte = hier kommen Adressen fuer Frankfurt, Bad Homburg, Oberursel, Hanau, Darmstadt, Mainz hinein. offen_adresse_fehlt = noch keine funktionierende Adresse.",
+ "_hinweis": "datum = Seiten mit festem Satz, aus dem das Datum eines Termins gelesen wird (korrigiert bekannte Termine oder legt sie ueber die VORLAGEN in build_ics.py neu an). beobachten = Presse- und Kalenderseiten: Kalenderseiten im Kreis Offenbach legen Advents-/Weihnachts-/Nikolausmaerkte selbst an, alles andere nur Vorschlaege in vorschlaege.txt. grossstaedte = Adressen fuer Frankfurt, Bad Homburg, Oberursel, Hanau, Darmstadt, Mainz. offen_adresse_fehlt = noch keine funktionierende Adresse.",
  "datum": [
   {
    "key": "langener-markt-{jahr}",
@@ -24,6 +24,108 @@
    "typ": "zeitraum",
    "url": "https://www.mainzer-johannisnacht.de/",
    "muster": "Johannisnacht.{0,120}?(\\d{1,2})\\.\\s*(?:bis|-|–)\\s*(\\d{1,2})\\.\\s*(Juni)\\s+(\\d{4})"
+  },
+  {
+   "key": "kunsttage-fruehjahr-{jahr}",
+   "vorlage": "kunsttage-fruehjahr",
+   "typ": "zeitraum_mon",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "muster": "Frühjahrsausstellung vom (\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+bis\\s+(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})"
+  },
+  {
+   "key": "kunsttage-burg-{jahr}",
+   "vorlage": "kunsttage-burg",
+   "typ": "zeitraum_mon",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "muster": "Kunst in der Burg vom (\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+bis\\s+(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})"
+  },
+  {
+   "key": "kunsttage-herbst-{jahr}",
+   "vorlage": "kunsttage-herbst",
+   "typ": "zeitraum_mon",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "muster": "Herbstausstellung vom (\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+bis\\s+(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})"
+  },
+  {
+   "key": "burgfestspiele-{jahr}",
+   "vorlage": "burgfestspiele",
+   "typ": "zeitraum_mon",
+   "url": "https://www.buergerhaeuser-dreieich.de/burgfestspiele",
+   "muster": "(?=Burgfestspiele\\s+\\d{4}\\s*:\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+bis\\s+(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+))Burgfestspiele\\s+(\\d{4})"
+  },
+  {
+   "key": "festspiele-hanau-{jahr}",
+   "vorlage": "festspiele-hanau",
+   "typ": "zeitraum_mon",
+   "url": "https://festspiele.hanau.de/",
+   "muster": "Wir sehen uns wieder\\W{0,6}vom\\s+(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+bis\\s+zum\\s+(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})"
+  },
+  {
+   "key": "weihnachtsmarkt-darmstadt-{jahr}",
+   "vorlage": "weihnachtsmarkt-darmstadt",
+   "typ": "zeitraum_num",
+   "url": "https://www.darmstadt-guide.de/veranstaltungen/",
+   "muster": "Darmstädter Weihnachtsmarkt\\s+Datum:\\s*(\\d{1,2})\\.(\\d{2})\\.\\s*[–-]\\s*(\\d{1,2})\\.(\\d{2})\\.(\\d{4})"
+  },
+  {
+   "key": "heinerfest-{jahr}",
+   "typ": "tage_num",
+   "url": "https://www.darmstadt-guide.de/veranstaltungen/",
+   "muster": "Heinerfest\\s+Datum:\\s*(\\d{1,2})\\.\\s*[–-]\\s*(\\d{1,2})\\.(\\d{2})\\.(\\d{4})"
+  },
+  {
+   "key": "schlossgrabenfest-{jahr}",
+   "typ": "zeitraum_num",
+   "url": "https://www.darmstadt-guide.de/veranstaltungen/",
+   "muster": "Schlossgrabenfest\\s+Datum:\\s*(\\d{1,2})\\.(\\d{2})\\.\\s*[–-]\\s*(\\d{1,2})\\.(\\d{2})\\.(\\d{4})"
+  },
+  {
+   "key": "weihnachtsmarkt-hoechst-{jahr}",
+   "vorlage": "weihnachtsmarkt-hoechst",
+   "typ": "zeitraum_voll",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html",
+   "muster": "Stadtteil Höchst\\)\\s*(\\d{2})\\.(\\d{2})\\.(\\d{4})\\s*-\\s*(\\d{2})\\.(\\d{2})\\.(\\d{4})"
+  },
+  {
+   "key": "adventsmarkt-seligenstadt-{jahr}",
+   "vorlage": "adventsmarkt-seligenstadt",
+   "typ": "zeitraum_voll",
+   "url": "https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html",
+   "muster": "Seligenstadt\\s+(\\d{2})\\.(\\d{2})\\.(\\d{4})\\s*-\\s*(\\d{2})\\.(\\d{2})\\.(\\d{4})"
+  },
+  {
+   "key": "main-kurisumasu-{jahr}",
+   "typ": "zeitraum",
+   "url": "https://main-kurisumasu.de/",
+   "muster": "Büsing Palais Offenbach\\s+(\\d{1,2})\\.\\s*[–-]\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})"
+  },
+  {
+   "key": "tauschboerse-{datum}",
+   "vorlage": "tauschboerse",
+   "typ": "einzeltag",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/",
+   "muster": "Datum:\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})(?:\\s+Uhrzeit:\\s*[\\d:]+(?:\\s*bis\\s*[\\d:]+)?\\s*Uhr)?\\s+Tausch- und Verschenkbörse"
+  },
+  {
+   "key": "gluehaepplerfest-{datum}",
+   "vorlage": "gluehaepplerfest",
+   "typ": "einzeltag",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/",
+   "muster": "Datum:\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})(?:\\s+Uhrzeit:\\s*[\\d:]+(?:\\s*bis\\s*[\\d:]+)?\\s*Uhr)?\\s+Glüh[Ää]ppler"
+  },
+  {
+   "key": "tauschboerse-{datum}",
+   "vorlage": "tauschboerse",
+   "typ": "einzeltag",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/",
+   "muster": "Datum:\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})(?:\\s+Uhrzeit:\\s*[\\d:]+(?:\\s*bis\\s*[\\d:]+)?\\s*Uhr)?\\s+Tausch- und Verschenkbörse"
+  },
+  {
+   "key": "gluehaepplerfest-{datum}",
+   "vorlage": "gluehaepplerfest",
+   "typ": "einzeltag",
+   "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/",
+   "muster": "Datum:\\s*(\\d{1,2})\\.\\s*([A-Za-zäöüÄÖÜ]+)\\s+(\\d{4})(?:\\s+Uhrzeit:\\s*[\\d:]+(?:\\s*bis\\s*[\\d:]+)?\\s*Uhr)?\\s+Glüh[Ää]ppler"
   }
  ],
  "stichworte": [
@@ -36,18 +138,12 @@
   "Laternenfest",
   "Weihnachtsmarkt",
   "Adventsmarkt",
-  "Adventszauber",
-  "Winterzauber",
   "Afterwork",
   "After-Work",
   "Verkaufsoffener Sonntag",
-  "Verkaufsoffener Feiertag",
   "Festspiele",
   "Open Air",
   "Kunsttage",
-  "Frühjahrsausstellung",
-  "Herbstausstellung",
-  "Kunst in der Burg",
   "Musiktage",
   "Burgfest",
   "Mittelaltermarkt",
@@ -56,20 +152,21 @@
   "Johannisnacht",
   "Brunnenfest",
   "Lamboyfest",
-  "Apfelwein",
-  "Streuobst",
   "Winterzauber",
   "Jazz in der Burg",
   "Blues Morning",
-  "Jazz am 1. Mai",
-  "Spezialmarkt",
-  "Kürbisfest"
+  "Jazz am 1. Mai"
  ],
  "beobachten": [
   {
    "stadt": "dreieich",
    "art": "Kunsttage",
    "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+  },
+  {
+   "stadt": "dreieich",
+   "art": "Programm",
+   "url": "https://www.buergerhaeuser-dreieich.de/programm"
   },
   {
    "stadt": "dietzenbach",
