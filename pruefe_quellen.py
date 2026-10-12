@@ -159,6 +159,7 @@ def kandidaten(text, woerter, heute, streng=False, maxdist=130):
             ks, ke = m.start() - a0, m.end() - a0
             best = None
             for a, b, s, e in datum_treffer(fenster, heute, streng):
+                if streng and s <= heute: continue   # Kopfzeile der Seite zeigt das heutige Datum
                 dist = max(0, a - ke) if a >= ke else max(0, ks - b) + 30
                 if dist <= maxdist and (best is None or dist < best[0]): best = (dist, s, e)
             if not best: continue
