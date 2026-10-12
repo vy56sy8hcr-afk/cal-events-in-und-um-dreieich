@@ -278,7 +278,8 @@ def main():
     # 2) Beobachten: Maerkte automatisch, alles andere als Vorschlag
     ohne = {uid_von(x["key"]) for x in alt_auto if x.get("key")}
     bekannt = bekannt_laden(ohne); abl = ablehnungen_laden()
-    bestand = vorschlaege_laden(heute, bekannt, abl)
+    bekannt_voll = bekannt_laden()   # inkl. Markt-Automatik: Vorschlaege dazu verschwinden
+    bestand = vorschlaege_laden(heute, bekannt_voll, abl)
     auto_neu, auto_fehler, neu = {}, set(), 0
     for quelle in q.get("beobachten", []) + q.get("grossstaedte", []):
         url = quelle["url"]; stadt = quelle.get("stadt", "")
@@ -306,7 +307,7 @@ def main():
                 if (wort.lower(), s) in auto_spans: continue
                 titel = f"{wort} {name}".strip()
                 key = (s, e, titel.lower())
-                if key in bestand or ist_bekannt(s, e, wort, stadt, bekannt): continue
+                if key in bestand or ist_bekannt(s, e, wort, stadt, bekannt_voll): continue
                 if any(x in (titel + " " + fenster).lower() for x in abl): continue
                 hinweis = "ueber 7 Tage: Pfeil-Termine in termine.json" if (e - s).days >= 7 else "-"
                 bestand[key] = (f"#> {stadt} | {wort} | {hinweis} | {url} | {ausschnitt}", f"{s} | {e} | ? | {titel} | ", s)
