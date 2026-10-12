@@ -23,6 +23,5 @@
 # Beispiel fest, mehrere Tage, mit Notiz:
 2027-01-03 | 2027-01-03 | ! | ▼❌BeispielEvent | hier kann Text stehen
 
-
-
+2026-12-29 | 2026-12-29 | ! | 🎅🏼Winterzauber Heusenstamm | 
 
