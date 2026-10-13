@@ -66,6 +66,7 @@ WM_BLOCK = (
     "seit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranstalter: AKTIVes Dreieich e.V.\n\n"
     "2. und 3. Advent: Hayner Weihnachtsmarkt Dreieichenhain, Fahrgasse\n"
     "Samstag je von 15-20:30 Uhr\nSonntag je von 14-20 Uhr\n"
+    "Veranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaft Dreieichenhain e.V.\n"
     "Seit 1978. In 2027 werden 50 Jahre gefeiert.\n\n"
     "4. Advent: Weihnachtsmarkt Offenthal\n"
     "Kirchgasse, Kirchgarten, Altes Rathaus\n"
