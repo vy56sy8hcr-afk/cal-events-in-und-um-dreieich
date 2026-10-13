@@ -156,13 +156,13 @@ def regeln(y):
     a1 = advent1(y)
     ad = ("Adventsmarkt Sprendlingen\nLindenplatz, Sprendlingen\nFr 17–21 Uhr, Sa und So 15–21 Uhr\n"
           "seit 2000 (2025: 25 Jahre)\nVeranstalter: AKTIVes Dreieich e.V.")
-    hn = "Hayner Weihnachtsmarkt\nDreieichenhain, Fahrgasse\nSa 15–20:30 Uhr, So 14–20 Uhr\nseit 1978 (2027: 50 Jahre)"
+    hn = "Hayner Weihnachtsmarkt\nDreieichenhain, Fahrgasse\nFr 17–21:30 Uhr, Sa und So 15–21:30 Uhr\nseit 1978 (2027: 50 Jahre)"
     of = ("Weihnachtsmarkt Offenthal\nKirchgasse, im Kirchgarten und am Alten Rathaus\nSa 16–22 Uhr, So 14–20 Uhr "
           "(fällt Weihnachten auf einen Sonntag: Fr 16–22 Uhr, Sa 14–20 Uhr)\nVeranstalter: Kulturverein Dreieich e.V.")
     ad = hn = of = WM_BLOCK
     einzel(f"adventsmarkt-sprendlingen-{y}", "▼ 🎅🏼Adventsmarkt Sprendlingen, Lindenplatz (1. Advent)", a1 - timedelta(2), a1, ad)
-    einzel(f"hayner-wm-2-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (2. Advent)", a1 + timedelta(6), a1 + timedelta(7), hn)
-    einzel(f"hayner-wm-3-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (3. Advent)", a1 + timedelta(13), a1 + timedelta(14), hn)
+    einzel(f"hayner-wm-2-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (2. Advent)", a1 + timedelta(5), a1 + timedelta(7), hn)
+    einzel(f"hayner-wm-3-{y}", "▼ 🎅🏼Hayner Weihnachtsmarkt, Dreieichenhain (3. Advent)", a1 + timedelta(12), a1 + timedelta(14), hn)
     if D(y, 12, 25).weekday() == 6:
         einzel(f"offenthal-wm-{y}", "▼ 🎅🏼Weihnachtsmarkt Offenthal (4. Advent)", D(y, 12, 23), D(y, 12, 24), of)
     else:
