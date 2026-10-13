@@ -558,6 +558,24 @@ TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 END:VEVENT
 BEGIN:VEVENT
+UID:58304583-6205-5489-a69d-ba56e7d88046@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:🎅🏼Nikolausmarkt Heusenstamm
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
+UID:5ca6fb1e-0cc6-503a-bb68-e76998848903@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:🎅🏼Winterzauber Heusenstamm
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+END:VEVENT
+BEGIN:VEVENT
 UID:e4950ea4-01e9-5b9f-981f-2d3e2420aa86@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261017
@@ -633,13 +651,13 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
 END:VEVENT
 BEGIN:VEVENT
 UID:163693bf-358a-5840-b419-a8f49786a768@events-dreieich
@@ -693,18 +711,9 @@ X-MICROSOFT-CDO-BUSYSTATUS:FREE
 DESCRIPTION:Altstadt Dietzenbach
 END:VEVENT
 BEGIN:VEVENT
-UID:3d9ea8c7-4ff7-5d86-818a-6be00c5584dd@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261207
-SUMMARY:🎅🏼Weihnachtsmarkt Langen
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-END:VEVENT
-BEGIN:VEVENT
 UID:8eb564a5-4da7-5ff9-ba70-fab1ba913d6f@events-dreieich
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261205
+DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261207
 SUMMARY:▼ 🎅🏼Hayner Weihnachtsmarkt\, Dreieichenhain (2. Advent)
 TRANSP:TRANSPARENT
@@ -713,13 +722,22 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
+END:VEVENT
+BEGIN:VEVENT
+UID:3d9ea8c7-4ff7-5d86-818a-6be00c5584dd@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261207
+SUMMARY:🎅🏼Weihnachtsmarkt Langen
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
 END:VEVENT
 BEGIN:VEVENT
 UID:3c1e0503-9fc7-5a5a-bf65-c1aae39a7923@events-dreieich
@@ -742,7 +760,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:df08b279-37ac-5829-b073-6f40cbf6b343@events-dreieich
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261212
+DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261214
 SUMMARY:▼ 🎅🏼Hayner Weihnachtsmarkt\, Dreieichenhain (3. Advent)
 TRANSP:TRANSPARENT
@@ -751,13 +769,13 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
 END:VEVENT
 BEGIN:VEVENT
 UID:3d43f414-41c0-5ef0-ab2c-4185bd1815c3@events-dreieich
@@ -805,13 +823,13 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
 END:VEVENT
 BEGIN:VEVENT
 UID:65f5acea-823d-50a4-bee9-9443bfd1c5b4@events-dreieich
@@ -1217,6 +1235,17 @@ TRANSP:TRANSPARENT
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 END:VEVENT
 BEGIN:VEVENT
+UID:1ab7916b-6da6-5e21-9326-311164d7b03c@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270724
+DTEND;VALUE=DATE:20270726
+SUMMARY:▼ 🎵Jazz in der Burg
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+DESCRIPTION:Jazz in der Burg und Blues Morning\nBurg Hayn\, Fahrgasse 52\n
+ Termin vorläufig\, das Programm erscheint im November 2026
+END:VEVENT
+BEGIN:VEVENT
 UID:093cafc3-51ab-5f37-b436-ce46a6f1a292@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270729
@@ -1480,13 +1509,13 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
 END:VEVENT
 BEGIN:VEVENT
 UID:21750faf-3910-587a-bb1c-19ab39c50ad0@events-dreieich
@@ -1528,18 +1557,9 @@ X-MICROSOFT-CDO-BUSYSTATUS:FREE
 DESCRIPTION:www.buergerhaeuser-dreieich.de/kunsttage/aktuelles
 END:VEVENT
 BEGIN:VEVENT
-UID:6e76a5fc-729e-5a08-993b-ab99c2f2ce7d@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20271203
-DTEND;VALUE=DATE:20271206
-SUMMARY:🎅🏼Weihnachtsmarkt Langen
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-END:VEVENT
-BEGIN:VEVENT
 UID:f0dd94e0-3933-50da-b952-593236ff1c4b@events-dreieich
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20271204
+DTSTART;VALUE=DATE:20271203
 DTEND;VALUE=DATE:20271206
 SUMMARY:▼ 🎅🏼Hayner Weihnachtsmarkt\, Dreieichenhain (2. Advent)
 TRANSP:TRANSPARENT
@@ -1548,13 +1568,22 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
+END:VEVENT
+BEGIN:VEVENT
+UID:6e76a5fc-729e-5a08-993b-ab99c2f2ce7d@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271206
+SUMMARY:🎅🏼Weihnachtsmarkt Langen
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
 END:VEVENT
 BEGIN:VEVENT
 UID:23b920b5-ef54-5a29-9346-5f9ce55dc470@events-dreieich
@@ -1577,7 +1606,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:b0dd19be-0bbc-527a-b14e-edf544ed4266@events-dreieich
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20271211
+DTSTART;VALUE=DATE:20271210
 DTEND;VALUE=DATE:20271213
 SUMMARY:▼ 🎅🏼Hayner Weihnachtsmarkt\, Dreieichenhain (3. Advent)
 TRANSP:TRANSPARENT
@@ -1586,13 +1615,13 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
 END:VEVENT
 BEGIN:VEVENT
 UID:69c70e17-aba5-5cfa-9406-6c916e70f8bb@events-dreieich
@@ -1618,13 +1647,13 @@ DESCRIPTION:WEIHNACHTSMÄRKTE IN DREIEICH\n\n1. Advent Adventsmarkt Sprend
  lingen Lindenplatz\, Sprendlingen\nFreitag von 17-21 Uhr\nSamstag und Son
  ntag von 15-21 Uhr\nseit 2000. In 2025 wurden 25 Jahre gefeiert.\nVeranst
  alter: AKTIVes Dreieich e.V.\n\n2. und 3. Advent: Hayner Weihnachtsmarkt 
- Dreieichenhain\, Fahrgasse\nSamstag je von 15-20:30 Uhr\nSonntag je von 1
- 4-20 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und Werbegemeinschaf
- t Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre gefeiert.\n\n4.
-  Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgarten\, Altes Rath
- aus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. wenn Weihnachten 
- auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag von 14-20 Uhr\n
- Veranstalter: Kulturverein Dreieich e.V.
+ Dreieichenhain\, Fahrgasse\nFreitag je von 17-21:30 Uhr\nSamstag und Sonn
+ tag je von 15-21:30 Uhr\nVeranstalter: Gewerbeverein Dreieich e. V. und W
+ erbegemeinschaft Dreieichenhain e.V.\nSeit 1978. In 2027 werden 50 Jahre 
+ gefeiert.\n\n4. Advent: Weihnachtsmarkt Offenthal\nKirchgasse\, Kirchgart
+ en\, Altes Rathaus\nSamstag von 16-22 Uhr\nSonntag von 14-20 Uhr\nbzw. we
+ nn Weihnachten auf Sonntag fällt\, dann\nFreitag von 16-22 Uhr\nSamstag 
+ von 14-20 Uhr\nVeranstalter: Kulturverein Dreieich e.V.
 END:VEVENT
 BEGIN:VEVENT
 UID:eb3bfd84-f7ab-54e8-bda2-4b01d8b99b0e@events-dreieich
