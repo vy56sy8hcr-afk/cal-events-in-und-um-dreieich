@@ -17,7 +17,8 @@
  "name": "35. Kunsttage Dreieich",
  "start": "2027-04-29",
  "ende": "2027-05-17",
- "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+ "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+ "vorlaeufig": true
 },
 {
  "key": "kunsttage-burg-2027",
@@ -26,7 +27,8 @@
  "name": "35. Kunsttage Dreieich Kunst in der Burg",
  "start": "2027-06-23",
  "ende": "2027-08-08",
- "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+ "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+ "vorlaeufig": true
 },
 {
  "key": "kunsttage-herbst-2027",
@@ -35,7 +37,8 @@
  "name": "35. Kunsttage Dreieich",
  "start": "2027-11-18",
  "ende": "2027-12-05",
- "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles"
+ "notiz": "www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+ "vorlaeufig": true
 },
   {
    "key": "altstadtfest-ni-2026",
@@ -109,6 +112,15 @@
    "start": "2026-07-18",
    "ende": "2026-07-19",
    "notiz": "Sa 18.07. Jazz in der Burg, So 19.07. Blues Morning\nBurg Hayn, Fahrgasse 52"
+  },
+  {
+   "key": "jazz-in-der-burg-2027",
+   "typ": "einzel",
+   "titel": "▼ 🎵Jazz in der Burg",
+   "start": "2027-07-24",
+   "ende": "2027-07-25",
+   "notiz": "Jazz in der Burg und Blues Morning\nBurg Hayn, Fahrgasse 52\nTermin vorläufig, das Programm erscheint im November 2026",
+   "vorlaeufig": true
   },
   {
    "key": "hooschebaa-2026",
@@ -226,7 +238,8 @@
    "name": "Burgfestspiele Dreieichenhain",
    "start": "2027-06-23",
    "ende": "2027-08-08",
-   "notiz": "Burgfestspiele Dreieichenhain\n23.06.2027 – 08.08.2027"
+   "notiz": "Burgfestspiele Dreieichenhain\n23.06.2027 – 08.08.2027",
+   "vorlaeufig": true
   },
   {
    "key": "party-joahrn-2026-a",
@@ -275,7 +288,8 @@
    "start": "2027-05-07",
    "ende": "2027-07-31",
    "praefix": "",
-   "notiz": "Brüder Grimm Festspiele Hanau\n43. Spielzeit, 07.05.2027 – 31.07.2027"
+   "notiz": "Brüder Grimm Festspiele Hanau\n43. Spielzeit, 07.05.2027 – 31.07.2027",
+   "vorlaeufig": true
   }
  ]
 }
