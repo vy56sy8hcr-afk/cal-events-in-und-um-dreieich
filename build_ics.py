@@ -306,16 +306,23 @@ def lade_gefunden(pfad="gefunden.json"):
     except ValueError:
         print("gefunden.json nicht lesbar - ignoriert"); return
     h = heute()
-    for g in daten.get("gefunden", []):
-        key = g.get("key")
-        if not key or key in FEST: continue
+        auto_notizen = {"Winterzauber Heusenstamm": "16 – 21 Uhr, Marktplatz Einkaufszentrum Alte Linde, Leibnizstraße"}
+    for a in daten.get("auto", []):
+        key = a.get("key")
+        if not key or key in FEST or key in ITEMS or key + "#anfang" in ITEMS: continue
         try:
-            s_, e_ = D.fromisoformat(g["start"]), D.fromisoformat(g.get("ende", g["start"]))
+            s_, e_ = D.fromisoformat(a["start"]), D.fromisoformat(a.get("ende", a["start"]))
         except (KeyError, ValueError):
             continue
-        if key in ITEMS:
-            ITEMS[key]["start"], ITEMS[key]["ende"] = s_, e_
-            print("Quelle:", key, s_, e_)
+        if not (1 <= (e_ - s_).days + 1 <= 200) or s_ > h + timedelta(600): continue
+        name, pre = a.get("name", ""), a.get("pre", "")
+        notiz = a.get("notiz", "") or auto_notizen.get(name, "")
+        if not name: continue
+        if (e_ - s_).days + 1 > 7:
+            pfeil(key, "🎅🏼", name, s_, e_, notiz, pre=pre)
+        else:
+            einzel(key, f"{pre}🎅🏼{name}", s_, e_, notiz)
+        print("Quelle (auto):", key, s_, e_)
             continue
         v = VORLAGEN.get(g.get("vorlage") or key.rpartition("-")[0])
         if not v or not (1 <= (e_ - s_).days + 1 <= 200) or s_ > h + timedelta(600): continue
