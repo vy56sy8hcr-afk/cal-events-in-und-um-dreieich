@@ -306,7 +306,7 @@ def lade_gefunden(pfad="gefunden.json"):
     except ValueError:
         print("gefunden.json nicht lesbar - ignoriert"); return
     h = heute()
-        auto_notizen = {"Winterzauber Heusenstamm": "16 – 21 Uhr, Marktplatz Einkaufszentrum Alte Linde, Leibnizstraße"}
+auto_notizen = {"Winterzauber Heusenstamm": "16 – 21 Uhr, Marktplatz Einkaufszentrum Alte Linde, Leibnizstraße"}
     for a in daten.get("auto", []):
         key = a.get("key")
         if not key or key in FEST or key in ITEMS or key + "#anfang" in ITEMS: continue
