@@ -159,7 +159,7 @@ def kandidaten(text, woerter, heute, streng=False, maxdist=130):
             ks, ke = m.start() - a0, m.end() - a0
             best = None
             for a, b, s, e in datum_treffer(fenster, heute, streng):
-                if streng and s <= heute: continue   # Kopfzeile der Seite zeigt das heutige Datum
+                if streng and s < heute + timedelta(MIN_VORLAUF): continue   # Kopfzeile der Seite zeigt das heutige Datum
                 dist = max(0, a - ke) if a >= ke else max(0, ks - b) + 30
                 if dist <= maxdist and (best is None or dist < best[0]): best = (dist, s, e)
             if not best: continue
@@ -246,16 +246,31 @@ def behalten(alt, neu, heute):
         if x.get("key") not in keys and heute - timedelta(190) <= e < heute: out.append(x)
     return out
 
+MIN_VORLAUF = 3   # Tage: Markt-Termine muessen mindestens so weit in der Zukunft liegen (Seiten zeigen oben das heutige Datum)
 AUTO_OHNE_JAHR = ["Winterzauber"]   # Datum auch ohne Jahr, wenn es zwischen 24. und 31.12. liegt
 
 def auto_kandidaten(text, heute):
     out = kandidaten(text, AUTO_WOERTER, heute, streng=True)
     for k in kandidaten(text, AUTO_OHNE_JAHR, heute):
         s, e = k[1], k[2]
+        if s < heute + timedelta(MIN_VORLAUF): continue
         if s.month == 12 and 24 <= s.day <= 31 and e.month == 12 and s <= e and e.day <= 31:
             gleich = [x for x in out if x[0] == k[0] and x[1] == s]
             if gleich and max(x[2] for x in gleich) >= e: continue   # laengerer Zeitraum gewinnt
             out = [x for x in out if x not in gleich] + [k]
+    return out
+
+def behalten_auto(alt, neu, heute):
+    """Abgelaufene Markt-Eintraege bleiben bis 190 Tage, aber nur, wenn sie beim ersten Fund (ab) mindestens
+    MIN_VORLAUF Tage in der Zukunft lagen. Eintraege ohne ab (aelter) fallen weg."""
+    keys = {x["key"] for x in neu}
+    out = []
+    for x in alt:
+        try:
+            e = date.fromisoformat(x["ende"]); st = date.fromisoformat(x["start"]); ab = date.fromisoformat(x["ab"])
+        except (KeyError, ValueError):
+            continue
+        if x.get("key") not in keys and heute - timedelta(190) <= e < heute and (st - ab).days >= MIN_VORLAUF: out.append(x)
     return out
 
 def noch_gueltig(x, heute):
@@ -313,7 +328,7 @@ def main():
                     if any(x in (titel + " " + fenster).lower() for x in abl): continue
                     auto_neu[key] = {"key": key, "start": s.isoformat(), "ende": e.isoformat(),
                                      "name": titel, "pre": "▼ " if stadt == "dreieich" else "",
-                                     "stadt": stadt, "url": url}
+                                     "stadt": stadt, "url": url, "ab": heute.isoformat()}
                     auto_spans.add((wort.lower(), s))
                     log(f"AUTO {titel} {s} bis {e}")
             if stadt in OHNE_VORSCHLAEGE: continue
@@ -332,7 +347,7 @@ def main():
             if "timed out" in str(ex): LAHM.add(host)
 
     neu_auto = list(auto_neu.values())
-    auto = neu_auto + behalten(alt_auto, neu_auto, heute)
+    auto = neu_auto + behalten_auto(alt_auto, neu_auto, heute)
     vorh = {x["key"] for x in auto}
     for x in alt_auto:   # Seite ausgefallen: Eintraege dieser Seite bleiben
         if x.get("url") in auto_fehler and x.get("key") not in vorh and noch_gueltig(x, heute): auto.append(x)
