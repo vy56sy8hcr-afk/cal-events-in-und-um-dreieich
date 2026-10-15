@@ -109,31 +109,14 @@
  ],
  "auto": [
   {
-   "key": "auto|heusenstamm|nikolausmarkt|2026-10-15",
-   "start": "2026-10-15",
-   "ende": "2026-10-15",
-   "name": "Nikolausmarkt Heusenstamm",
-   "pre": "",
-   "stadt": "heusenstamm",
-   "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender"
-  },
-  {
-   "key": "auto|heusenstamm|winterzauber|2026-10-15",
-   "start": "2026-10-15",
-   "ende": "2026-10-15",
-   "name": "Winterzauber Heusenstamm",
-   "pre": "",
-   "stadt": "heusenstamm",
-   "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender"
-  },
-  {
    "key": "auto|heusenstamm|winterzauber|2026-12-28",
    "start": "2026-12-28",
    "ende": "2026-12-29",
    "name": "Winterzauber Heusenstamm",
    "pre": "",
    "stadt": "heusenstamm",
-   "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender"
+   "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
+   "ab": "2026-10-15"
   }
  ]
 }
