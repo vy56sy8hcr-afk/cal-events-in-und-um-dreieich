@@ -109,6 +109,16 @@
  ],
  "auto": [
   {
+   "key": "auto|heusenstamm|adventsmarkt|2026-11-21",
+   "start": "2026-11-21",
+   "ende": "2026-11-21",
+   "name": "Adventsmarkt Heusenstamm",
+   "pre": "",
+   "stadt": "heusenstamm",
+   "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
+   "ab": "2026-10-16"
+  },
+  {
    "key": "auto|heusenstamm|winterzauber|2026-12-28",
    "start": "2026-12-28",
    "ende": "2026-12-29",
@@ -116,7 +126,7 @@
    "pre": "",
    "stadt": "heusenstamm",
    "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
-   "ab": "2026-10-15"
+   "ab": "2026-10-16"
   }
  ]
 }

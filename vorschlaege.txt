@@ -1,4 +1,10 @@
-# Vorschlaege, Stand 2026-10-15. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-10-16. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
+
+#> dietzenbach | Kerb | - | https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/ | traditionelle Dietzenbacher Kerb in der Altstadt statt. An allen Tagen ... mehr Bauhof: Spätere Öffnung am 26. Oktober Datum: 14.10.2026 Die Wert- und Altstoffannahmestelle
+2026-10-26 | 2026-10-26 | ? | Kerb Dietzenbach | 
+
+#> dietzenbach | Kerb | - | https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/ | November 2026: Dietzenbacher Kerb Datum: 15.10.2026 Von Freitag, 30. Oktober, bis Dienstag, 3. November 2026, findet wieder die traditionelle Dietzenbacher Kerb in der
+2026-10-30 | 2026-10-30 | ? | Kerb Dietzenbach | 
 
