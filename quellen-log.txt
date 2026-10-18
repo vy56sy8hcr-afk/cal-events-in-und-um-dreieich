@@ -1,5 +1,5 @@
-# Lauf vom 2026-10-17
-FEHLER https://www.gewerbeverein-langen.de/verkaufsoffener-sonntag/: <urlopen error _ssl.c:993: The handshake operation timed out>
+# Lauf vom 2026-10-18
+OK langener-markt-2026 2026-09-06 bis 2026-09-06
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK brunnenfest-oberursel-2027 2027-05-21 bis 2027-05-24
@@ -15,12 +15,12 @@ OK schlossgrabenfest-2026 2026-05-21 bis 2026-05-24
 OK weihnachtsmarkt-hoechst-2026 2026-11-28 bis 2026-11-29
 OK adventsmarkt-seligenstadt-2026 2026-11-28 bis 2026-12-20
 OK main-kurisumasu-2026 2026-12-12 bis 2026-12-13
-OK tauschboerse-2026-10-17 2026-10-17 bis 2026-10-17
+KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/
 OK gluehaepplerfest-2026-12-18 2026-12-18 bis 2026-12-18
-OK tauschboerse-2026-10-17 2026-10-17 bis 2026-10-17
+KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 1974 Zeichen https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles
-OK 14129 Zeichen https://www.buergerhaeuser-dreieich.de/programm
+OK 13940 Zeichen https://www.buergerhaeuser-dreieich.de/programm
 OK 27073 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
 OK 8914 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
 OK 42402 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
@@ -31,9 +31,9 @@ OK 18094 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemit
 OK 18094 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
 OK 4827 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
 OK 4860 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
-OK 7363 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
+OK 7245 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
 OK 28177 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
-OK 60121 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
+OK 60703 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 AUTO Adventsmarkt Heusenstamm 2026-11-21 bis 2026-11-21
 AUTO Winterzauber Heusenstamm 2026-12-28 bis 2026-12-29
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
@@ -49,8 +49,8 @@ OK 4130 Zeichen https://roedermark.de/rathaus-politik/aktuelles/pressemitteilung
 OK 3302 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
 OK 4908 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
 OK 1995 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
-OK 5126 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
-OK 29329 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
+OK 5037 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
+OK 29302 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
 OK 7544 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
 OK 3341 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
 FEHLER https://www.mainhausen.de/events: HTTP Error 404: Not Found
@@ -63,9 +63,9 @@ OK 3496 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte
 OK 5100 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Westerwald-ueber-Lahntal-und-Taunus-zum-Main/Frankfurt-am-Main-Stadtteil-Hoechst.html
 OK 9702 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/
 OK 4594 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Zwischen-Main-Taunus/Aktionskalender/Veranstaltungen-M%C3%A4rkte/
-OK 6917 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
+OK 6656 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 6088 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Wetterau/Aktionskalender/Veranstaltungen-M%C3%A4rkte/
-OK 18515 Zeichen https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/
+OK 18794 Zeichen https://www.klimaenergie-frm.de/Streuobst/Streuobst-Portal/Aktionskalender/
 OK 13549 Zeichen https://www.kreis-offenbach.de/Freizeit/Entdecken/Touren-Routen/Hessische-Apfelwein-und-Obstwiesenroute/Termine-rund-um-die-Route/
 FEHLER https://frankfurt.de/frankfurt-entdecken-und-erleben/stadtportrait/frankfurter-feste: HTTP Error 403: Forbidden
 OK 8945 Zeichen https://www.visitfrankfurt.travel/erleben/feste-und-veranstaltungen/museumsuferfest
