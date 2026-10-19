@@ -1,4 +1,4 @@
-# Vorschlaege, Stand 2026-10-18. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-10-19. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
