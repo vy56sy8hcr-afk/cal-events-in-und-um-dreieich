@@ -1,4 +1,4 @@
-# Vorschlaege, Stand 2026-10-20. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-10-21. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
@@ -10,4 +10,7 @@
 
 #> dreieich | Musiktage | - | https://www.buergerhaeuser-dreieich.de/programm | 19:00 Uhr Dreieicher Musiktage Junge Talente, frische Klänge und musikalische Lebensfreude Benefizkonzert im Haus Dietrichsroth Der Förderverein DreieichMusik e. V. und
 2026-11-03 | 2026-11-03 | ? | Musiktage | 
+
+#> dietzenbach | Kerb | - | https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/ | welche ... mehr Dietzenbacher Kerb Datum: 30.10.2026 bis 03.11.2026 Uhrzeit: 14:00 bis 22:00 Uhr Veranstaltungsort: Altstadt Leuchtende Kinderaugen und Spaß für die ganze
+2026-11-03 | 2026-11-03 | ? | Kerb Dietzenbach | 
 

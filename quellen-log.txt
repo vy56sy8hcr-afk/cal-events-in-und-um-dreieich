@@ -1,4 +1,4 @@
-# Lauf vom 2026-10-20
+# Lauf vom 2026-10-21
 OK langener-markt-2026 2026-09-06 bis 2026-09-06
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
@@ -20,38 +20,38 @@ OK gluehaepplerfest-2026-12-18 2026-12-18 bis 2026-12-18
 KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 1974 Zeichen https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles
-OK 14356 Zeichen https://www.buergerhaeuser-dreieich.de/programm
-OK 27043 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
+OK 14077 Zeichen https://www.buergerhaeuser-dreieich.de/programm
+OK 27025 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
 OK 8914 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
 OK 42382 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
 OK 8409 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
 OK 20674 Zeichen https://www.langen.de/de/feste-und-maerkte.html
-OK 6210 Zeichen https://www.muehlheim.de/veranstaltungskalender
+OK 6224 Zeichen https://www.muehlheim.de/veranstaltungskalender
 OK 18074 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
 OK 18074 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
 OK 4807 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
 OK 4840 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
-OK 7166 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
+OK 7235 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
 OK 28348 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
-OK 59532 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
+OK 58418 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 AUTO Adventsmarkt Heusenstamm 2026-11-21 bis 2026-11-21
 AUTO Winterzauber Heusenstamm 2026-12-28 bis 2026-12-29
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
-OK 17995 Zeichen https://www.langen.de/de/pressemitteilungen.html
-OK 15439 Zeichen https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
-OK 14772 Zeichen https://www.langen.de/de/aktuelles-kultur-freizeit.html
+OK 17922 Zeichen https://www.langen.de/de/pressemitteilungen.html
+OK 15544 Zeichen https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
+OK 14820 Zeichen https://www.langen.de/de/aktuelles-kultur-freizeit.html
 OK 29989 Zeichen https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/
 OK 8427 Zeichen https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/
 OK 2824 Zeichen https://www.mainhausen.de/
-OK 6016 Zeichen https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen
+OK 6092 Zeichen https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen
 OK 1321 Zeichen https://www.kultur-obertshausen.de/
 OK 4479 Zeichen https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html
-OK 3274 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
-OK 4898 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
+OK 3198 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
+OK 4834 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
 OK 1986 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
-OK 5171 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
-OK 29405 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
-OK 7534 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
+OK 5245 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
+OK 29404 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
+OK 7788 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
 OK 3322 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
 FEHLER https://www.mainhausen.de/events: HTTP Error 404: Not Found
 OK 47549 Zeichen https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html
@@ -78,4 +78,4 @@ OK 6732 Zeichen https://www.darmstadt-guide.de/veranstaltungen/
 OK 4342 Zeichen https://www.mainzer-johannisnacht.de/
 OK 5230 Zeichen https://diemainzerwinzer.de/sommerweinfeste/
 AUTO 2 Markt-Eintraege, GEFUNDEN 16
-VORSCHLAEGE 3 offen, davon 1 neu
+VORSCHLAEGE 4 offen, davon 1 neu
