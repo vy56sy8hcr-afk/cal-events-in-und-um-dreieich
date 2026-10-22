@@ -1,5 +1,5 @@
-# Lauf vom 2026-10-21
-OK langener-markt-2026 2026-09-06 bis 2026-09-06
+# Lauf vom 2026-10-22
+FEHLER https://www.gewerbeverein-langen.de/verkaufsoffener-sonntag/: HTTP Error 401: Unauthorized
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK brunnenfest-oberursel-2027 2027-05-21 bis 2027-05-24
@@ -21,40 +21,40 @@ KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-O
 KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 1974 Zeichen https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles
 OK 14077 Zeichen https://www.buergerhaeuser-dreieich.de/programm
-OK 27025 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
-OK 8914 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
-OK 42382 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
+OK 27097 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
+OK 8176 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
+OK 43206 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
 OK 8409 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
-OK 20674 Zeichen https://www.langen.de/de/feste-und-maerkte.html
-OK 6224 Zeichen https://www.muehlheim.de/veranstaltungskalender
-OK 18074 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
-OK 18074 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
+FEHLER https://www.langen.de/de/feste-und-maerkte.html: <urlopen error timed out>
+OK 6212 Zeichen https://www.muehlheim.de/veranstaltungskalender
+OK 18018 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
+OK 18018 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
 OK 4807 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
 OK 4840 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
-OK 7235 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
+OK 7080 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
 OK 28348 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
-OK 58418 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
+OK 57718 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 AUTO Adventsmarkt Heusenstamm 2026-11-21 bis 2026-11-21
 AUTO Winterzauber Heusenstamm 2026-12-28 bis 2026-12-29
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
-OK 17922 Zeichen https://www.langen.de/de/pressemitteilungen.html
-OK 15544 Zeichen https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
-OK 14820 Zeichen https://www.langen.de/de/aktuelles-kultur-freizeit.html
+UEBERSPRUNGEN (Server antwortet nicht) https://www.langen.de/de/pressemitteilungen.html
+UEBERSPRUNGEN (Server antwortet nicht) https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
+UEBERSPRUNGEN (Server antwortet nicht) https://www.langen.de/de/aktuelles-kultur-freizeit.html
 OK 29989 Zeichen https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/
 OK 8427 Zeichen https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/
 OK 2824 Zeichen https://www.mainhausen.de/
-OK 6092 Zeichen https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen
-OK 1321 Zeichen https://www.kultur-obertshausen.de/
-OK 4479 Zeichen https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html
-OK 3198 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
+FEHLER https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen: HTTP Error 503: Service Unavailable
+OK 1303 Zeichen https://www.kultur-obertshausen.de/
+OK 4459 Zeichen https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html
+OK 3343 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
 OK 4834 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
-OK 1986 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
-OK 5245 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
-OK 29404 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
-OK 7788 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
-OK 3322 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
+OK 1988 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
+OK 5253 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
+OK 29456 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
+OK 7864 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
+OK 3324 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
 FEHLER https://www.mainhausen.de/events: HTTP Error 404: Not Found
-OK 47549 Zeichen https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html
+OK 49672 Zeichen https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html
 OK 3592 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Dreieich.html
 OK 5304 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Seligenstadt.html
 OK 3715 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Hanau-Steinheim.html
@@ -78,4 +78,4 @@ OK 6732 Zeichen https://www.darmstadt-guide.de/veranstaltungen/
 OK 4342 Zeichen https://www.mainzer-johannisnacht.de/
 OK 5230 Zeichen https://diemainzerwinzer.de/sommerweinfeste/
 AUTO 2 Markt-Eintraege, GEFUNDEN 16
-VORSCHLAEGE 4 offen, davon 1 neu
+VORSCHLAEGE 4 offen, davon 0 neu
