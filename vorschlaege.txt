@@ -1,4 +1,4 @@
-# Vorschlaege, Stand 2026-10-22. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-10-23. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
@@ -7,6 +7,9 @@
 
 #> dietzenbach | Kerb | - | https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/ | November 2026: Dietzenbacher Kerb Datum: 15.10.2026 Von Freitag, 30. Oktober, bis Dienstag, 3. November 2026, findet wieder die traditionelle Dietzenbacher Kerb in der
 2026-10-30 | 2026-10-30 | ? | Kerb Dietzenbach | 
+
+#> dietzenbach | Kerb | - | https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/ | historische und traditionelle Kerb in der Altstadt bietet den Rahmen für den stadtweiten verkaufsoffenen Sonntag am 01.11.2026. Kunden und Besucher ... mehr Emil und die
+2026-11-01 | 2026-11-01 | ? | Kerb Dietzenbach | 
 
 #> dreieich | Musiktage | - | https://www.buergerhaeuser-dreieich.de/programm | 19:00 Uhr Dreieicher Musiktage Junge Talente, frische Klänge und musikalische Lebensfreude Benefizkonzert im Haus Dietrichsroth Der Förderverein DreieichMusik e. V. und
 2026-11-03 | 2026-11-03 | ? | Musiktage | 
