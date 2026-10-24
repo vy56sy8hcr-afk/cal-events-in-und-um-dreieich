@@ -1,4 +1,4 @@
-# Lauf vom 2026-10-23
+# Lauf vom 2026-10-24
 OK langener-markt-2026 2026-09-06 bis 2026-09-06
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
@@ -20,39 +20,39 @@ OK gluehaepplerfest-2026-12-18 2026-12-18 bis 2026-12-18
 KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 1974 Zeichen https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles
-OK 13794 Zeichen https://www.buergerhaeuser-dreieich.de/programm
-OK 27122 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
-OK 8176 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
-OK 43262 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
-OK 8445 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
+OK 13477 Zeichen https://www.buergerhaeuser-dreieich.de/programm
+OK 27029 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
+OK 8203 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
+OK 43245 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
+OK 8429 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
 OK 20674 Zeichen https://www.langen.de/de/feste-und-maerkte.html
-OK 6227 Zeichen https://www.muehlheim.de/veranstaltungskalender
-OK 17924 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
-OK 17924 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
-OK 4843 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
-OK 4876 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
-OK 7136 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
+OK 6219 Zeichen https://www.muehlheim.de/veranstaltungskalender
+OK 17908 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
+OK 17908 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
+OK 4827 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
+OK 4860 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
+OK 7138 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
 OK 28415 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
-OK 57256 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
+OK 56531 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 AUTO Adventsmarkt Heusenstamm 2026-11-21 bis 2026-11-21
 AUTO Winterzauber Heusenstamm 2026-12-28 bis 2026-12-29
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
 OK 17922 Zeichen https://www.langen.de/de/pressemitteilungen.html
 OK 15544 Zeichen https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
 OK 14820 Zeichen https://www.langen.de/de/aktuelles-kultur-freizeit.html
-OK 30007 Zeichen https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/
-OK 8445 Zeichen https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/
+OK 29999 Zeichen https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/
+OK 8437 Zeichen https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/
 OK 2864 Zeichen https://www.mainhausen.de/
-OK 6102 Zeichen https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen
+OK 6077 Zeichen https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen
 OK 1303 Zeichen https://www.kultur-obertshausen.de/
 OK 4206 Zeichen https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html
-OK 2893 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
-OK 4866 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
-OK 2003 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
+OK 3120 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
+OK 4858 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
+OK 1995 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
 OK 5300 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
-OK 29615 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
-OK 7680 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
-OK 3358 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
+OK 29640 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
+OK 7672 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
+OK 3341 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
 FEHLER https://www.mainhausen.de/events: HTTP Error 404: Not Found
 OK 49672 Zeichen https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html
 OK 3592 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Dreieich.html
@@ -71,11 +71,11 @@ FEHLER https://frankfurt.de/frankfurt-entdecken-und-erleben/stadtportrait/frankf
 OK 8945 Zeichen https://www.visitfrankfurt.travel/erleben/feste-und-veranstaltungen/museumsuferfest
 OK 17825 Zeichen https://www.bad-homburg.de/de/erleben/ausgehen/feste-und-festivals/laternenfest
 WENIG TEXT (vermutlich nur JavaScript) https://www.vereinsring-oberursel.de/brunnenfest/
-OK 7400 Zeichen https://festspiele.hanau.de/
+OK 7378 Zeichen https://festspiele.hanau.de/
 FEHLER https://www.hanau.de/freizeit/veranstaltungskalender/veranstaltungen/183871.html: HTTP Error 404: Not Found
 OK 1523 Zeichen https://www.heinerfest.de/
 OK 6732 Zeichen https://www.darmstadt-guide.de/veranstaltungen/
 OK 4342 Zeichen https://www.mainzer-johannisnacht.de/
 OK 5230 Zeichen https://diemainzerwinzer.de/sommerweinfeste/
 AUTO 2 Markt-Eintraege, GEFUNDEN 16
-VORSCHLAEGE 6 offen, davon 1 neu
+VORSCHLAEGE 5 offen, davon 0 neu
