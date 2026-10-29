@@ -1,6 +1,10 @@
 # Aenderungen der ICS, neueste oben. Zeile: von | bis | ? | Titel | Notiz
 # ENTFERNT = aus der ICS verschwunden (auch durch das wandernde Zeitfenster)
 
+== Stand 2026-10-29 ==
+NEU
+2028-02-29 | 2028-02-29 | ? | ▼ Faschingsumzug Sprendlingen | Beginn 15.11 Uhr
+
 == Stand 2026-10-28 ==
 NEU
 2027-03-26 | 2027-03-29 | ? | ▼🎈Oster50J-Riesenrad-Drhain
