@@ -1,9 +1,6 @@
-# Vorschlaege, Stand 2026-10-30. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-10-31. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
-
-#> dietzenbach | Kerb | - | https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/ | November 2026: Dietzenbacher Kerb Datum: 15.10.2026 Von Freitag, 30. Oktober, bis Dienstag, 3. November 2026, findet wieder die traditionelle Dietzenbacher Kerb in der
-2026-10-30 | 2026-10-30 | ? | Kerb Dietzenbach | 
 
 #> neu-isenburg | Stadtfest | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Termin speichern Märkte, Stadtfeste und Messen / Sonstiges Halloweenfeier 31.10.2026 18 :00 Uhr – 20 :00 Uhr Für Groß und Klein, vor dem Bürgerhaus Zeppelinheim. Essen,
 2026-10-31 | 2026-10-31 | ? | Stadtfest N-I | 
