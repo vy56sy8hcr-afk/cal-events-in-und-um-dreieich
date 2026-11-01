@@ -41,13 +41,6 @@
    "vorlage": "burgfestspiele"
   },
   {
-   "key": "festspiele-hanau-2027",
-   "start": "2027-05-07",
-   "ende": "2027-07-31",
-   "url": "https://festspiele.hanau.de/",
-   "vorlage": "festspiele-hanau"
-  },
-  {
    "key": "weihnachtsmarkt-darmstadt-2026",
    "start": "2026-11-16",
    "ende": "2026-12-23",
@@ -116,7 +109,7 @@
    "pre": "",
    "stadt": "heusenstamm",
    "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
-   "ab": "2026-10-31"
+   "ab": "2026-11-01"
   },
   {
    "key": "auto|heusenstamm|winterzauber|2026-12-28",
@@ -126,7 +119,7 @@
    "pre": "",
    "stadt": "heusenstamm",
    "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
-   "ab": "2026-10-31"
+   "ab": "2026-11-01"
   }
  ]
 }
