@@ -1,5 +1,10 @@
-# Vorschlaege, Stand 2026-11-01. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-02. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
-#> dietzenbach | Kerb | - | https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/ | historische und traditionelle Kerb in der Altstadt bietet den Rahmen für den stadtweiten verkaufsoffenen Sonntag am 01.11.2026. Kunden und Besucher ... mehr Emil und die
+#> dreieich | Musiktage | - | https://www.buergerhaeuser-dreieich.de/programm | 19:00 Uhr Dreieicher Musiktage Junge Talente, frische Klänge und musikalische Lebensfreude Konzert im Haus Dietrichsroth Der Förderverein DreieichMusik e. V. und die
+2026-11-03 | 2026-11-03 | ? | Musiktage | 
+
+#> dietzenbach | Kerb | - | https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/ | gefunden Dietzenbacher Kerb Datum: 30.10.2026 bis 03.11.2026 Uhrzeit: 14:00 bis 22:00 Uhr Veranstaltungsort: Altstadt Leuchtende Kinderaugen und Spaß für die ganze
+2026-11-03 | 2026-11-03 | ? | Kerb Dietzenbach | 
+
