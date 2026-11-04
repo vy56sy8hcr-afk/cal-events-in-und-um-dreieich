@@ -1,6 +1,11 @@
 # Aenderungen der ICS, neueste oben. Zeile: von | bis | ? | Titel | Notiz
 # ENTFERNT = aus der ICS verschwunden (auch durch das wandernde Zeitfenster)
 
+== Stand 2026-11-04 ==
+ENTFERNT
+2026-05-03 | 2026-05-03 | ? | ▼🎈🛍️Fahrgass' Classics VoF | Verkaufsoffener Sonntag 12-18 Uhr mit Ausstellung von Oldtimern, Motorrädern, historischen Landmaschinen, Traktoren und Fahrrädern.\n\nImmer am ersten Sonntag im Mai in der schönen Dreieichenhainer Altstadt.\n\nwww.dreieichenhain.com/veranstaltungen/
+2026-05-03 | 2026-05-03 | ? | 🛍️Siebenschläfer-Maimarkt Langen VoF | Wassergasse, Langen\nImmer am ersten Sonntag im Mai
+
 == Stand 2026-11-02 ==
 ENTFERNT
 2026-05-01 | 2026-05-03 | ? | ▼ <—🎨34. Kunsttage Dreieich (16.o4. - o3.5.2o26) | Frühjahrsausstellung der Kunsttage Dreieich\nKunstInitiative Dreieich und Bürgerhäuser Dreieich

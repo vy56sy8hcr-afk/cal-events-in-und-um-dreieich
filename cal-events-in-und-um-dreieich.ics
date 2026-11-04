@@ -7,29 +7,6 @@ X-WR-TIMEZONE:Europe/Berlin
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:39773a58-9232-517f-9ffe-13d986ec45c1@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20260503
-DTEND;VALUE=DATE:20260504
-SUMMARY:▼🎈🛍️Fahrgass' Classics VoF
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:Verkaufsoffener Sonntag 12-18 Uhr mit Ausstellung von Oldtimer
- n\, Motorrädern\, historischen Landmaschinen\, Traktoren und Fahrrädern
- .\n\nImmer am ersten Sonntag im Mai in der schönen Dreieichenhainer Alts
- tadt.\n\nwww.dreieichenhain.com/veranstaltungen/
-END:VEVENT
-BEGIN:VEVENT
-UID:46292956-3554-5bb7-bc7a-3e51147340f2@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20260503
-DTEND;VALUE=DATE:20260504
-SUMMARY:🛍️Siebenschläfer-Maimarkt Langen VoF
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:Wassergasse\, Langen\nImmer am ersten Sonntag im Mai
-END:VEVENT
-BEGIN:VEVENT
 UID:db5af8f4-f68d-5d52-a33f-4516c7129ade@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260508
