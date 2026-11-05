@@ -1,4 +1,7 @@
-# Vorschlaege, Stand 2026-11-04. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-05. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
+
+#> obertshausen | Afterwork | - | https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen | Meininger Platz Herbstliches AfterWorkEvent im November weiterlesen Seniorinnen und Senioren können wieder zusammen feiern Weihnachtsfeier: Einlasskarten sind ab 16. November
+2026-11-06 | 2026-11-06 | ? | Afterwork Obertshausen | 
 
