@@ -1,7 +1,4 @@
-# Vorschlaege, Stand 2026-11-07. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-08. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
-
-#> neu-isenburg | Stadtfest | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Termin speichern Märkte, Stadtfeste und Messen Floh- und Trödelmarkt November 07.11.2026 09 :00 Uhr – 13 :00 Uhr Neu-Isenburger Flohmarkt: Von Büchern bis Spielzeug – hier
-2026-11-07 | 2026-11-07 | ? | Stadtfest N-I | 
 
