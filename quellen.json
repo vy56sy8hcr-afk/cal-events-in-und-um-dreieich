@@ -155,7 +155,8 @@
   "Winterzauber",
   "Jazz in der Burg",
   "Blues Morning",
-  "Jazz am 1. Mai"
+  "Jazz am 1. Mai",
+  "Oktoberfest"
  ],
  "beobachten": [
   {
@@ -387,6 +388,11 @@
    "stadt": "apfelweinroute",
    "art": "Kreis-Offenbach",
    "url": "https://www.kreis-offenbach.de/Freizeit/Entdecken/Touren-Routen/Hessische-Apfelwein-und-Obstwiesenroute/Termine-rund-um-die-Route/"
+  },
+  {
+   "stadt": "dreieich",
+   "art": "Oktoberfest Goetzenhain",
+   "url": "https://www.hsv-goetzenhain.de/oktoberfest"
   }
  ],
  "grossstaedte": [
