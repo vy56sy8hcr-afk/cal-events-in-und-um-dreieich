@@ -13,6 +13,34 @@
    "url": "https://www.vereinsring-oberursel.de/brunnenfest/"
   },
   {
+   "key": "kunsttage-fruehjahr-2027",
+   "start": "2027-04-29",
+   "ende": "2027-05-17",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "vorlage": "kunsttage-fruehjahr"
+  },
+  {
+   "key": "kunsttage-burg-2027",
+   "start": "2027-06-23",
+   "ende": "2027-08-08",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "vorlage": "kunsttage-burg"
+  },
+  {
+   "key": "kunsttage-herbst-2027",
+   "start": "2027-11-18",
+   "ende": "2027-12-05",
+   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
+   "vorlage": "kunsttage-herbst"
+  },
+  {
+   "key": "burgfestspiele-2027",
+   "start": "2027-06-23",
+   "ende": "2027-08-08",
+   "url": "https://www.buergerhaeuser-dreieich.de/burgfestspiele",
+   "vorlage": "burgfestspiele"
+  },
+  {
    "key": "weihnachtsmarkt-darmstadt-2026",
    "start": "2026-11-16",
    "ende": "2026-12-23",
@@ -70,34 +98,6 @@
    "ende": "2026-10-17",
    "url": "https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/",
    "vorlage": "tauschboerse"
-  },
-  {
-   "key": "kunsttage-fruehjahr-2027",
-   "start": "2027-04-29",
-   "ende": "2027-05-17",
-   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
-   "vorlage": "kunsttage-fruehjahr"
-  },
-  {
-   "key": "kunsttage-burg-2027",
-   "start": "2027-06-23",
-   "ende": "2027-08-08",
-   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
-   "vorlage": "kunsttage-burg"
-  },
-  {
-   "key": "kunsttage-herbst-2027",
-   "start": "2027-11-18",
-   "ende": "2027-12-05",
-   "url": "https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles",
-   "vorlage": "kunsttage-herbst"
-  },
-  {
-   "key": "burgfestspiele-2027",
-   "start": "2027-06-23",
-   "ende": "2027-08-08",
-   "url": "https://www.buergerhaeuser-dreieich.de/burgfestspiele",
-   "vorlage": "burgfestspiele"
   }
  ],
  "auto": [
@@ -109,7 +109,7 @@
    "pre": "",
    "stadt": "heusenstamm",
    "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
-   "ab": "2026-11-10"
+   "ab": "2026-11-11"
   },
   {
    "key": "auto|heusenstamm|winterzauber|2026-12-28",
@@ -119,7 +119,7 @@
    "pre": "",
    "stadt": "heusenstamm",
    "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
-   "ab": "2026-11-10"
+   "ab": "2026-11-11"
   }
  ]
 }
