@@ -1,4 +1,7 @@
-# Vorschlaege, Stand 2026-11-12. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-13. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
+
+#> neu-isenburg | Stadtfest | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Termin speichern Märkte, Stadtfeste und Messen Flohmarktine 14.11.2026 14 :00 Uhr – 18 :00 Uhr Mode, Vintage & Accessoires: Alles, was das Frauenherz begehrt. Aktionen auf
+2026-11-14 | 2026-11-14 | ? | Stadtfest N-I | 
 
