@@ -1,6 +1,10 @@
 # Aenderungen der ICS, neueste oben. Zeile: von | bis | ? | Titel | Notiz
 # ENTFERNT = aus der ICS verschwunden (auch durch das wandernde Zeitfenster)
 
+== Stand 2026-11-15 ==
+ENTFERNT
+2026-05-14 | 2026-05-14 | ? | 🎈Countryfest Langen | Biergarten hinter der Neuen Stadthalle Langen. Live Musik und Linedance von 11 bis 14 Uhr, Musik bis 18 Uhr. Eintritt frei!
+
 == Stand 2026-11-09 ==
 NEU
 2026-10-23 | 2026-10-23 | ? | ▼ 🎈14. Götzenhainer Oktoberfest | HSV-Sporthalle Götzenhain, Langener Straße 69, 63303 Dreieich\nVeranstalter: HSV Götzenhain 1954 e.V.\nwww.hsv-goetzenhain.de/oktoberfest
