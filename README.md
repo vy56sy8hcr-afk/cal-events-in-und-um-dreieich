@@ -7,9 +7,6 @@ Abo-Link (Kalender-App, “Kalender per URL hinzufügen”):
 - `termine.json` enthält bestätigte Termine. Gleicher `key` ersetzt den Rhythmus-Termin, `"skip": true` löscht ihn.
 - Der Workflow läuft täglich, verschiebt das Fenster (heute -6 bis +16 Monate) und speichert die ICS.
 
-Hier der Text für deine README.md. Du ersetzt damit den ganzen Inhalt der Datei:
-
-README Veranstaltungskalender
 
 Welche Datei wofür?
 
@@ -38,5 +35,3 @@ Die Zeilen müssen in der Datei stehen bleiben. Der Kalender wird bei jedem Lauf
 termine.json und eigene_termine.txt änderst du nur von Hand. Kein Skript schreibt dort hinein. Wer eine dieser Dateien mit einer älteren Fassung ersetzt, verliert seine Änderungen.
 
 Nach jeder Änderung: Commit changes, dann den Workflow mit “Run workflow” starten.
-
-Gib Bescheid, wenn du es kürzer oder anders aufgebaut haben möchtest.
