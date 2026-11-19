@@ -1,4 +1,13 @@
-# Vorschlaege, Stand 2026-11-18. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-19. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
+
+#> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 2027 HEUSENSTAMMER SOMMER: Kerb in Rembrücken — Kultur, Sport & Ehrenamt HEUSENSTAMMER SOMMER: Kerb in Rembrücken Kultur, Sport & Ehrenamt Dorfplatz Rembrücken,
+2027-09-11 | 2027-09-11 | ? | Kerb Heusenstamm | 
+
+#> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 2027 HEUSENSTAMMER SOMMER: Kerb in Rembrücken — Kultur, Sport & Ehrenamt HEUSENSTAMMER SOMMER: Kerb in Rembrücken Kultur, Sport & Ehrenamt Dorfplatz Rembrücken,
+2027-09-12 | 2027-09-12 | ? | Kerb Heusenstamm | 
+
+#> heusenstamm | Mittelaltermarkt | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | Samstag, 09. Oktober 2027 Mittelaltermarkt — Kultur, Sport & Ehrenamt Mittelaltermarkt Kultur, Sport & Ehrenamt Schlossgelände, Im Herrngarten 1 09.10.2027 Infos folgen. Montag, 18.
+2027-10-09 | 2027-10-09 | ? | Mittelaltermarkt Heusenstamm | 
 
