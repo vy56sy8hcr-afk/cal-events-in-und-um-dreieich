@@ -1,6 +1,9 @@
-# Vorschlaege, Stand 2026-11-19. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-20. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
+
+#> heusenstamm | Adventsmarkt | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | Samstag, 21. November 2026 Adventsmarkt — Förderverein Lebensbilder e.V. Adventsmarkt Förderverein Lebensbilder e.V. AWO Horst-Schmidt-Haus, Herderstraße 85 21.11.2026 10:00 bis
+2026-11-21 | 2026-11-21 | ? | Adventsmarkt Heusenstamm | 
 
 #> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 2027 HEUSENSTAMMER SOMMER: Kerb in Rembrücken — Kultur, Sport & Ehrenamt HEUSENSTAMMER SOMMER: Kerb in Rembrücken Kultur, Sport & Ehrenamt Dorfplatz Rembrücken,
 2027-09-11 | 2027-09-11 | ? | Kerb Heusenstamm | 
