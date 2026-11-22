@@ -1,6 +1,10 @@
 # Aenderungen der ICS, neueste oben. Zeile: von | bis | ? | Titel | Notiz
 # ENTFERNT = aus der ICS verschwunden (auch durch das wandernde Zeitfenster)
 
+== Stand 2026-11-22 ==
+ENTFERNT
+2026-05-21 | 2026-05-24 | ? | 🎈Schlossgrabenfest Darmstadt
+
 == Stand 2026-11-19 ==
 ENTFERNT
 2026-11-21 | 2026-11-21 | ? | 🎅🏼Adventsmarkt Heusenstamm
