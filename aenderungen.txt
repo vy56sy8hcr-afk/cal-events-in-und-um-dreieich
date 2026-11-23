@@ -1,6 +1,12 @@
 # Aenderungen der ICS, neueste oben. Zeile: von | bis | ? | Titel | Notiz
 # ENTFERNT = aus der ICS verschwunden (auch durch das wandernde Zeitfenster)
 
+== Stand 2026-11-23 ==
+NEU
+2027-05-02 | 2027-05-02 | ? | 🎅🏼Weihnachtsmarkt Langen
+ENTFERNT
+2026-05-22 | 2026-05-27 | ? | ▼ 🎈308. Haaner Kerb | Die Kerben und ihre Termine 2026 in Dreieich:\n\nHayner Kerb (Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\n\nKerb Sprendlingen\nFr 14.08.2026 – Di 18.08.2026\n\nKerb Götzenhain\nFr 18.09.2026 – Mo 21.09.2026\n\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
+
 == Stand 2026-11-22 ==
 ENTFERNT
 2026-05-21 | 2026-05-24 | ? | 🎈Schlossgrabenfest Darmstadt

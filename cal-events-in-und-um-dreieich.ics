@@ -7,19 +7,6 @@ X-WR-TIMEZONE:Europe/Berlin
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:90d4971c-6e84-504a-9eb4-b5f4422aad5e@events-dreieich
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20260522
-DTEND;VALUE=DATE:20260528
-SUMMARY:▼ 🎈308. Haaner Kerb
-TRANSP:TRANSPARENT
-X-MICROSOFT-CDO-BUSYSTATUS:FREE
-DESCRIPTION:Die Kerben und ihre Termine 2026 in Dreieich:\n\nHayner Kerb (
- Dreieichenhain)\nFr 22.05.2026 – Mi 27.05.2026\n\nKerb Sprendlingen\nFr
-  14.08.2026 – Di 18.08.2026\n\nKerb Götzenhain\nFr 18.09.2026 – Mo 2
- 1.09.2026\n\nKerb Offenthal\nFr 30.10.2026 – Di 03.11.2026
-END:VEVENT
-BEGIN:VEVENT
 UID:2f039cd6-fab8-5325-9beb-8c4fef219f94@events-dreieich
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260529
@@ -943,6 +930,15 @@ DESCRIPTION:Verkaufsoffener Sonntag 12-18 Uhr mit Ausstellung von Oldtimer
  n\, Motorrädern\, historischen Landmaschinen\, Traktoren und Fahrrädern
  .\n\nImmer am ersten Sonntag im Mai in der schönen Dreieichenhainer Alts
  tadt.\n\nwww.dreieichenhain.com/veranstaltungen/
+END:VEVENT
+BEGIN:VEVENT
+UID:9e9010bd-8dd7-50b6-b983-2eab6949cd06@events-dreieich
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:🎅🏼Weihnachtsmarkt Langen
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
 END:VEVENT
 BEGIN:VEVENT
 UID:63a9f96a-b70b-5408-b0a0-53ac6d7a8a51@events-dreieich

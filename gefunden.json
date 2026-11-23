@@ -102,6 +102,16 @@
  ],
  "auto": [
   {
+   "key": "auto|langen|weihnachtsmarkt|2027-05-02",
+   "start": "2027-05-02",
+   "ende": "2027-05-02",
+   "name": "Weihnachtsmarkt Langen",
+   "pre": "",
+   "stadt": "langen",
+   "url": "https://www.langen.de/de/feste-und-maerkte.html",
+   "ab": "2026-11-23"
+  },
+  {
    "key": "auto|heusenstamm|winterzauber|2026-12-28",
    "start": "2026-12-28",
    "ende": "2026-12-29",
@@ -109,7 +119,7 @@
    "pre": "",
    "stadt": "heusenstamm",
    "url": "https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender",
-   "ab": "2026-11-22"
+   "ab": "2026-11-23"
   }
  ]
 }
