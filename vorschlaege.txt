@@ -1,9 +1,9 @@
-# Vorschlaege, Stand 2026-11-23. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-24. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
-#> langen | Weihnachtsmarkt | - | https://www.langen.de/de/pressemitteilungen.html | Einschränkungen während des Weihnachtsmarkts Rund um den Vierröhrenbrunnen und die Stadtkirche sowie auf dem Schneidhiwwelplatz wird es am ersten und zweiten Adventswochenende wieder
-2026-11-23 | 2026-11-23 | ? | Weihnachtsmarkt Langen | 
+#> roedermark | Nikolausmarkt | - | https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html | Weiterlesen Stadtleben Nikolausmarkt mit Musik und Genuss Di. / 24.11.2026 Am zweiten Adventswochenende heißt es: Brauchtumspflege auf dem Häfnerplatz Weiterlesen Kultur,
+2026-11-24 | 2026-11-24 | ? | Nikolausmarkt Rödermark | 
 
 #> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 2027 HEUSENSTAMMER SOMMER: Kerb in Rembrücken — Kultur, Sport & Ehrenamt HEUSENSTAMMER SOMMER: Kerb in Rembrücken Kultur, Sport & Ehrenamt Dorfplatz Rembrücken,
 2027-09-11 | 2027-09-11 | ? | Kerb Heusenstamm | 
