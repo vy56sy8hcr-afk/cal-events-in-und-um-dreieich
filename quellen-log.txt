@@ -1,4 +1,4 @@
-# Lauf vom 2026-11-24
+# Lauf vom 2026-11-25
 KEIN TREFFER https://www.gewerbeverein-langen.de/verkaufsoffener-sonntag/
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
 OK laternenfest-bad-homburg-2027 2027-08-27 bis 2027-08-30
@@ -21,38 +21,38 @@ KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-O
 KEIN TREFFER https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 1974 Zeichen https://www.buergerhaeuser-dreieich.de/kunsttage/aktuelles
 OK 12995 Zeichen https://www.buergerhaeuser-dreieich.de/programm
-OK 27437 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
-OK 8635 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
-OK 47845 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
+OK 27421 Zeichen https://www.dietzenbach.de/Stadt-Rathaus/Stadt/Aktuelles/
+OK 8289 Zeichen https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/
+OK 47847 Zeichen https://www.rodgau.de/de/aktuelles/pressemeldungen/
 OK 8456 Zeichen https://www.dreieich.de/freizeit-entdecken/kunst-kultur/feste-und-maerkte/
 OK 20850 Zeichen https://www.langen.de/de/feste-und-maerkte.html
 AUTO Weihnachtsmarkt Langen 2027-05-02 bis 2027-05-02
-OK 6211 Zeichen https://www.muehlheim.de/veranstaltungskalender
+OK 6206 Zeichen https://www.muehlheim.de/veranstaltungskalender
 OK 18010 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/pressemitteilungen/
 OK 18010 Zeichen https://www.dreieich.de/rathaus-service/presse-medien/newsroom/
-OK 4867 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
-OK 4864 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
-OK 7182 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
-OK 31351 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
-OK 51042 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
+OK 4871 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/
+OK 4868 Zeichen https://www.egelsbach.de/rathaus-politik/aktuelles/veranstaltungskalender/
+OK 7058 Zeichen https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/
+OK 31445 Zeichen https://www.heusenstamm.de/de/buerger-und-stadt/pressecenter/aktuelle-meldungen
+OK 50054 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender
 AUTO Winterzauber Heusenstamm 2026-12-28 bis 2026-12-29
 OK 5757 Zeichen https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/regelmaessige-veranstaltungen
 OK 17634 Zeichen https://www.langen.de/de/pressemitteilungen.html
 OK 15666 Zeichen https://www.langen.de/de/aktuelles-aus-dem-rathaus.html
 OK 14825 Zeichen https://www.langen.de/de/aktuelles-kultur-freizeit.html
-OK 30098 Zeichen https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/
-OK 8447 Zeichen https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/
+OK 30093 Zeichen https://www.hainburg.de/rathaus-politik/aktuelles/pressemitteilungen/
+OK 8442 Zeichen https://www.hainburg.de/kultur-freizeit/vereine/veranstaltungskalender/
 OK 2941 Zeichen https://www.mainhausen.de/
 OK 6273 Zeichen https://www.obertshausen.de/de/aktuelles-1/pressemitteilungen
-OK 1287 Zeichen https://www.kultur-obertshausen.de/
+OK 1191 Zeichen https://www.kultur-obertshausen.de/
 OK 4039 Zeichen https://roedermark.de/rathaus-politik/aktuelles/pressemitteilungen.html
-OK 3095 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
-OK 5314 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
+OK 2886 Zeichen https://roedermark.de/kultur-freizeit/veranstaltungskalender.html
+OK 5279 Zeichen https://www.seligenstadt.de/rathaus-und-politik/aktuelles/pressemitteilungen/
 OK 2029 Zeichen https://www.seligenstadt.de/freizeit-und-kultur/veranstaltungen/
-OK 5420 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
-OK 29629 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
-OK 7959 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
-OK 3360 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
+OK 5475 Zeichen https://www.unser-seligenstadt.de/veranstaltungskalender
+OK 29690 Zeichen https://www.dietzenbach.de/Kultur-Freizeit/Freizeit-Bewegung/Veranstaltungskalender/
+OK 7919 Zeichen https://www.muehlheim.de/rathaus-politik/aktuelles/aktuelle-meldungen/
+OK 3362 Zeichen https://www.rodgau.de/Leben/Freizeit/Veranstaltungskalender/
 FEHLER https://www.mainhausen.de/events: HTTP Error 404: Not Found
 OK 56168 Zeichen https://www.deutsche-fachwerkstrasse.de/Themen/Weihnachtsmaerkte.html
 OK 3592 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Rhein-zum-Main-und-Odenwald/Dreieich.html
@@ -61,7 +61,7 @@ OK 3715 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte
 OK 4102 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Westerwald-ueber-Lahntal-und-Taunus-zum-Main/Oberursel.html
 OK 3496 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Westerwald-ueber-Lahntal-und-Taunus-zum-Main/Kronberg-im-Taunus.html
 OK 5100 Zeichen https://www.deutsche-fachwerkstrasse.de/Regionalstrecken_Staedte/Vom-Westerwald-ueber-Lahntal-und-Taunus-zum-Main/Frankfurt-am-Main-Stadtteil-Hoechst.html
-OK 10562 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/
+OK 10723 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/
 OK 4396 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Zwischen-Main-Taunus/Aktionskalender/Veranstaltungen-M%C3%A4rkte/
 OK 5135 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Main-Kinzig/Aktionskalender/
 OK 6105 Zeichen https://www.klimaenergie-frm.de/Streuobst/Hessische-Apfelwein-und-Obstwiesenroute/Wetterau/Aktionskalender/Veranstaltungen-M%C3%A4rkte/
@@ -72,7 +72,7 @@ FEHLER https://frankfurt.de/frankfurt-entdecken-und-erleben/stadtportrait/frankf
 OK 8945 Zeichen https://www.visitfrankfurt.travel/erleben/feste-und-veranstaltungen/museumsuferfest
 OK 17917 Zeichen https://www.bad-homburg.de/de/erleben/ausgehen/feste-und-festivals/laternenfest
 OK 808 Zeichen https://www.vereinsring-oberursel.de/brunnenfest/
-OK 7342 Zeichen https://festspiele.hanau.de/
+OK 7551 Zeichen https://festspiele.hanau.de/
 FEHLER https://www.hanau.de/freizeit/veranstaltungskalender/veranstaltungen/183871.html: HTTP Error 404: Not Found
 OK 1523 Zeichen https://www.heinerfest.de/
 OK 6732 Zeichen https://www.darmstadt-guide.de/veranstaltungen/
