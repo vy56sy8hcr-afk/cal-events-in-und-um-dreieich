@@ -1,9 +1,9 @@
-# Vorschlaege, Stand 2026-11-25. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-26. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
-#> neu-isenburg | Weihnachtsmarkt | - | https://www.neu-isenburg.de/rathaus_und_service/rathauspresse/ | Rathaus und Service Weihnachtsmarkt und Hugenottenmarkt Programm rund um den Weihnachtsmarkt Aktionen auf dieser Seite: 25.11.2026 Rathaus und Service 25. November –
-2026-11-25 | 2026-11-25 | ? | Weihnachtsmarkt N-I | 
+#> roedermark | Adventsmarkt | - | https://roedermark.de/kultur-freizeit/veranstaltungskalender.html | buchen Märkte und Messen Adventsmarkt in Ober-Roden Sa. / 28.11.26 / 15:00 Uhr Programm Samstag, 28. November 15 Uhr: Beginn des Markttreibens 22 Uhr: Ende des ersten Markttages
+2026-11-28 | 2026-11-28 | ? | Adventsmarkt Rödermark | 
 
 #> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 2027 HEUSENSTAMMER SOMMER: Kerb in Rembrücken — Kultur, Sport & Ehrenamt HEUSENSTAMMER SOMMER: Kerb in Rembrücken Kultur, Sport & Ehrenamt Dorfplatz Rembrücken,
 2027-09-11 | 2027-09-11 | ? | Kerb Heusenstamm | 
