@@ -1,9 +1,18 @@
-# Vorschlaege, Stand 2026-11-26. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-27. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
 #> roedermark | Adventsmarkt | - | https://roedermark.de/kultur-freizeit/veranstaltungskalender.html | buchen Märkte und Messen Adventsmarkt in Ober-Roden Sa. / 28.11.26 / 15:00 Uhr Programm Samstag, 28. November 15 Uhr: Beginn des Markttreibens 22 Uhr: Ende des ersten Markttages
 2026-11-28 | 2026-11-28 | ? | Adventsmarkt Rödermark | 
+
+#> neu-isenburg | Stadtfest | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Termin speichern Märkte, Stadtfeste und Messen Weihnachtsmarkt 28.11.2026 15 :00 Uhr – 29.11.2026 20 :00 Uhr Weihnachtsmarkt rund um die Kirche "Zum Heiligen Kreuz" im
+2026-11-28 | 2026-11-28 | ? | Stadtfest N-I | 
+
+#> neu-isenburg | Weihnachtsmarkt | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Märkte, Stadtfeste und Messen Weihnachtsmarkt 28.11.2026 15 :00 Uhr – 29.11.2026 20 :00 Uhr Weihnachtsmarkt rund um die Kirche "Zum Heiligen Kreuz" im Buchenbusch. Samstag: 15-21 Uhr
+2026-11-28 | 2026-11-28 | ? | Weihnachtsmarkt N-I | 
+
+#> neu-isenburg | Weihnachtsmarkt | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Uhr – 29.11.2026 20 :00 Uhr Weihnachtsmarkt rund um die Kirche "Zum Heiligen Kreuz" im Buchenbusch. Samstag: 15-21 Uhr Sonntag: 15-20 Uhr Aktionen auf dieser Seite: Termin speichern
+2026-11-29 | 2026-11-29 | ? | Weihnachtsmarkt N-I | 
 
 #> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 2027 HEUSENSTAMMER SOMMER: Kerb in Rembrücken — Kultur, Sport & Ehrenamt HEUSENSTAMMER SOMMER: Kerb in Rembrücken Kultur, Sport & Ehrenamt Dorfplatz Rembrücken,
 2027-09-11 | 2027-09-11 | ? | Kerb Heusenstamm | 
