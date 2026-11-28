@@ -1,4 +1,4 @@
-# Vorschlaege, Stand 2026-11-27. Neue Treffer werden unten angefuegt, alte bleiben stehen.
+# Vorschlaege, Stand 2026-11-28. Neue Treffer werden unten angefuegt, alte bleiben stehen.
 # Zeile mit #> = Hinweis zur Quelle. Die Zeile darunter kopierst du in eigene_termine.txt (Titel und Emoji anpassen).
 # Nicht gewollt? Begriff in ablehnungen.txt eintragen. Was im Kalender, in termine.json oder eigene_termine.txt steht, verschwindet von selbst.
 
@@ -13,6 +13,9 @@
 
 #> neu-isenburg | Weihnachtsmarkt | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Uhr – 29.11.2026 20 :00 Uhr Weihnachtsmarkt rund um die Kirche "Zum Heiligen Kreuz" im Buchenbusch. Samstag: 15-21 Uhr Sonntag: 15-20 Uhr Aktionen auf dieser Seite: Termin speichern
 2026-11-29 | 2026-11-29 | ? | Weihnachtsmarkt N-I | 
+
+#> neu-isenburg | Stadtfest | - | https://www.neu-isenburg.de/kultur-und-freizeit/veranstaltungskalender/ | Termin speichern Märkte, Stadtfeste und Messen / Sonstiges Filmbörse November 29.11.2026 11 :00 Uhr – 15 :00 Uhr Aktionen auf dieser Seite: Termin speichern Klassik, Oper &
+2026-11-29 | 2026-11-29 | ? | Stadtfest N-I | 
 
 #> heusenstamm | Kerb | - | https://www.heusenstamm.de/de/freizeit-und-kultur/veranstaltungen/veranstaltungskalender | 2027 HEUSENSTAMMER SOMMER: Kerb in Rembrücken — Kultur, Sport & Ehrenamt HEUSENSTAMMER SOMMER: Kerb in Rembrücken Kultur, Sport & Ehrenamt Dorfplatz Rembrücken,
 2027-09-11 | 2027-09-11 | ? | Kerb Heusenstamm | 
